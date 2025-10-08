@@ -1,0 +1,378 @@
+@use '/src/App.scss' as css;
+
+.main-signup{
+  background-color: css.$theme_bg;
+  position: absolute;
+  width: 375px;
+  height: 100%;
+}
+.signup_header{
+    display: flex;
+    // position: fixed;
+    // position: absolute;
+    background-color: css.$theme_bg;
+    width: 375px;
+    z-index: 1;
+    img{
+        cursor: pointer;
+        padding: 15px 26px 15px 29px;
+    }
+    .title{
+        color: css.$theme_text;
+        font-weight: 500;
+        align-self: center;
+    }
+  }
+  .show-img-loader-signup{
+    display: block !important;
+    // margin: 5px 0 0 0px;
+    margin: 15px 18px 15px 29px;
+  }
+.signup_page {
+  margin: 0 20px;
+  // margin-top: 75px;
+  // height: calc(100vh - 75px);
+  position: relative;
+
+  .desc{
+    color: css.$theme_text;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-family: "AvenirNextLTPro-Medium";
+  }
+  .socialInputs{
+    display: block;
+    padding-bottom: 20px;
+  }
+  .inputField {
+    color: css.$theme_text;
+    margin-bottom: 20px;
+
+    .label {
+      color: css.$theme_text;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      //   font-family: 'AvenirNextLTPro-Regular';
+    }
+    .show-img-loader-logo {
+      display: block !important;
+      color: #848484;
+      margin-left: auto;
+      margin-right: 15px;
+      margin-top: 0;
+      position: relative;
+      bottom: 34px;
+    }
+    .input_field_wrapper {
+      position: relative;
+      input {
+        margin-top: 10px;
+        color: css.$theme_text;
+        border-radius: 8px;
+        background-color: rgba(36, 36, 38, 1);
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 14px 20px;
+        padding-right: 40px;
+        font-size: 16px;
+        font-weight: 500;
+
+        &::placeholder{
+          color: #848484;
+        }
+      }
+      
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      select:-webkit-autofill,
+      select:-webkit-autofill:hover,
+      select:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset !important;
+      }
+
+      img {
+        position: absolute;
+        top: 45%;
+        right: 0%;
+      }
+    }
+  }
+
+  .inputField-disabled {
+    color: css.$theme_text;;
+    margin-bottom: 20px;
+
+    .label-disabled {
+      color: css.$theme_text;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      //   font-family: 'AvenirNextLTPro-Regular';
+    }
+
+    .input_field_wrapper-disabled {
+      position: relative;
+      input {
+        margin-top: 10px;
+        color: css.$theme_text;;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+      }
+      img {
+        position: absolute;
+        top: 45%;
+        right: 0%;
+      }
+    }
+  }
+
+  .signup_radio {
+    margin-top: 20px;
+    .question_txt {
+       color: css.$theme_text;
+      margin-bottom: 16px;
+    }
+    input[type=radio]#whatsapp, input[type=radio]#text, input[type=radio]#none {
+      accent-color: #E72D38;
+    }
+    .answer_txt {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      .title_radio {
+         color: css.$theme_text;
+        // margin-top: -5px;
+        cursor: pointer;
+      }
+      span {
+        // margin-left: 8px;
+      }
+      .radio_img {
+        cursor: pointer;
+        img {
+          margin-top: -10px;
+          pointer-events: none;
+        }
+      }
+
+      input[type="radio"] {
+        border: 0.15em solid red !important;
+        width: 20px !important;
+        height: 20px !important;
+        cursor: pointer;
+      }
+      input[type="radio"]:checked {
+        background-color: red !important;
+      }
+    }
+  }
+}
+
+.customSubmit{
+    // background-color: yellow;
+    padding-bottom: 25px;
+    margin-top: 45px;
+    // position: fixed !important;
+    .buttonText{
+        color: white;
+        background-color: #E72D38;
+        padding: 13px 0;
+        text-align: center;
+        border-radius: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        cursor: pointer;
+    }
+    .disabled{
+      color: white;
+      background-color: #E72D3880;
+      padding: 13px 0;
+      text-align: center;
+      border-radius: 100px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      opacity: 0.5;
+    }
+}
+
+.customSubmitSignupForm{
+  position: fixed !important;
+  bottom: 0;
+  background-color: #0d0d0d;
+  width: 336px;
+  padding: 10px 0px 22px 0;
+
+  @media (max-width: 450px) {
+     width: calc(100% - 39px);
+     padding: 10px 20px 22px 20px;
+     margin: 0 -20px;
+     width: 100%;
+  }
+
+  .buttonText{
+      color: white;
+      background-color: #E72D38;
+      padding: 13px 0;
+      text-align: center;
+      border-radius: 100px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      cursor: pointer;
+  }
+  .disabled{
+    color: white;
+    background-color: #E72D3880;
+    padding: 13px 0;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    opacity: 0.5;
+  }
+
+  .signup-submit-btn-spinner {
+    height: 18px;
+    width: 18px;
+    border-width: 2px;
+  }
+}
+
+.phone-label {
+  color: css.$theme_text;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.phone-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  .phone-country-code {
+    max-width: 74px;
+  }
+
+  .country-code-with-error {
+    margin-bottom: 15px;
+  }
+
+  .phone-number-field {
+    width: 348px;
+  }
+}
+.MB-20{
+  margin-bottom: 20px;
+}
+
+
+// @media (min-width:451px){
+//   .customSubmit{
+//     max-width: 375px !important;
+//     width: 100%;
+//   }
+// }
+
+@media (max-width: 450px) {
+  .main-signup{
+    width: 100%;
+  }
+
+  .signup_page {
+    .desc{
+      margin-top: 75px;
+    }
+  }
+  .signup_header {
+    display: flex;
+    position: fixed;
+    background-color: css.$theme_bg;
+    width: 100%;
+    z-index: 1;
+
+    img {
+        cursor: pointer;
+        padding: 15px 23px 15px 29px;
+    }
+
+    .title {
+        color: css.$theme_text;
+        font-weight: 500;
+        align-self: center;
+    }
+  }
+}
+.answer_txt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-indicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E72D38; 
+  border-radius: 50%;
+  background-color: #000; 
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-indicator {
+  background-color: #000; 
+}
+
+.radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #E72D38;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-indicator::after {
+  display: block;
+}
+
+.radio_img {
+  margin-right: 10px;
+}

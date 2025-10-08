@@ -1,0 +1,136 @@
+@use '/src/App.scss' as css;
+
+.enter_otp{
+    color: #000;
+    position: relative;
+    height: 100vh;
+    background-color: css.$theme_bg;
+
+    .enter_otp_header{
+        display: flex;
+        .title{
+            color: css.$theme_text;
+            font-weight: 500;
+            align-self: center;
+        }
+        img{
+            cursor: pointer;
+            padding: 16px 26px 15px 29px;
+        }
+    }
+    .otp_desc{
+        color: css.$theme_text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 20px;
+        padding-top: 10px;
+
+        .mobile{
+            color:#E5E5E5;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "AvenirNextLTPro-Medium";
+        }
+    }
+
+}
+
+.custom_input_one{
+    width: 46px !important;
+    height: 46px;
+    color: css.$theme_text;
+    background: #242426;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.border_error{
+    border: 1px solid #E72D38;
+}
+
+.otp_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    position: relative;
+
+    div{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .incorrect-otp{
+        position: absolute;
+        top: 110%;
+        color: #BE212A;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+.otp_txt_label{
+    color: css.$theme_text;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.resend_otp_label{
+    color: css.$theme_text;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 20px;
+ 
+    .resend_otp{
+        color: css.$theme_text;
+        span{
+            color: css.$theme_text;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+}
+
+.send-reply-btn{
+    margin: 0 20px;
+    position: absolute;
+    // position: fixed;
+    bottom: 0;
+    width: 90%;
+
+    .otp-submit-btn-spinner {
+        height: 18px;
+        width: 18px;
+        border-width: 2px;
+    }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+// .data-missing{
+//     position: fixed;
+//     bottom: 100px;
+//     left: 40px;
+//     color: #BE212A;
+//     font-size: 14px;
+//     font-weight: 500;
+// }

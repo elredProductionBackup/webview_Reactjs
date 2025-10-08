@@ -1,0 +1,67 @@
+@use '/src/App.scss' as css;
+
+.sharecard-shimmer {
+  color: #000;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden !important;
+  height: 100vh;
+  
+  .title {
+    color: #000;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .card_shimmer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .card_wrapper {
+      width: calc(100% - 40px);
+      height: 638px;
+      background-color: css.$theme_shimmer_dark;
+      border-radius: 10px;
+      position: relative;
+
+      .middle_section {
+        // height: 80vh;
+        // background: red;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .circle_icons {
+          display: flex;
+          gap: 10px;
+          margin-top: 30px;
+        }
+        .circle_icons_two {
+          display: flex;
+          gap: 10px;
+          margin-top: 35px;
+        }
+        .square_icons {
+          display: flex;
+          gap: 12px;
+          margin-top: 46px;
+        }
+      }
+
+      .bottom_title {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        bottom: 15px;
+        align-items: center;
+      }
+    }
+  }
+}

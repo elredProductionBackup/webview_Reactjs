@@ -1,0 +1,98 @@
+@use '/src/App.scss' as css;
+.designation_popup {
+  background-color: rgba(36, 36, 38, 1) !important;
+  padding: 0;
+  height: fit-content !important;
+  //   min-height: 100px !important;
+  max-height: 50vh !important;
+  border-radius: 16px 16px 0 0 !important;
+  max-width: 375px !important;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px !important;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .popup_header_offcanvas_wrapper {
+    padding-bottom: 12px !important;
+
+    .popup_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 4px;
+      padding-bottom: 2px;
+      background-color: rgba(36, 36, 38, 1);
+      position: sticky;
+      top: 0;
+      border-radius: 16px 16px 0 0 !important;
+  
+      .keywords_title {
+        color: css.$theme_text;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: -0.019em;
+      }
+  
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .designation_popup_body {
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    -ms-overflow-style: auto;
+    /* IE and Edge */
+    scrollbar-width: auto;
+    /* Firefox */
+
+    &::-webkit-scrollbar-thumb {
+      background: #D9D9D9;
+    }
+
+    padding: 0;
+    margin-right: 12px;
+
+    .keywords_body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      overflow: auto;
+      padding: 0px 20px 2px 20px;
+
+      .popup_chip_designation {
+        border-radius: 24px;
+        border: 1px solid css.$theme_text;
+        width: fit-content;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.228px;
+        padding: 2px 12px;
+        color: css.$theme_text;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .designation_popup {
+    max-width: 450px !important;
+    width: 100%;
+  }
+}
+
+.offcanvas-header{
+  display: block !important;
+}

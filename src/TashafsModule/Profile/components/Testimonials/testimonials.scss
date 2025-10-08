@@ -1,0 +1,90 @@
+.testimonials {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 16px 0 16px 16px;
+  border-radius: 10px;
+  // backdrop-filter: blur(10px);
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+
+  .signle_testimonal_container {
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  .testimonal-hor-container > div{
+      width: 95%;
+    margin: 0 !important;
+    flex: none;
+    max-width: none;
+        
+  }
+
+  .testimonal-hor-container {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 9px;
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      // background: #888;
+      border-radius: 3px;
+    }
+
+  
+
+    .card-main-container {
+      margin-top: 25px;
+      width: 100%;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-see-more {
+  font-family: "AvenirPro-regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+.testi_btn_see_more{
+  margin-right: 15px;
+}
+
+.wip {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.section_test_text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}

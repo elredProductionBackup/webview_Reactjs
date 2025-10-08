@@ -1,0 +1,354 @@
+@use "/src/App.scss" as css;
+
+.award-view-Wrapper {
+  background-color: css.$theme_bg;
+  color: css.$theme_text;
+  // height: calc(100vh - 44px);
+}
+
+.awardview {
+  //background-color: white;
+  background-color: css.$theme_bg;
+  color: css.$theme_text;
+  //color: #000;
+  height: 100%;
+  margin-bottom: 0;
+  .award-header {
+    // color: #000;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    //background-color: white;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 375px;
+    background-color: css.$theme_bg;
+    color: css.$theme_text;
+    .award-back {
+      cursor: pointer;
+      padding: 15px 23px 15px 29px;
+    }
+
+    .back-icon-award-spinner {
+      margin: 12px 15px 15px 29px;
+      cursor: default;
+    }
+
+    .title {
+      // font-family: "WorkSans-Regular";
+      // color: #000;
+      color: css.$theme_text;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      // margin-left: 16px;
+    }
+  }
+
+  .award-title {
+    // color: #000;
+    color: css.$theme_text;
+    background-color: css.$theme_bg;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    // text-align: center;
+    word-wrap: break-word;
+    padding: 0 20px;
+    // text-transform: capitalize;
+    text-align: center;
+    padding-top: 97px;
+   
+  }
+
+  .awardImg-div {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 118px;
+      width: auto;
+      pointer-events: none;
+    }
+  }
+
+  .body-key {
+    // color: #000;
+    color: css.$theme_text;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    // margin-bottom: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+
+    .body-text {
+      font-size: 16px;
+      font-weight: 400 !important;
+      line-height: 20px;
+      // color: #313030;
+      color: css.$theme_text;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      margin-left: 4px;
+      margin-top: -4px;
+    }
+
+    .key_name {
+      // color: #000;
+      color: css.$theme_text;
+      min-width: 90px;
+      max-width: 90px;
+      width: 100%;
+      // background: red;
+    }
+
+    .key_value {
+      // color: #313030;
+      color: css.$theme_light_text_grey;
+      min-width: 50%;
+      // background: pink;
+      word-wrap: break-word;
+      font-size: 16px;
+      font-weight: 100;
+      font-family: "AvenirNextLTPro-Regular";
+      font-weight: 400;
+      line-height: 19.2px;
+    }
+
+    .colon {
+      // color: #000;
+      color: css.$theme_text;
+      min-width: 15px;
+      // background: yellow;
+    }
+  }
+}
+
+.preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 35px; */
+  padding: 0 20px;
+  padding-bottom: 30px;
+  background-color: css.$theme_bg;
+  .overlayCert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .certificateImage {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 4px;
+  }
+
+  .show-img-loader-certificate {
+    display: block;
+    margin: 80px auto 20px auto;
+  }
+
+  .preview-cursor-pointer {
+    cursor: pointer;
+  }
+
+  .preview-awards {
+    // width: 335px;
+    width: 100%;
+    height: 185px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: center;
+    border-radius: 4px;
+    position: relative;
+border: 1px solid css.$theme_text;
+    .label-certificate {
+      // background-color: white;
+      // color: black;
+      background-color: css.$theme_grey;
+      color: css.$theme_text;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      // border-bottom: 1px solid css.$theme_light_border;
+      // border-left: 1px solid css.$theme_light_border;
+      // border-right: 1px solid css.$theme_light_border;
+      border-top: 1px solid css.$theme_dark_border;
+      border-radius: 0 0 4px 4px;
+      padding: 15px;
+      display: flex;
+
+      img {
+        margin-right: 10px;
+        pointer-events: none;
+      }
+
+      .pdf-spinner {
+        margin-right: 12px;
+        margin-top: 2px;
+      }
+
+      .name {
+        // color: #000;
+        color: css.$theme_text;
+        // margin-left: 10px;
+      }
+    }
+
+    .loader_div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .awardview {
+    // background-color: white;
+    // color: #000;
+    background-color: css.$theme_bg;
+    color: css.$theme_text;
+    .award-header {
+      // color: #000;
+      /* padding: 20px; */
+      display: flex;
+      align-items: center;
+      // background-color: white;
+      background-color: css.$theme_bg;
+      color: css.$theme_text;
+      top: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+      .award-back {
+        cursor: pointer;
+        padding: 15px 23px 15px 29px;
+      }
+
+      .back-icon-award-spinner {
+        margin: 12px 15px 15px 29px;
+        cursor: default;
+      }
+
+      .title {
+        // font-family: "WorkSans-Regular";
+        // color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: css.$theme_text;
+        // margin-left: 16px;
+      }
+    }
+
+    .award-title {
+      // color: #000;
+      color: css.$theme_text;
+      background-color: css.$theme_bg;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      // text-align: center;
+      word-wrap: break-word;
+      margin: 0 20px;
+      // text-transform: capitalize;
+      text-align: center;
+      padding-top: 97px;
+    }
+
+    .awardImg-div {
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 118px;
+        width: auto;
+        pointer-events: none;
+      }
+    }
+
+    .body-key {
+    //  color: #000;
+    color: css.$theme_text;
+      margin: 0 20px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      // margin-bottom: 25px;
+      padding-bottom: 25px;
+      display: flex;
+      align-items: center;
+
+      .body-text {
+        font-size: 16px;
+        font-weight: 400 !important;
+        line-height: 20px;
+        // color: #313030;
+        color: css.$theme_text;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+        margin-top: -4px;
+      }
+
+      .key_name {
+        // color: #000;
+        color: css.$theme_text;
+        min-width: 90px;
+        max-width: 90px;
+        width: 100%;
+        // background: red;
+      }
+
+      .key_value {
+        // color: #313030;
+        color: css.$theme_light_text_grey;
+        min-width: 50%;
+        // background: pink;
+        word-wrap: break-word;
+        font-size: 16px;
+        font-weight: 100;
+        font-family: "AvenirNextLTPro-Regular";
+        font-weight: 400;
+        line-height: 19.2px;
+      }
+
+      .colon {
+        // color: #000;
+        color: css.$theme_text;
+        min-width: 15px;
+        // background: yellow;
+      }
+    }
+  }
+}

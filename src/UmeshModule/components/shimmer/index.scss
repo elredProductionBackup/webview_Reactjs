@@ -1,0 +1,231 @@
+@use '/src/App.scss' as css;
+
+.profile-shimmer {
+  // padding: 15px;
+  // background-color: #e1e4eb;
+  background-color: css.$theme_shimmer_bg;
+
+  // border-radius: 18px;
+  .profile-shimmer-title {
+    color: #000;
+  }
+  .shimmer-user {
+    // margin-left: 10px;
+    .user-img {
+      margin-top: 60px;
+    }
+    .user-name {
+      margin-top: 15px;
+    }
+  }
+
+  .cards {
+    margin-top: 77px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    .card {
+      border: transparent;
+      margin-right: 20px;
+    }
+  }
+
+  .share-shimmer {
+    background: #e7e9ef;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 4px;
+  }
+
+
+  .ratings-shimmer {
+    background: #1a1d27;
+    margin-top: 35px;
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+
+    .star-loading {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 46px;
+      // background: red;
+      background: #242939;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .ratings-start {
+      margin-bottom: 30px;
+    }
+
+    .ratings-middle {
+      // margin-top: 30px;
+      margin-left: 20px;
+    }
+    .ratings-end {
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  }
+
+  .testimonials-shimmer {
+    background: #1a1d27;
+    padding: 15px 20px;
+    margin-top: 12px;
+    border-radius: 4px;
+
+    .inner-card {
+      background:css.$theme_shimmer;;
+      margin-top: 20px;
+      border-radius: 18px;
+      padding: 20px 30px;
+
+      .right-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        .first {
+          // background: #cfd4df;
+          text-align: right;
+        }
+      }
+
+      .middle-item {
+        margin-top: 10px;
+        // background: #cfd4df;
+      }
+
+      .last-item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .last-circle {
+          // background: #cfd4df;
+        }
+
+        .last-shimmer {
+          margin-left: 10px;
+          // background: #cfd4df;
+        }
+      }
+    }
+  }
+
+
+
+  .super-skills {
+    display: flex;
+    background: #1a1d27;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    .one-dim {
+      display: flex;
+      margin: 20px 0;
+    }
+
+    .super1,
+    .super2 {
+      background-color: #242939;
+    }
+
+    .super-div {
+      margin-left: 10px;
+    }
+  }
+
+  .shimmer-single {
+    background: #1a1d27;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.comments-container{
+  height: 100vh;
+  background-color: #1a1d27;
+overflow-y: hidden;
+}
+
+.super-skills-big {
+  background: #1a1d27;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+
+  .super-div {
+    margin-left: 10px;
+  }
+}
+
+
+.overflw_verticle {
+  margin-right: 15px;
+  border-radius: 18px;
+  height: 123px !important;
+  width: 100%;
+  padding: 0;
+}
+.overflw_verticle_mb{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.circle-name{
+  display: flex;
+  align-items: center;
+  .location {
+    width: 60%;
+    margin-left: 10px;
+  }
+}
+
+.shimmer-user-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 16px 11px 10px 11px;
+  background-color: #1A1D27;
+
+  .date-shimmer-testimonial {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .testimonial-card-text-shimmer {
+    padding: 0 10px;
+  }
+
+  .circle-name-testimonials {
+    display: flex;
+    // margin-top: 80px;
+    padding: 0 10px;
+
+    .location {
+      width: 60%;
+      margin-left: 10px;
+    }
+    .location-2 {
+      width: 50%;
+      margin-left: 10px;
+    }
+  }
+}

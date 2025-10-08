@@ -1,0 +1,22 @@
+@use '/src/App.scss' as css;
+
+.comments-body {
+  overflow-y: auto;
+  height: calc(100vh - 44px);
+  background-color: css.$theme_bg;
+}
+
+.screen-cont{
+  padding: 0px 20px 0px 20px;
+
+}
+.disabled-scroll{
+  overflow-y: hidden !important;
+}
+
+.no-comments {
+  height: calc(100vh - 44px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,9 @@
+@use '/src/App.scss' as css;
+
+.user_profile {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: none
+}

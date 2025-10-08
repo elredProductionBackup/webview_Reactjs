@@ -1,0 +1,203 @@
+@use '/src/App.scss' as css;
+
+.leads {
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 0px 0px 0px 16px;
+  border-radius: 10px;
+  display: flex;
+  //   align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  flex-direction: column;
+
+  .leads-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 20px;
+    padding-right: 16px;
+
+    .see-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      cursor: pointer;
+      font-family: "AvenirPro-regular";
+    }
+  }
+
+  .leads-cards:last-child {
+    padding-right: 15px;
+  }
+
+  .leads-cards {
+    display: flex;
+    overflow: auto;
+    gap: 12px;
+
+    .leadsdate {
+      margin: 16px 0 0 12px;
+      color: #fff;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 21px */
+      letter-spacing: -0.266px;
+      font-family: "AvenirPro-regular";
+    }
+    .card {
+      // border: none !important;
+      cursor: pointer;
+      min-width: 205px;
+      max-width: 205px;
+      height: 307px !important;
+      margin: 16px 0 16px 15px;
+      margin-left: 0;
+      border-radius: 12px;
+      background-color: transparent;
+      border: 1px solid rgb(68, 68, 70);
+      // background-color: linear-gradient( rgba(86,86,86,1), rgba(86,86,86,1));
+      // background-color: gainsboro;
+      //   background-color: grey;
+      // object-fit: cover;
+      //object-position: 30% 100%;
+      background-size: cover;
+      background-position: center;
+      //   background-repeat: no-repeat;
+
+      .title-card-leads-view {
+        padding: 12px 12px 15px 12px;
+        line-height: 23px;
+        display: flex;
+        /* align-items: flex-end; */
+        /* justify-content: flex-end; */
+        height: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .location-loader-spinn {
+          height: 10px;
+          width: 10px;
+        }
+
+        .locate {
+          display: flex;
+          align-items: baseline;
+          padding-bottom: 11px;
+          width: 169px;
+
+          img {
+            pointer-events: none;
+          }
+
+          .name-place {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            margin-left: 5px;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .description-wrapper {
+          width: 175px;
+          max-height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .title-Description-leads {
+          width: 175px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 22.6px;
+          text-align: left;
+          overflow-wrap: anywhere !important;
+          /* display: flex; */
+          max-width: 100%;
+          height: -moz-fit-content;
+          height: fit-content;
+          // padding-bottom: 2px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          /* align-items: center; */
+          /* padding-top: 5px; */
+          display: -webkit-box;
+          font-family: "AvenirPro-regular";
+          margin-top: 0px !important;
+          margin-bottom: 0px !important;
+          white-space: pre-wrap;
+          /* Since CSS 2.1 */
+          white-space: -moz-pre-wrap;
+          /* Mozilla, since 1999 */
+          white-space: -pre-wrap;
+          /* Opera 4-6 */
+          white-space: -o-pre-wrap;
+          /* Opera 7 */
+          word-wrap: break-word;
+
+          /* Internet Explorer 5.5+ */
+          a {
+            color: #fff;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.inner-shimmer {
+  margin-left: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  height: 100%;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.spinner-overlay-danger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  // background: linear-gradient(rgba(86, 86, 86, 1), rgba(86, 86, 86, 1));
+  background: linear-gradient(css.$theme_shimmer_bg,css.$theme_shimmer_bg );
+}
+
+.zIndex-leadsBottom {
+  z-index: 2;
+}
+.overFlow-disable-for-leads {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+.lazy-load-item {
+  border-radius: 7px;
+  //background: linear-gradient(rgba(86, 86, 86, 1), rgba(86, 86, 86, 1));
+  background: linear-gradient(css.$theme_shimmer_bg,css.$theme_shimmer_bg );
+  //rgba(26, 29, 39, 1)
+}

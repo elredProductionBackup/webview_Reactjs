@@ -1,0 +1,173 @@
+@use '/src/App.scss' as css;
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    // position: absolute;
+    //  top: 0;
+
+    /* margin-left: 20px; */
+    background-color: rgba(36, 36, 38, 1);
+    //  transform: translate(-50%, 0%);
+    //left: 50%;
+    /* margin-right: 35px; */
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    //    height: 411px;
+}
+
+.somethingwent-wrong {
+    font-family: "AvenirPro-regular";
+
+    text-align: center;
+
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(229, 229, 229, 1);
+}
+.noInternet {
+    font-family: "AvenirPro-regular";
+
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(231, 45, 56, 1) !important;
+    font-style: normal;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+
+    //text-align: left;
+}
+
+.no-Awards {
+    margin-top: 30px;
+    width: 161px;
+    height: 178px;
+}
+button {
+    // width: 130px;
+    // height: 40px;
+    // border-radius: 12px;
+    // font-family: "AvenirPro-regular";
+    // font-size: 20px;
+    // font-weight: 500;
+    // line-height: 24px;
+    // letter-spacing: 0px;
+    // text-align: center;
+    // color: rgba(255, 255, 255, 1);
+    // background-color: rgba(231, 45, 56, 1);
+    // border: none;
+    // margin-top: 40px;
+    // justify-content: center;
+    // margin-bottom: 20px;
+    // position: relative;
+    // transform: translate(-50%, -50%);
+    // left: 50%;
+}
+.buttonRetry{
+     width: 130px;
+    height: 40px;
+    border-radius: 12px;
+    font-family: "AvenirPro-regular";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(231, 45, 56, 1);
+    border: none;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  
+}
+
+// @media (min-width: 360px) {
+//     .container-wrapper {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         position: absolute;
+//         top: 53%;
+//         /* margin-left: 20px; */
+//         background-color: rgba(255, 255, 255, 1);
+//         transform: translate(-50%, -50%);
+//         left: 50%;
+//         /* margin-right: 35px; */
+//         width: 337px;
+//         border-radius: 4px;
+//         overflow: hidden;
+//         height: auto;
+//     }
+// }
+
+// @media(min-width: 450px){
+//     .container-wrapper {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         position: absolute;
+//         top: 53%;
+//         /* margin-left: 20px; */
+//         background-color: rgba(255, 255, 255, 1);
+//         transform: translate(-50%, -50%);
+//         left: 50%;
+//         /* margin-right: 35px; */
+//         width: 337px;
+//         border-radius: 4px;
+//         overflow: hidden;
+//         height: auto;
+//     }
+// }
+
+// @media(min-width:1280px){
+//     .container-wrapper {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 80vh;
+//         position: absolute;
+//         top: 47%;
+//         /* margin-left: 20px; */
+//         background-color: white;
+//         transform: translate(-50%, -50%);
+//         left: 50%;
+//         /* margin-right: 35px; */
+//         width: 337px;
+//         border-radius: 12px;
+//         overflow: hidden;
+//         height: 411px;
+//     }
+// }
+// @media(max-width:1080px){
+//     .container-wrapper {
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 80vh;
+//     position: absolute;
+//     top: 55%;
+//     /* margin-left: 20px; */
+//     background-color: white;
+//     transform: translate(-50%, -50%);
+//     left: 50%;
+//     /* margin-right: 35px; */
+//     width: 336px;
+//     border-radius: 12px;
+//     overflow: hidden;
+//     height: 327px;
+
+//     }
+// }

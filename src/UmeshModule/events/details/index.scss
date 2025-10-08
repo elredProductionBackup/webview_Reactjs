@@ -1,0 +1,58 @@
+@use '/src/App.scss' as css;
+
+.detail_main_cont {
+  height: 100vh;
+  .detail_body {
+    padding: 20px 10px 0px 10px;
+    overflow-y: auto;
+    height: calc(100vh - 58px);
+    .head_text {
+      // font-family: Avenir Next LT Pro;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #606060;
+      margin-bottom: 0;
+    }
+    .social_container {
+      border-bottom: 1px solid #e0e0e991;
+      padding: 20px 0 30px 0;
+      margin-bottom: 30px;
+    }
+
+    .social_icons {
+      height: 38px;
+      width: 38px;
+      margin-top: 10;
+    }
+
+    .text_form {
+      // font-family: '';
+      font-size: 16px;
+      font-weight: 400;
+      //   line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000;
+      margin: 10px 0 20px 0;
+    }
+
+    .btn_save {
+      background: #e72d38;
+      font-family: "AvenirPro-medium";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      padding: 14px;
+      border: none;
+      margin: 20px 0;
+      width: calc(100%);
+    }
+  }
+}

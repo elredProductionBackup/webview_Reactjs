@@ -1,0 +1,136 @@
+@use '/src/App.scss' as css;
+
+.network-share-card-shimmer {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    background-color: css.$theme_bg;
+    height: 100vh;
+
+    .network-card-shimmer-title-container {
+        color: #000;
+        text-align: left;
+        padding: 0 20px;
+        height: 44px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: css.$theme_bg;
+        width: 375px;
+
+        @media only screen and (max-width: 450px) {
+          width: 100%;
+        }
+
+        .network-card-shimmer-title {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+    }
+
+    .network-card-shimmer-body {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 54px;
+
+        .network-card-shimmer-body-wrapper {
+          width: calc(100% - 40px);
+          height: 638px;
+          background-color: css.$theme_shimmer_dark;
+          border-radius: 10px;
+          position: relative;
+
+          .network-card-shimmer-top-section {
+            display: flex;
+            justify-content: flex-end;
+            gap: 6px;
+
+            .network-card-shimmer-top-right-share-square {
+                border-radius: 10px;
+                margin-top: 14px;
+            }
+
+            .network-card-shimmer-top-right-share-line {
+                border-radius: 6px;
+                margin-top: 22px;
+                margin-right: 14px;
+            }
+          }
+
+          .network-card-shimmer-middle-section {
+            padding-top: 74px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .network-card-shimmer-network-dp-and-name {
+              height: 30px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              margin-top: 5px;
+
+              .network-card-shimmer-network-name {
+                margin-top: 8px !important;
+              }
+            }
+
+            .network-card-shimmer-middle-top-text {
+                margin-top: 14px;
+                border-radius: 6px;
+                margin-bottom: 80px;
+            }
+
+            .network-card-shimmer-middle-bottom-text {
+                border-radius: 6px;
+                margin-bottom: 130px;
+            }
+    
+            .network-card-shimmer-square-icons {
+              display: flex;
+              gap: 10px;
+
+              .network-card-shimmer-square {
+                border-radius: 10px;
+              }
+            }
+          }
+
+          .network-card-shimmer-bottom-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: 35px;
+
+            .network-card-shimmer-bottom-left-line {
+                margin-left: 13px;
+                border-radius: 6px;
+                display: inline-flex;
+                align-items: flex-end;
+            }
+
+            .network-card-shimmer-bottom-right-container {
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                gap: 4px;
+
+                .network-card-shimmer-bottom-right-square {
+                    border-radius: 6px;
+                }
+
+                .network-card-shimmer-bottom-right-line {
+                    border-radius: 6px;
+                }
+            }
+          }
+        }
+    }
+}

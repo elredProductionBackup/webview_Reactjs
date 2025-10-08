@@ -1,0 +1,94 @@
+@use '/src/App.scss' as css;
+
+.members_cont {
+  align-items: center;
+  margin-bottom: 30px;
+  .member_img {
+    height: 46px;
+    width: 46px;
+    margin-right: 12px;
+  }
+
+  .members_name {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.019em;
+    text-align: left;
+    color: #000;
+    margin-bottom: 0;
+  }
+
+  .members_status {
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.019em;
+    text-align: left;
+    color: #11992f;
+    margin-bottom: 0;
+    margin-left: 16px;
+  }
+}
+
+.no_members_name {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.no_members_cont {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.no_members_status {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  color: #11992f;
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+.text_change {
+  font-family: "AvenirPro-regular";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0569ff;
+  cursor: pointer;
+}
+.text_message {
+  font-family: "AvenirPro-regular";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.no_container {
+  box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.05);
+  margin: -10px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 20px 10px 10px;
+  position: absolute;
+  background: #fff;
+}

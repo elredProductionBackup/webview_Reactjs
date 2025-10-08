@@ -1,0 +1,105 @@
+@use '/src/App.scss' as css;
+
+.Toastify__toast-theme--light {
+    border-radius: 18px;
+    padding: 9px 10px 18px 10px;
+    background-color: #363638;
+}
+
+.Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+    bottom: 0;
+    width: 345px;
+}
+
+@media only screen and (max-width: 450px) {
+    .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+        bottom: 20px;
+        left: 20px !important;
+        width: calc(100% - 40px) !important;
+        right: 20px !important;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+        bottom: 20px;
+        width: 345px;
+        left: calc((100% - 345px) / 2);
+        right: calc((100% - 345px) / 2);
+        transform: translateX(0);
+    }
+}
+
+.feedback-success-cross {
+    margin-top: -24px;
+    cursor: pointer;
+}
+
+.Toastify__toast {
+    position: relative;
+    height: 77px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Toastify__close-button {
+    opacity: 1;
+}
+
+.Toastify__close-button > svg {
+    fill: #fff;
+}
+
+.success-toast-load{
+    display: flex;
+}
+.feedback-success-cross-load{
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    // height: 16px;
+    // width: 16px;
+}
+
+.feedback-success-container {
+    display: flex;
+    padding-top: 5px;
+
+    .feedback-success-green-check-icon {
+        height: 34px;
+        width: 34px;
+        margin-top: 4px;
+    }
+
+    .feedback-success-text-container {
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+
+        .feedback-submitted-main-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            text-align: left;
+            margin-bottom: 6px;
+        }
+
+        .feedback-submitted-main-text-green { 
+            color: rgba(3, 165, 90, 1);
+        }
+
+        .feedback-submitted-main-text-red {
+            color: rgba(231, 45, 56, 1);
+        }
+
+        .feedback-submitted-sub-text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+}

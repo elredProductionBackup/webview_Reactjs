@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "AvenirPro-regular";
+  src: url("./assets/fonts/Avenir_Next_Pro/AvenirNextLTPro-Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "AvenirPro-medium";
+  src: url("./assets/fonts/Avenir_Next_Pro/AvenirNextLTPro-Medium.otf")
+    format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Poppins-medium";
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+@font-face {
+  font-family: "FuturaBoldFont";
+  src: url("./assets/fonts/fonts/FuturaBoldFont.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "FuturaHeavyFont";
+  src: url("./assets/fonts/fonts/FuturaHeavyFont.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "FuturaLightFont";
+  src: url("./assets/fonts/fonts/FuturaLightFont.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "FuturaMedium";
+  src: url("./assets/fonts/fonts/FuturaMedium.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("./assets/fonts/fonts/Nunito-Black.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("./assets/fonts/fonts/Nunito-Black.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("./assets/fonts/fonts/Nunito-Bold.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-ExtraLight";
+  src: url("./assets/fonts/fonts/Nunito-ExtraLight.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("./assets/fonts/fonts/Nunito-Light.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Nunito-Medium";
+  src: url("./assets/fonts/fonts/Nunito-Medium.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("./assets/fonts/fonts/WorkSans-Regular.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("./assets/fonts/fonts/WorkSans-Medium.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Light";
+  src: url("./assets/fonts/fonts/AvenirNextLTPro-Light.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("./assets/fonts/fonts/AvenirNextLTPro-Regular.otf")
+    format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("./assets/fonts/fonts/AvenirNextLTPro-Regular.otf")
+    format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Medium";
+  src: url("./assets/fonts/fonts/AvenirLTPro-Medium.otf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/fonts/Raleway-Regular.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "AvenirNextLTPro-Medium", sans-serif;
+  // font-family: "AvenirNextLTPro-Medium";
+  color: white;
+  // touch-action: pan-x pan-y;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  // scrollbar-width: none;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+// --------------------------------------------------------------------------
+// DARK THEMING
+$theme_bg: #0d0d0d;
+$theme_red: #e72d38;
+$theme_light_red: #ff2130;
+$theme_light: #ffffff;
+$theme_grey: #525252;
+$theme_border: #909090;
+$theme_shimmer_dark: #1a1d27;
+$theme_shimmer_bg: #1e232d;
+$theme_shimmer: #242939;
+$theme_text: #fff;
+$comment_likes: #e5e5e5;
+$download_header: #04112b;
+$personality_bg: #3a3a3c;
+$scrollbar: rgb(248, 248, 248);
+
+/* Mobile Styles */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: $theme_bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  overflow-y: auto;
+
+  // to hide the scrollbar
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  // background-position: center;
+}
+
+/* Tablet and Larger Screens Styles */
+@media (min-width: 451px) {
+  .main-container {
+    max-width: 375px !important;
+    // width: 100%;
+    height: 100vh;
+    // background-color: rgb(60, 253, 111);
+    margin: 0 auto; /* Center the container horizontally */
+  }
+}
+
+/* Styles for mobile devices */
+/* You might want to use a max-width here instead of min-width for mobile */
+@media (max-width: 419px) {
+  .main-container {
+    max-width: 100%; /* Allowing the container to take up full width */
+    height: 100vh;
+    /* Other mobile styles */
+  }
+}
+
+@media (max-width: 349px) {
+  /* Adjust styles for screens below 350px */
+  .main-container {
+    /* You might want to adjust these styles based on your design */
+    max-width: 100%; /* Allow the container to take up full width */
+    /* Other mobile styles */
+  }
+}
+
+.offerings_screen {
+  height: 95vh !important;
+  border-radius: 18px 18px 0 0;
+
+  .main_div_canvas {
+    border-radius: 18px 18px 0 0;
+
+    background-color: #be212a;
+    height: 100vh;
+    .wallpaper {
+      height: 55vh;
+      // background-color: yellow;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 90%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    .content_div_canvas {
+      background-color: $theme_bg;
+      height: 30vh;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0 40px;
+
+      .txt1 {
+        color: $theme_text;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.3px;
+
+        @media only screen and (max-height: 620px){
+          margin-bottom: 15px;
+        }
+      }
+      .description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #7c7c80;
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 10px;
+      }
+      img {
+        max-width: 180px;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+    .top_canvas_section {
+      text-align: center;
+      position: relative;
+      .skipOfferings {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        cursor: pointer;
+        color: #fff;
+      }
+      #popup_hr {
+        border: 4px solid #0d0d0d;
+        opacity: 1;
+        width: 32%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%;
+      }
+      img {
+        margin-top: 10% !important;
+        width: 35%;
+      }
+    }
+  }
+}
+
+.Toastify__toast {
+  .Toastify__toast-body {
+    div {
+      color: black !important;
+    }
+  }
+  button {
+    svg {
+      path {
+        color: rgba(0, 0, 0, 0.3) !important;
+      }
+    }
+  }
+}
+
+.show-img-loader {
+  display: block !important;
+}
+.hide-img-loader {
+  display: none !important;
+}
+.show-image-after-loader {
+  display: block !important;
+}
+
+@media (min-width: 451px) {
+  .offerings_screen {
+    max-width: 375px !important;
+    margin: 0 auto;
+  }
+  .offcanvas-backdrop.show {
+    width: 375px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.offcanvas-backdrop {
+  // background-color: transparent !important;
+}
+
+.private_text {
+  font-weight: 400;
+  color: $theme_light;
+  padding: 26px 20px 32px 20px;
+  text-align: center;
+  font-family: AvenirPro-regular;
+  background-color: #0d0d0d;;
+}
+
+.header_division {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.notify_label_div {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #147bff;
+}
+
+.spinner-border {
+  --bs-spinner-border-width: 2px !important;
+}
+
+// --------------------------------------------------------------------------
+// DARK THEMING
+$theme_bg: #0d0d0d;
+$theme_red: #e72d38;
+$theme_light_red: #ff2130;
+$theme_light: #ffffff;
+$theme_grey: #525252;
+$theme_border: #909090;
+$theme_shimmer_bg: #1a1d27;
+$theme_shimmer: #242939;
+$theme_text: #fff;
+$thme_border_bottom: #3c3c3c;
+$theme_light_text: #ebebeb;
+$theme_dark_blue: #161b25;
+$theme_light_border: #dfdfdf;
+$theme_light_grey: #363638;
+$theme_half_light_text: #8E8E93;
+$theme_input: #444446;
+$theme_lead_shimmer: #1e232d;
+$theme_lead_inner_shimmer: #0d0d0d38;
+$theme_light_text_grey: #e5e5e5;
+$theme_deletePopup: #242426;
+$theme_dark_border: #2d2d2d;
+$theme_shimmer_leads:#1E232D;
+:export {
+  theme_shimmer: $theme_shimmer;
+  theme_shimmer_bg: $theme_shimmer_bg;
+  theme_shimmer_leads:$theme_shimmer_leads
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button */
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px; /* Create space for custom radio indicator */
+  cursor: pointer;
+}
+
+/* Style the custom radio indicator */
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px; /* Adjust as needed */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+// 

@@ -1,0 +1,114 @@
+@use '/src/App.scss' as css;
+
+.home {
+  position: absolute;
+  bottom: 0%;
+  background: #c3c3c3;
+  text-align: center;
+  .emojibox {  
+    padding: 5px;
+    position: fixed;
+    bottom: 10%;
+    /* transform: translate(-50%, -50%); */
+    /* left: 50%; */
+    background: #fff;
+    width: 336px;
+    border-radius: 12px;
+    border: 0.25px solid #c3c3c3;
+    z-index: 5;
+    max-width: 375px;
+    width: 100%;
+    .container_div{
+      margin-top: 10px;
+      span {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+   
+  }
+ 
+  .smiley_text {
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 24px;
+    color: #929292;
+    margin-bottom: 5px;
+    font-family: "AvenirPro-regular";
+  }
+
+  .emojitext_close {
+    display: flex;
+    justify-content: space-between;
+margin-left: 10px;
+margin-top: 5px;
+    // border-bottom: 1px solid  #c3c3c3;
+  }
+  .divider {
+    position: absolute;
+    left: 0;
+    border-bottom: 0.25px solid #c3c3c3;
+    max-width: 375px;
+    width: 100%;
+
+  }
+  .close-img {
+    height: 25px;
+    width: 25px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .close-img-loader{
+    margin-right: 2px;
+
+  }
+  .inside-emoji{
+    margin-top: 3px;
+  }
+}
+
+// @media  only screen and (max-width: 450px){
+//   .home {
+//     position: fixed;
+//     bottom: 10%;
+//     background: grey;
+//     text-align: center;
+//     z-index: 5;
+//     max-width: 375px !important;
+//     .emojibox {
+
+//       width: 337px;
+//       text-align: justify;
+//       padding: 10px;
+//       position: fixed;
+//       bottom: 10%;
+//       transform: translate(-50%,-50%);
+//       left: 50%;
+//       background: #c3c3c3;
+//       z-index: 5;
+//       span {
+//         font-size: 20px;
+//       }
+//     }
+//   }
+// }
+
+.emoji-Wrapper {
+  z-index: 3;
+  // height: 450px;
+  // width: 100%;
+  position: absolute;
+  // height: auto;
+  // bottom: 12%;
+  bottom: 87px;
+  // background-color: #fff;
+  // border: 1px solid #e7e7e7;
+  // border-radius: 10px;
+}
+
+.show-img-loader {
+  display: block !important;
+}
+.hide-img-loader {
+  display: none !important;
+}

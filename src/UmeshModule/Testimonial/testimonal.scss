@@ -1,0 +1,103 @@
+@use '/src/App.scss' as css;
+
+.body-wrapper {
+  padding: 10px 34px 0 34px;
+  overflow-y: auto;
+
+  // to hide the scrollbar
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.testimonal-main-wrapper {
+  height: 100vh;
+  position: relative;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(173, 109, 23, 0.3));
+
+}
+
+.container_search_text {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Default shadow */
+}
+.search-rel-container {
+}
+.search_result_bg {
+  // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(173, 109, 23, 0.3));
+}
+.card {
+  height: 100px;
+}
+
+.first-card {
+  height: 400px;
+}
+
+.testim_body_wrap {
+  height: calc(100vh - 44px) !important;
+}
+
+.search_test_container {
+  height: 100vh;
+  position: relative;
+  background-color: css.$theme_bg;
+}
+
+.body_wrapper_searc {
+  padding: 0px 20px 0 20px;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+}
+
+.testimonal_card_text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+.text_text_wrapper_center {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_body_container {
+  padding-top: 20px;
+  .card-body-1 {
+    min-height: 120px;
+  }
+
+
+}
+
+.search-testimonials{
+  padding-top: 20px ;
+}
+
+.search-testimonials:last-child {
+  padding-bottom: 10px ;
+}
+
+.search-result-loader{
+  margin-top: 15%;
+
+}

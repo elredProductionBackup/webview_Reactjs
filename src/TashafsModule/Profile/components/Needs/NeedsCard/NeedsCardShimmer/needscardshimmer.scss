@@ -1,0 +1,113 @@
+@use '/src/App.scss' as css;
+
+.needs_card_shimmer {
+  color: #000;
+  background-color: css.$theme_bg;
+  height: 100vh;
+
+  .needs_card_shimmer_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    padding: 0 20px;
+    .left_title {
+      display: flex;
+      align-items: center;
+      // margin-left: 9px;
+      .send {
+        color: css.$theme_text;
+        // margin-left: 20px;
+      }
+
+      .needs-top-margin {
+        margin-right: 20px;
+      }
+      .needs-top-margin-loader {
+                margin-right: 12px;
+             }
+    }
+    .right_title {
+      background-color: #147bff;
+      padding: 5px 10px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin-right: 6px;
+      }
+
+      .download {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        color: white;
+        // margin-left: 10px;
+      }
+    }
+  }
+  .needscard-shimmer-page-container {
+    height: calc(100vh - 64px);
+    position: relative;
+
+    .needscard-shimmer-card-container {
+      width: 90%;
+      height: 365px;
+      background-color: css.$theme_shimmer_bg;
+      margin: 10px auto;
+      border-radius: 12px;
+      // margin-top: 15px;
+  
+      .top_needscard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+  
+        .left_side {
+          display: flex;
+          align-items: center;
+  
+          .name_designation {
+            margin-left: 10px;
+            .name_shimmer,
+            .designation_shimmer {
+              line-height: 0;
+            }
+          }
+        }
+      }
+  
+      #shimmer_hr_needs {
+        border: 1px solid #0D0D0D;
+        margin: 0 20px;
+      }
+  
+      .needs_content_shimmer {
+        width: 295px;
+        height: 252px;
+        // background: red;
+        background: rgba(13, 13, 13, 0.22);
+  
+        margin: 20px auto;
+        border-radius: 10px;
+        padding: 16px;
+        .top_shim {
+          margin-bottom: 35px;
+        }
+      }
+    }
+
+    .needs-bottom-message-field-shimmer-container {
+      position: absolute;
+      bottom: 23px;
+      left: 20px;
+      right: 20px;
+
+      .needs-bottom-message-field-shimmer {
+        border-radius: 46px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@use '/src/App.scss' as css;
+
+.network-icon-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .network-icon-badges-clickable-span {
+    display: inline-flex;
+    cursor: pointer;
+
+    .network-icon-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 4px;
+      overflow: hidden;
+  
+      .network-icon-badge-shimmer {
+        margin-top: 23px;
+      }
+  
+      img {
+        width: 31px;
+        height: 31px;
+        pointer-events: none;
+        border-radius: 50%;
+        // background: #fff;
+        border: 1px solid #909090;
+      }
+    }
+  
+    .network-icon-total-badge {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+  }
+}
+
+.network-icon-badge-bg {
+  background: #fff;
+}
+
+.network-icon-total-badge-bg {
+  background: rgba(255, 255, 255, 0.4);
+}

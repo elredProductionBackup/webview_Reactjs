@@ -1,0 +1,34 @@
+
+.left-container,
+.right-container {
+    width: 30%;
+    height: 58vh;
+    background-color: transparent;
+    position: absolute;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    right: 0;
+}
+
+.left-container-cursor {
+    cursor: pointer;
+}
+
+.right-container-cursor {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+    .left-container,
+    .right-container {
+        width: 30%;
+        height: 58vh;
+        background-color: transparent;
+        position: absolute;
+    }
+}

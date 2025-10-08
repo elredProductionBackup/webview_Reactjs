@@ -1,0 +1,17 @@
+@use '/src/App.scss' as css;
+
+.awards_shimmer{
+    padding: 20px;
+    padding-bottom: 1px;
+}
+
+.innerAwardsShimmer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.no-awards-margin{
+    padding-top: 10px;
+    margin-bottom: 30px;
+}

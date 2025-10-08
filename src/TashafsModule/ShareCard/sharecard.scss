@@ -1,0 +1,218 @@
+@use '/src/App.scss' as css;
+
+.share-card {
+  background: css.$theme_bg;
+  width: 100%;
+  color: #000;
+
+  @media only screen and (min-height: 700px) {
+    height: 100vh;
+  }
+
+  .username {
+    color: css.$theme_text;
+    font-size: 16px;
+    // font-family: "WorkSans-Regular";
+    font-weight: 400;
+    // font-weight: 600;
+    line-height: 20px;
+    padding: 12px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 370px;
+    text-overflow: ellipsis;
+  }
+
+  .card-div {
+    display: flex;
+    justify-content: center;
+    // padding-bottom: 100px;
+
+    .share-card-container {
+      margin: 0 20px 82px 20px;
+      border: 1px solid #444446;
+      border-radius: 10px;
+      padding: 10px;
+      width: calc(100% - 40px);
+      background-size: cover !important;
+      position: relative;
+      height: 638px;
+
+      .dp-bg-white {
+        background-color: #909090;
+      }
+
+      .user-image {
+        text-align: center;
+        margin: 35px auto 0 auto;
+        border-radius: 50%;
+        display: flex;
+        height: 124px;
+        width: 124px;
+
+        img {
+          width: 124px;
+          height: 124px;
+          border-radius: 50%;
+          padding: 0 !important;
+          object-fit: cover;
+          pointer-events: none;
+          margin: auto;
+        }
+
+        .user-image-border-white {
+          border: 3px solid #909090;
+        }
+
+        .user-image-border-blue {
+          border: 3px solid #3A90FF;
+        }
+      }
+
+      .user-name-share-card {
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        margin-top: 20px;
+        // font-family: "Raleway-Bold";
+
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        padding: 0 0 0 8px;
+      }
+
+      .user-surname-share-card {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        // margin-top: 5px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        margin: 0 auto;
+        // font-family: "Raleway-Regular";
+        line-height: 20px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        padding: 0 0 0 8px;
+      }
+
+      .professions {
+        font-size: 16px;
+        // font-family: "Raleway-Regular";
+        font-weight: 500 !important;
+        letter-spacing: 0.5px;
+        // line-height: 20px;
+        margin-top: 25px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .locations {
+        font-size: 16px;
+        // font-family: "Raleway-Regular";
+        font-weight: 500 !important;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      .badges-div {
+        margin-top: 40px;
+      }
+
+      .badges-div-height-space {
+        height: 32px;
+      }
+
+      .network-badges-div {
+        margin-top: 31px;
+      }
+    }
+  }
+}
+
+.verified-user-share-card-icon-container {
+  position: absolute;
+  top: 168px;
+  left: 192px;
+  cursor: pointer;
+  border-radius: 100%;
+
+  .verified-user-share-card-icon {
+    height: 28px;
+    width: 28px;
+    pointer-events: none;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+.verified-user-share-card-icon-container {
+  position: absolute;
+  top: 169px;
+  left: 56.75%;
+  cursor: pointer;
+  border-radius: 100%;
+
+  .verified-user-share-card-icon {
+    height: 28px;
+    width: 28px;
+    pointer-events: none;
+  }
+}
+
+}
+
+.card-branding-new {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 92%;
+  bottom: 0;
+
+  .logo-elred {
+    img {
+      width: 70px;
+    }
+  }
+
+  .main-card-profile {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+    .profile-div {
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.2);
+      // margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .shareTxt {
+      cursor: pointer;
+      padding-left: 5px;
+    }
+  }
+}
+
+.bg-filter-sharecard {
+  backdrop-filter: url(#filter);
+  margin: -10px;
+  padding: 10px;
+  height: 638px;
+  border-radius: 10px;
+}

@@ -1,0 +1,219 @@
+@use '/src/App.scss' as css;
+
+.container-aadhar-popup {
+  .aadhar-verified-container {
+    z-index: 100000;
+    position: fixed;
+    width: 375px;
+    bottom: 0;
+    border-radius: 18px 18px 0 0;
+    background-color: css.$theme_deletePopup;
+    padding: 36px 41px 14px 41px;
+    visibility: hidden;
+
+    .aadhaar-verified-popup-img {
+      pointer-events: none;
+      width: 145px;
+      height: 100px;
+      display: flex;
+      margin: auto;
+    }
+
+    .aadhaar-verified-popup-loader-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+
+      .aadhaar-verified-popup-img-loader {
+        height: 28px;
+        width: 28px;
+      }
+    }
+
+    .aadhaar-verified-text {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 37px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: css.$theme_text;
+      margin: 12px 0;
+    }
+
+    .blue-tick-symbol-text {
+      color: css.$theme_light_text_grey;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .aadhaar-verified-ok-btn {
+      background: #e72d38;
+      color: #fff;
+      width: 100%;
+      border-radius: 100px;
+      border: transparent;
+      outline: none;
+      height: 48px;
+
+      .btn-ok-text {
+        vertical-align: middle;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+
+  .aadhar-verified-container-show {
+    transform: none;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .aadhar-verified-container-hide {
+      transform: translateY(100%);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+  }
+}
+
+.aadhar-popup-overlay {
+  position: fixed;
+  visibility: visible;
+  width: 375px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 80000;
+  transition: all 0.3s ease-in-out;
+}
+
+.aadhar-popup-overlay-hidden {
+  position: fixed;
+  visibility: hidden;
+  width: 375px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 450px) {
+  .container-aadhar-popup {
+    .aadhar-verified-container {
+      z-index: 100000;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      border-radius: 18px 18px 0 0;
+      background-color: css.$theme_deletePopup;
+      padding: 36px 41px 14px 41px;
+      visibility: hidden;
+
+      .aadhaar-verified-popup-img {
+        pointer-events: none;
+        width: 145px;
+        height: 100px;
+        display: flex;
+        margin: auto;
+      }
+
+      .aadhaar-verified-popup-loader-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+
+        .aadhaar-verified-popup-img-loader {
+          height: 28px;
+          width: 28px;
+        }
+      }
+
+      .aadhaar-verified-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 37px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: css.$theme_text;
+        margin: 12px 0;
+      }
+
+      .blue-tick-symbol-text {
+        color: css.$theme_light_text_grey;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 26px;
+      }
+
+      .aadhaar-verified-ok-btn {
+        background: #e72d38;
+        color: #fff;
+        width: 100%;
+        border-radius: 100px;
+        border: transparent;
+        outline: none;
+        height: 48px;
+
+        .btn-ok-text {
+          vertical-align: middle;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .aadhar-verified-container-show {
+    transform: none;
+    visibility: visible !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .aadhar-verified-container-hide {
+      transform: translateY(100%);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .aadhar-popup-overlay {
+    position: fixed;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 80000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .aadhar-popup-overlay-hidden {
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+}

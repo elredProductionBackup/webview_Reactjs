@@ -1,0 +1,86 @@
+.ratings {
+  // background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  // padding: 10px;
+  border-radius: 10px;
+  // backdrop-filter: blur(10px);
+  margin-top: 36px;
+  position: relative;
+
+  .circle-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // backdrop-filter: blur(10px);
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(255, 255, 255, 0.2) 0%,
+    //   rgba(255, 255, 255, 0) 100%
+    // );
+
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+    img {
+      pointer-events: none;
+    }
+  }
+
+  .title-ratings {
+    // margin-top: 5px;
+    // margin-left: 5px;
+    // margin-bottom: 15px;
+    // font-size: 18px;
+    // font-weight: 500;
+    // line-height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 15px;
+    padding-bottom: 0;
+  }
+
+  .desc-ratings {
+    display: flex;
+    align-items: center;
+    /* width: 85%; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 0 26px;
+    padding-top: 21px;
+
+    .ratings-count {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      max-width: 24px;
+      margin-right: 31px;
+      width: 100%;
+      text-align:center;
+  
+    }
+    .ratingCountLoader{
+      margin-left: -6px;
+    }
+    .ratings-desc {
+    //  margin-left: 31px;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+      font-family: "AvenirNextLTPro-Regular";
+    }
+    .hr-line{
+     // color: inherit;
+     // border: 0;
+     
+      border-top: 0.4px solid #FFFFFF4D;
+  
+    }
+  }
+}

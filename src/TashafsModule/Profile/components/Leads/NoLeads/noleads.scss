@@ -1,0 +1,19 @@
+.noleads {
+//  background-color: rgb(39, 39, 39);
+  /* text-align: center; */
+  height: 334px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  img {
+    max-width: 230px;
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

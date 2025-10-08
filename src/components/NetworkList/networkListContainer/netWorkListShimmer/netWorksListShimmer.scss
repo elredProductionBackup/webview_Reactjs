@@ -1,0 +1,26 @@
+@use '/src/App.scss' as css;
+
+.networkList_shimmer {
+    padding: 0px 20px 20px 20px;
+    padding-bottom: 1px;
+    background-color: css.$theme_shimmer_bg;
+}
+
+.innerNetworkListShimmer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 0.5px solid  css.$theme_shimmer_bg;
+    background-color: css.$theme_shimmer_bg;
+    .linner {
+        padding-top: 5px;
+     
+        
+    }
+}
+
+.no-awards-margin {
+    padding-top: 10px;
+    margin-bottom: 30px;
+}

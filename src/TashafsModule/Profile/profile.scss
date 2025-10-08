@@ -1,0 +1,150 @@
+@use '/src/App.scss' as css;
+
+.profile_header {
+  position: absolute;
+  top: 0;
+  max-width: 375px;
+  width: 100%;
+  z-index: 5;
+
+  .profile{
+    -webkit-backdrop-filter: blur(34px);
+  }
+
+  .branding_header {
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: css.$download_header;
+
+    .elred_logo {
+      img {
+        height: 17px;
+        width: 67px;
+      }
+    }
+
+
+    .cta_download {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+  }
+}
+
+.profile {
+  // position: absolute;
+  top: 0;
+  width: 375px;
+  z-index: 3;
+  height: 44px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  .profile-text {
+    // font-family: "WorkSans-Regular";
+    font-weight: 400;
+  }
+  width: 375px;
+}
+
+.profile-body {
+  padding: 16px;
+  margin-top: 42px;
+}
+
+.parent-profile {
+  // height: 100vh;
+  // overflow: auto;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.showing-img-loader {
+  display: block !important;
+}
+.hiding-img-loader {
+  display: none !important;
+}
+
+.bg-filter-profile-with-data {
+  backdrop-filter: url(#filter); // NETWORK BACKDROP FILTER
+}
+@media screen and (max-width: 450px) {
+  .profile_header {
+    max-width: 450px;
+    width: 100%;
+  }
+  .profile {
+    padding: 15px;
+    // position: fixed;
+    top: 0;
+    z-index: 3;
+    .profile-text {
+      // font-family: "WorkSans-Regular";
+      font-weight: 400;
+    }
+    width: 100%;
+  }
+
+  .profile-body {
+    padding: 16px;
+    margin-top: 42px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .parent-profile {
+    // height: 100vh;
+    // overflow: auto;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+
+.attachment_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+  
+    .attachment_content {
+      border: 1px solid white;
+      border-radius: 40px;
+      padding: 0 10px;
+      cursor: pointer !important;
+      img{
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+        margin-right: 4px;
+      }
+      span{
+        font-size: 12px;
+        letter-spacing: -1.9%;
+      }
+    }
+  }
+  

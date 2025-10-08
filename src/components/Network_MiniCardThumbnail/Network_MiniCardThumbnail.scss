@@ -1,0 +1,86 @@
+@use '/src/App.scss' as css;
+
+.network_minicard_thumbnail {
+  width: 57px;
+  height: 85px;
+  // background-color: rgb(41, 105, 217);
+  margin: 0 10px;
+  margin-top: 84px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  cursor: pointer;
+
+  .network_image {
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 0.1px solid #909090;
+    background-color: #909090;
+  }
+
+  .thumbnail-group-network-name-dp-container {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    height: 4px;
+    margin-top: 2px;
+
+    .thumbnail-group-network-dp-img {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+    }
+
+    .thumbnail-group-network-title {
+      font-size: 3px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      line-height: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: calc(100% - 8px);
+    }
+  }
+
+  .network_name {
+    margin-top: 1px;
+    font-size: 4px;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+    height: 10px;
+  }
+
+  .network_location {
+    font-size: 3px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 3px;
+    padding: 0 10%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.network_minicard_thumbnail_shimmer {
+  margin: 0 10px;
+  margin-top: 84px;
+  border-radius: 2px;
+}

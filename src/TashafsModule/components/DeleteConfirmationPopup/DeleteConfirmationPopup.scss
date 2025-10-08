@@ -1,0 +1,100 @@
+@use '/src/App.scss' as css;
+
+.deletePopup {
+  border-radius: 18px 18px 0 0;
+  // padding: 20px 15px;
+  padding: 20px 35px;
+background-color:css.$theme_deletePopup ;
+
+  .deletepopup_content {
+    .text_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .handle_hr {
+        height: 6px;
+        width: 115px;
+        background-color: rgba(207, 207, 207, 1);
+        border-radius: 5px;
+        margin-bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+      #deleteBucket {
+        margin-top: 35px;
+        width: 52px;
+        height: 52px;
+      }
+      .message_delete {
+        margin-top: 45px;
+        // color: #000;
+        color: rgba(243, 243, 243, 1);
+        text-align: center;
+        font-family: "AvenirNextLTPro-Medium";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+      }
+    }
+
+    .action_btns {
+      display: flex;
+      align-items: center;
+      // justify-content: space-around;
+      margin-top: 50px;
+      gap: 20px;
+      .cncl {
+        // color: #747474;
+        color:css.$theme_red;
+        background-color: css.$theme_text;
+        // border: 1px solid #8a8a8a;
+        //  padding: 12px 45px;
+        border-radius: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        width: 140px;
+        height: 40px;
+        padding: 15px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        width: 47%;
+      }
+      .cnfrm {
+        color: #ffffff;
+        background-color: #e72d38;
+        font-size: 20px;
+        //  padding: 12px 45px;
+        font-weight: 500;
+        border-radius: 25px;
+        cursor: pointer;
+
+        display: flex;
+        width: 140px;
+        height: 40px;
+        padding: 15px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        width: 47%;
+      }
+    }
+  }
+}
+
+@media (min-width: 451px) {
+  .deletePopup {
+    max-width: 376px !important;
+    // width: 375px;
+    // top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+}

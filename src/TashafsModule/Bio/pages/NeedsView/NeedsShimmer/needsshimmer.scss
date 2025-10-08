@@ -1,0 +1,91 @@
+@use '/src/App.scss' as css;
+
+
+.leads_shimmer {
+  background-color: css.$theme_shimmer_dark;
+  min-width: 160px;
+  height: 240px;
+  border-radius: 12px;
+  /* text-align: center; */
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: flex-end;
+  padding: 15px 20px;
+  // margin: 10px 5px;
+  margin: 14px 7px;
+}
+
+.shimmer_leads {
+  display: flex;
+  //   background: red;
+  /* margin: 0 auto; */
+  justify-content: center;
+  margin-top: 40px;
+  height: calc(100vh - 44px);
+  overflow: hidden;
+  background-color: css.$theme_bg;
+  .second_row {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 365px) {
+  .leads_shimmer {
+    max-width: 160px;
+  }
+  .shimmer_leads {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 366px) and (max-width: 379px) {
+  .leads_shimmer {
+    max-width: 160px;
+  }
+  .shimmer_leads {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 385px) {
+  .leads_shimmer {
+    max-width: 160px;
+  }
+  .shimmer_leads {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 386px) and (max-width: 395px) {
+  .leads_shimmer {
+    max-width: 170px;
+  }
+  .shimmer_leads {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 396px) and (max-width: 405px) {
+  .shimmer_leads {
+    margin-top: 50px;
+  }
+  .leads_shimmer {
+    max-width: 170px;
+  }
+}
+
+@media (min-width: 406px) and (max-width: 450px) {
+  .shimmer_leads {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 451px) {
+  .leads_shimmer {
+    width: 160px;
+  }
+  .shimmer_leads {
+    margin-top: 40px;
+  }
+}

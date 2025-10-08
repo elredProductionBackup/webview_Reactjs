@@ -1,0 +1,76 @@
+@use '/src/App.scss' as css;
+
+.received_chat_msg {
+  background-color: css.$theme_light_grey;
+  // margin: 10px 20px;
+  border-radius: 0 20px 20px 20px;
+  padding: 8px 14px;
+  padding-bottom: 5px;
+  width: fit-content;
+  max-width: 280px;
+  margin-bottom: 10px;
+
+  // padding-right: 10%;
+  .msg {
+    .message {
+      // color: #000;
+      color:css.$theme_text;
+      font-family: "AvenirNextLTPro-Regular";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: -0.2px;
+      word-wrap: break-word;
+      a{
+        // color: #000;
+        color:css.$theme_text;
+        font-style: italic;
+      }
+    }
+    .username {
+      // color: #000;
+      color:css.$theme_text;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      margin-bottom: 5px;
+      // text-transform: capitalize;
+    }
+  }
+
+  .deleted_div {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 6px;
+    }
+    .deleted_msg {
+      font-family: "AvenirNextLTPro-Regular";
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      // color: #000;
+      color:css.$theme_text;
+      font-style: italic;
+      i {
+        // color: #000;
+        color:css.$theme_text;
+      }
+    }
+  }
+
+  .date_status {
+    text-align: right;
+
+    .date {
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+      // color: #656565;
+      color: css.$theme_light_text_grey;
+      font-family: "AvenirPro-regular";
+      font-style: normal;
+      letter-spacing: -0.16px;
+    }
+  }
+}

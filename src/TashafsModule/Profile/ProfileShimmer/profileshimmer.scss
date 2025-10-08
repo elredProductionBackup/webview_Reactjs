@@ -1,0 +1,346 @@
+@use '/src/App.scss' as css;
+
+.profile-shimmer {
+  height: 100vh;
+  overflow-y: hidden;
+  // padding: 15px;
+  .profile-shimmer-title {
+    color: #000;
+    top: 0;
+    // background: #e7e9ef;
+    background-color: css.$theme_shimmer_bg;
+    width: 100%;
+    padding: 15px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .network-profile-shimmer-title {
+    color: #000;
+    top: 0;
+    // background: #e7e9ef;
+    width: 100%;
+    padding: 15px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper {
+    padding: 15px;
+    // margin-top: 25px;
+  }
+  .networkLogoNameShimmerContainer{
+    display: flex;
+    gap: 7px;
+    align-items: flex-end;
+    height: 40px;
+  }
+  .shimmer-user {
+    margin-left: 10px;
+    .user-img {
+      margin-top: 50px;
+    }
+    .user-name {
+      margin-top: 15px;
+    }
+
+    .circle-name {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      .location {
+        width: 60%;
+        margin-left: 10px;
+      }
+      .location-2 {
+        width: 50%;
+        margin-left: 10px;
+      }
+    }
+  }
+  .cards {
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    .card {
+      border: transparent;
+      margin-right: 20px;
+    }
+  }
+
+  .share-shimmer {
+    // background: #e7e9ef;
+    background-color: css.$theme_shimmer_dark !important;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 4px;
+  }
+  .tags-shimmer {
+    // background: #e7e9ef;
+    background-color: css.$theme_shimmer_dark;
+    padding: 8px 16px !important;
+    margin-top: 32px;
+    padding: 10px 0;
+    border-radius: 4px;
+    padding-bottom: 16px !important;
+  }
+
+  .networkShareDisclaimerShimmerContainer{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .network-share-shimmer {
+    background: css.$theme_shimmer_dark;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 4px;
+  }
+
+  .i-need {
+    background: #e7e9ef;
+    // text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-radius: 6px;
+
+    .i-need-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 15px;
+    }
+
+    .i-need-cards {
+      margin: 15px;
+      display: flex;
+      overflow: hidden;
+      .card {
+        height: 130px;
+        min-width: 260px;
+        border: 1px solid #d6dae5;
+        background-color: transparent;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        padding-left: 15px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .needs-shimmer {
+    // background: #e7e9ef;
+    background-color: css.$theme_shimmer_dark;
+    // text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 4px;
+
+    .top-needs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 15px;
+    }
+    .cards-shimmer {
+      display: flex;
+      overflow: hidden;
+      .needs-card-shimmer {
+        min-width: 205px;
+        height: 305px;
+        // background-color: #d6dae5;
+        background-color: css.$theme_shimmer;
+        margin: 15px 0px 15px 12px;
+        border-radius: 10px;
+
+        .inner-shimmer {
+          margin-left: 15px;
+          margin-left: 15px;
+          display: flex;
+          flex-direction: column;
+          /* height: 100vh; */
+          height: 100%;
+          padding-bottom: 20px;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .ratings-shimmer {
+    background: #1a1d27;
+    margin-top: 35px;
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+
+    .star-loading {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 46px;
+      // background: red;
+      background: #242939;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .ratings-start {
+      margin-bottom: 30px;
+    }
+
+    .ratings-middle {
+      // margin-top: 30px;
+      margin-left: 20px;
+    }
+    .ratings-end {
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  }
+
+  .network-ratings-shimmer {
+    background: #1a1d27;
+    margin-top: 35px;
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+
+    .star-loading {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 46px;
+      // background: red;
+      background: css.$theme_shimmer_dark;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .ratings-start {
+      margin-bottom: 30px;
+    }
+
+    .ratings-middle {
+      // margin-top: 30px;
+      margin-left: 20px;
+    }
+    .ratings-end {
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  }
+
+  .testimonials-shimmer {
+    background: #1a1d27;
+    padding: 15px 20px;
+    margin-top: 12px;
+    border-radius: 4px;
+
+    .inner-card {
+      background: #1a1d27;
+      margin-top: 20px;
+      border-radius: 18px;
+      padding: 20px 30px;
+
+      .right-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        .first {
+          background: #1a1d27;
+          text-align: right;
+        }
+      }
+
+      .middle-item {
+        margin-top: 10px;
+        background: #1a1d27;
+      }
+
+      .last-item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .last-circle {
+          background: #1a1d27;
+        }
+
+        .last-shimmer {
+          margin-left: 10px;
+          background: #1a1d27;
+        }
+      }
+    }
+  }
+
+  .super-skills {
+    display: flex;
+    background: #1a1d27;
+    /* margin-top: 15px; */
+    border-radius: 4px;
+    padding: 15px;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-bottom: 50px;
+    .one-dim {
+      display: flex;
+      margin: 20px 0;
+    }
+
+    .super1,
+    .super2 {
+      background-color: #242939;
+    }
+
+    .super-div {
+      margin-left: 10px;
+    }
+  }
+
+  .shimmer-single {
+    background: #1a1d27;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.super-skills-big {
+  background: #1a1d27;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  .super-div {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 451px) {
+  .profile-shimmer-title {
+    max-width: 375px;
+    width: 100%;
+  }
+}

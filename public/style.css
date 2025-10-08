@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "AvenirPro-medium";
+  src: url("./fonts/AvenirNextLTPro-Medium.otf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "AvenirPro-regular";
+  src: url("./fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+@font-face {
+  font-family: "Poppings-regular";
+  src: url("./fonts/Poppins-Medium.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+.no-script-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.no-script {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #0D0D0D;
+  width: 375px;
+}
+
+.no-script img {
+  height: 319px;
+  width: 319px;
+}
+
+.heading-noscript {
+  font-family: Poppings-regular;
+  color: #e72d38;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.desc-noscript {
+  margin-top: 8px;
+  font-family: AvenirPro-regular;
+  color: #E5E5E5;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media only screen and (max-width:450px) {
+  .no-script {
+    width: 100%;
+  }
+}

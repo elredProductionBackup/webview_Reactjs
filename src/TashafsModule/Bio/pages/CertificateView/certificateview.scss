@@ -1,0 +1,69 @@
+@use '/src/App.scss' as css;
+
+.wrapper_certificate {
+  //   background: yellow;
+  height: calc(100vh - 44px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: css.$theme_bg;
+  color: css.$theme_text;
+
+  img {
+    max-width: 94%;
+    max-height: 94%;
+    pointer-events: none;
+    border: 1px solid #DFDFDF;
+  }
+}
+
+.cert_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px 0px 0px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  // background: white;
+  background-color: css.$theme_bg;
+  color: css.$theme_text;
+  .name {
+    display: flex;
+    align-items: center;
+    .certificate_name {
+      // color: #000;
+      color: css.$theme_text;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+    //  margin-left: 10px;
+    }
+    .back-arrow{
+      cursor: pointer;
+      padding: 15px 23px 15px 29px;
+    }
+  }
+
+  img {
+    cursor: pointer;
+    // margin-right: 10px;
+  }
+  .certi-icon-awar-spinner{
+    margin-right: 10px;
+  }
+
+  .back-icon-pdf-award-spinner {
+    margin: 12px 15px 15px 29px;
+    cursor: default;
+  }
+
+}
+
+.pdf-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 2.2px 4px 1.5px;
+}

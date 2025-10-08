@@ -1,0 +1,21 @@
+@use '/src/App.scss' as css;
+
+.btn_cont {
+  padding: 10px 20px;
+  font-family: "AvenirPro-regular";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 1px solid #8a8a8a;
+  border-radius: 26px;
+  color: #000;
+  background-color: #fff;
+}
+
+.btn_cont:hover {
+  border: 1px solid #8a8a8a;
+  color: #000;
+  background-color: #fff;
+}

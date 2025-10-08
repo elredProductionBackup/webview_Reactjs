@@ -1,0 +1,111 @@
+.subcard-location-price-container {
+    display: block;
+    // justify-content: space-between;
+  
+
+    .subcard-location {
+      display: flex;
+      gap: 2px;
+      margin-top: 3px;
+    //  cursor: pointer;
+      .subcard-location-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 2px;
+        // pointer-events: none;
+      }
+      .locationLoader {
+        margin-top: 3px;
+        margin-right: 10px;
+      }
+
+      .subcard-location-text {
+        font-size: 16px;
+        font-weight: 500;
+        max-width: 250px;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+       // cursor: pointer;
+        font-family: "AvenirNextLTPro-Regular";
+      }
+      .subcard-location-text-needs{
+        font-size: 16px;
+        font-weight: 500;
+        max-width: 230px;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+       // cursor: pointer;
+        font-family: "AvenirNextLTPro-Regular";
+      }
+    
+    }
+
+    .subcard-amount {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+      align-items: center;
+      .subcard-currency-sign {
+        width: 20px;
+        height: 20px;
+      }
+
+      .subcard-currency-amount {
+        font-size: 16px;
+        font-weight: 500;
+       // margin-top: 3px;
+        max-width: 250px;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        font-family: "AvenirNextLTPro-Regular";
+        padding-top: 5px;
+      }
+      .currency-value {
+        // margin-right: 2px;
+        // font-size: 20px;
+        // margin-left: 7px;
+        margin-right: 2px;
+        font-size: 20px;
+        margin-left: 7px;
+        line-height: 15px;
+        margin-top: 6px;
+      }
+    }
+  }
+
+
+
+  @media (max-width: 360px) {
+    .subcard-location-text {
+      width: 108px;
+    }
+    .subcard-location-text-needs{
+      width: 85px;
+    }
+  
+  }
+
+  .lead-location-padding{
+    padding: 0 12px 12px 16px;
+  }
+  .need-location-padding{
+    padding: 0 0 12px 0;
+  }
+
+  .subcard-amount-margin {
+    margin-right: 15px;
+  }
+  
+  .removePointer{
+   // cursor: none;
+  }
+

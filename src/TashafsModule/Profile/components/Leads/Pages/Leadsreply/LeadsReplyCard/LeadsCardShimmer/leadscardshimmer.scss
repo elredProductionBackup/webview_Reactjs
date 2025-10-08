@@ -1,0 +1,167 @@
+@use "/src/App.scss" as css;
+
+.leads_card_shimmer {
+  // color: #000;
+  color:css.$theme_text;
+  background-color: css.$theme_bg;
+  padding-bottom: 26px;
+  height: 100vh;
+  position: relative;
+
+  .leads_card_shimmer_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+
+    .left_title{
+      display: inline-flex;
+        .send{
+            color:css.$theme_text;
+           // margin-left: 20px;
+           // margin-top: 2px;
+        }
+    }
+    .leads-reply-back1{
+      margin-right: 23px;
+      margin-left: 9px;
+    }
+    .spiner-margin1{
+      margin-right: 15px;
+      margin-top: 5px;
+      margin-left: 9px;
+    }
+    .right_title{
+        background-color: #147BFF;
+        padding: 5px 10px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .download{
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            color: white;
+            margin-left: 7px;
+
+        }
+        .download-elred-Spinner{
+          height: 10px;
+          width: 10px;
+          margin-left: 6px;
+        }
+    }
+  }
+  .leadscard {
+
+    width: 335px;
+    height: 366px;
+   // background-color: #e1e4eb;
+    background-color: css.$theme_lead_shimmer;
+        margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 8px;
+
+    .top_leadscard {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+      .left_side {
+        display: flex;
+        align-items: center;
+
+        .name_designation {
+          margin-left: 10px;
+          .name_shimmer{
+            line-height: 0;
+          }
+          .designation_shimmer {
+            line-height: 0;
+            margin-top: 9px;
+          }
+        }
+      }
+    }
+
+    #shimmer_hr_leads {
+      border: 1.5px solid css.$theme_lead_inner_shimmer;
+      margin: 0 20px 20px 20px ;
+    }
+
+    .leads_content_shimmer{
+        width: 295px;
+        height: 252px;
+        // background: red;
+     //   background: #FFFFFF38;
+        background: css.$theme_lead_inner_shimmer;
+
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 16px;
+        .top_shim{
+            margin-bottom: 35px;
+        }
+    }
+  }
+  .input_wrapper {
+    background: transparent;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 375px !important;
+   
+    // margin: auto;
+    .input_comp {
+      margin: 0px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f7f7f7;
+      padding: 13px 18px;
+      border-radius: 46px;
+     // width: 90%;
+      bottom: 0;
+  
+      .input_emoji {
+       // width: 95%;
+        display: flex;
+        align-items: center;
+        input {
+          color: #000;
+          margin-left: 10px;
+          //width: 85%;
+          outline: none;
+          border: none;
+          background-color: transparent;
+         
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #929292;
+          }
+        }
+      }
+  
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .leads-bottom-message-field-shimmer-container {
+    position: absolute;
+    bottom: 33px;
+    left: 20px;
+    right: 20px;
+  
+    .leads-bottom-message-field-shimmer {
+      border-radius: 46px !important;
+    }
+  }
+}

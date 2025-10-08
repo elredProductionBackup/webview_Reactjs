@@ -1,0 +1,67 @@
+@use '/src/App.scss' as css;
+
+.edu-cert-view {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    height: 100vh;
+    position: relative;
+    background-color: css.$theme_bg;
+  
+    .edu-cert-header {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: css.$theme_bg;
+  
+      .edu-cert-back-spinner {
+        margin: 14px 16px 14px 29px;
+      }
+
+      .edu-cert-back {
+        img {
+          cursor: pointer;
+          padding: 15px 23px 15px 29px;
+        }
+      }
+  
+      .edu-cert-title {
+        color: css.$theme_text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 290px;
+      }
+    }
+
+    .edu-cert-container {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 44px);
+
+        .edu-cert-image {
+            max-width: 94%;
+            max-height: 94%;
+            pointer-events: none;
+            border: 1px solid #DFDFDF;
+        }
+
+        .edu-cert-pdf {
+            max-width: 94%;
+            max-height: 94%;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 2px 2.2px 4px 1.5px;
+        }
+    }
+
+    .edu-cert-spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

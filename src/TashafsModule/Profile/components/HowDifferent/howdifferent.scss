@@ -1,0 +1,45 @@
+.how-different {
+  margin-top: 15px;
+  // background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  // backdrop-filter: blur(10px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .m-f-icon {
+    width: 68px;
+    pointer-events: none;
+  }
+  .next-button {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    img {
+      pointer-events: none;
+    }
+  }
+
+  .description {
+    margin-left: 12px;
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+    }
+    .desc {
+      font-family: "AvenirNextLTPro-Regular";
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use '/src/App.scss' as css;
+
+.container-wrapper-no {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.no-testimonal {
+  font-family: "AvenirPro-regular";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 10px;
+  color: css.$theme_text;
+}
+
+.centered-div-test {
+ overflow-x: hidden
+}
+
+.height-100{
+  height: 100%;
+}
+
+.no-search-img{
+  height: 285px;
+  width: 285px;
+}

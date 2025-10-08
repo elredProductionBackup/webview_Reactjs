@@ -1,0 +1,111 @@
+@use '/src/App.scss' as css;
+
+.main_cont {
+  background-image: url("../../../assets/images//events/bg.png");
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  .chi_cont {
+    padding: 15px 0;
+  }
+
+  .event_time {
+    font-family: "AvenirPro-medium";
+    font-size: 16px;
+    font-weight: 500;
+    // line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+  }
+  .img_clock {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+}
+
+.bottom_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px 20px 10px;
+  background-color: #fff;
+}
+
+.header_cont {
+  padding-top: 20px;
+  .download_btn_cont {
+    background: #147bff;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 0px 12px;
+    .download_icon {
+      height: 14px;
+      //   height: auto;
+      width: 14px;
+      padding-right: 5px;
+    }
+
+    .download_text {
+      //   font-family: Roboto;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      //   letter-spacing: -0.019em;
+      text-align: left;
+    }
+  }
+
+  .share_icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+}
+
+.event_title {
+  font-family: "AvenirPro-medium";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+.btn_yes {
+  background: linear-gradient(0deg, #ff2020, #ff2020),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  padding-inline: 30px;
+  border: none;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    border: none;
+  }
+}
+
+.btn_no {
+  padding-inline: 30px;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 295px) {
+  .btn_no {
+    padding-inline: 20px;
+  }
+
+  .btn_yes {
+    padding-inline: 20px;
+  }
+}

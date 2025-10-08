@@ -1,0 +1,11 @@
+@use '/src/App.scss' as css;
+
+.nodata {
+  font-family: "AvenirNextLTPro-Regular";
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8E8E93;
+  margin-bottom: 15px;
+  margin-top: 13px;
+}

@@ -1,0 +1,30 @@
+@use '/src/App.scss' as css;
+
+.header_main_cont {
+  padding: 20px 20px 0 0px;
+  //   background-color: #ffffff;
+  padding-bottom: 10px;
+  background-color: transparent;
+
+  .back-img {
+    padding-right: 14px;
+    padding-left: 10px;
+  }
+
+  .search-icon {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+  .header-title {
+    font-size: 16px;
+    font-weight: 400;
+    // color: #000;
+    font-family: "Poppins-medium";
+    // line-height: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

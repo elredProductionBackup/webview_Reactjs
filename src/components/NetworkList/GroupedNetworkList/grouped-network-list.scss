@@ -1,0 +1,134 @@
+.grouped-network-list-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .network-list-card-container {
+        position: relative;
+
+        .network-list-network-span {
+            position: absolute;
+            top: 5px;
+            left: 29px;
+            background-color: #0d0d0d;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .network-list-network-thumbnail-container {
+                background-color: #9E9E9E;
+                border-radius: 50%;
+
+                .network-list-network-thumbnail {
+                    border: 0.5px solid #9E9E9E;
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .network-list-network-name {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;       
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 215px;
+
+                @media only screen and (max-width: 450px) {
+                max-width: calc(100vw - 160px); 
+                }
+            }
+        }
+
+        .network-list-card-with-border {
+            margin-top: 20px;
+            border: 1px solid #8E8E93;
+            border-radius: 8px;
+            padding: 45px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .network-list-card-single {
+                display: flex;
+                gap: 12px;
+                cursor: pointer;
+
+                .network-list-card-single-img-container {
+                    .network-list-card-single-img {
+                        height: 48px;
+                        width: 48px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .network-list-name-address-container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .network-list-name-title {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19.2px;
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 200px;
+
+                        @media only screen and (max-width: 450px) {
+                            max-width: calc(100vw - 170px); 
+                        }
+                    }
+                    
+                    .network-list-address {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 14.4px;
+                        text-align: left;
+                        display: flex;
+
+                        .network-list-address-city, .network-list-address-country {
+                            color: #E5E5E5;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-width: 100px;
+                            display: block;
+
+                            @media only screen and (max-width: 420px) {
+                                max-width: calc(100vw - 292px) !important; 
+                            }
+
+                            @media only screen and (max-width: 450px) {
+                                max-width: calc(100vw - 307px); 
+                            }
+                        }
+
+                        .network-list-address-seperator {
+                            color: #E5E5E5;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .network-list-bottom-divider-container {
+
+                .network-list-bottom-divider {
+                    display: flex;
+                    border-bottom: 0.5px solid #525252;
+                    padding-top: 18px;
+                }
+            }
+        }
+    }
+}

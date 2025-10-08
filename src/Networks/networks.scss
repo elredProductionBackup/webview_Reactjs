@@ -1,0 +1,36 @@
+@use '/src/App.scss' as css;
+
+.networks{
+    height: 100vh;
+    overflow: auto;
+    // background-color: #503421;
+    background-position: top;
+}
+
+.network-profile-body{
+    margin-top: 0 !important;
+    padding-bottom: 22px;
+}
+
+.network_header{
+    position: fixed;
+    top: 0;
+}
+
+.network_body{
+    // background-color: rgb(0, 116, 188);
+    // background-image: url('../assets/images/bg.jpeg');
+    // background-position: top;
+    padding-top: 55px;
+}
+
+.network-card-ios-overscroll-bg {
+    @media only screen and (max-width: 450px) {
+        position: absolute;
+        inset: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #0d0d0d;
+        z-index: 990;        
+    }
+}

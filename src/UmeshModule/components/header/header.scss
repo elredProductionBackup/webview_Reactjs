@@ -1,0 +1,103 @@
+@use '/src/App.scss' as css;
+
+.searchTestimonial {
+  padding: 10px 11px 10px 0px;
+  background-color: #ffffff;
+  // padding-bottom: 10px;
+  // overflow: hidden;
+  position: sticky;
+  top: 0;
+
+    .back-img-testimonial {
+      cursor: pointer;
+      padding: 0px 20px 0px 29px;
+      z-index: 1;
+      height: 24px;
+      width: 24px;
+    }
+  
+    .show-back-image {
+      display: none;
+    }
+  
+    .search-icon {
+      // height: 22px;
+      width: 18px;
+      height: auto;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .header-title {
+      font-size: 16px;
+      font-weight: 400;
+      color: css.$theme_text;
+      font-family: "AvenirNextLTPro-Regular";
+      // line-height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+}
+.header-container {
+  .search{
+    border-bottom: 1px solid css.$thme_border_bottom;
+  }
+  padding: 10px 20px 10px 0px;
+  background-color: css.$theme_bg;
+  // padding-bottom: 10px;
+  // overflow: hidden;
+  // position: sticky;
+  // top: 0;
+
+    .back-img-testimonial {
+      cursor: pointer;
+      margin: 0px 14px 0px 20px;
+      z-index: 1;
+      height: 24px;
+      width: 24px;
+    }
+  
+    .show-back-image {
+      display: none;
+    }
+
+    .search-testimonial{
+      background: #3C3C3C;
+      border-radius: 14px;
+      display: flex;
+      gap: 12px;
+      height: 38px;
+      padding: 6px 10px 10px 10px;
+      position: absolute;
+      right: 20px;
+      top: 3px;
+      width: 38px;
+      cursor: pointer;
+      }
+  
+    .search-icon {
+      // cursor: pointer;
+      height: 18px;
+      width: 18px;
+    }
+    .header-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: css.$theme_text;
+      // font-family: "AvenirNextLTPro-Regular";
+      // line-height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+}
+
+.disabled_button{
+  pointer-events: none;
+}
+
+.header-bar {
+  gap: 2px;
+  width: 100%;
+  height: 24px;
+}

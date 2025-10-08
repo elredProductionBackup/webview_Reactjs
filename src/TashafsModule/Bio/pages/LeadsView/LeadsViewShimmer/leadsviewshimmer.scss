@@ -1,0 +1,36 @@
+@use '/src/App.scss' as css;
+
+.needs_view_shimmer {
+  width: 161px;
+  // height: 215px;
+  height: 240px;
+//  background-color: #e1e4eb;
+  background-color: css.$theme_shimmer_bg;
+  border:  1px solid  #444446;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 12px 12px 12px;
+  justify-content: flex-end;
+  //  margin: 10px 5px 20px 5px;
+  // margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.needs_shimmer {
+  display: flex;
+  //   background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+ // overflow: hidden;
+  .first_needs {
+    margin-top: -50px;
+    margin-right: 15px;
+  }
+
+  .second_needs {
+    margin-top: 50px;
+  }
+}

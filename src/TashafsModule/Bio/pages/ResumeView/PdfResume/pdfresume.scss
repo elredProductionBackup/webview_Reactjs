@@ -1,0 +1,11 @@
+@use '/src/App.scss' as css;
+
+.pdfView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-pdf-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 2.2px 4px 1.5px;
+}

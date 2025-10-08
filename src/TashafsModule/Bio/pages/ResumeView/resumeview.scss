@@ -1,0 +1,83 @@
+@use '/src/App.scss' as css;
+
+.resume-view {
+  background-color: css.$theme_bg;
+  color: #000;
+  height: 100vh;
+  position: relative;
+
+  .resume-header {
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    position: sticky;
+    top: 0;
+    background: css.$theme_bg;
+    // height: 44px;
+    // padding: 0 29px;
+
+    .resume-back-spinner {
+      margin: 14px 20px 14px 29px;
+    }
+    .resume-back {
+      img {
+        cursor: pointer;
+        /* margin-right: 23px; */
+        padding: 15px 28px 15px 29px;
+      }
+    }
+
+    .title {
+      // font-family: "WorkSans-Regular";
+      color: css.$theme_text;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      //  margin-left: 16px;
+    }
+  }
+
+  .noresume {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    img {
+      pointer-events: none;
+    }
+
+    .no-title {
+      color: css.$theme_text;
+
+      font-family: "AvenirNextLTPro-Regular";
+
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 20px;
+      white-space: nowrap;
+    }
+
+    img {
+      max-width: 165px;
+      width: 100%;
+    }
+  }
+}
+
+.image-resume {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 44px);
+
+  img {
+    // max-width: 450px;
+    max-width: 94%;
+    max-height: 94%;
+    border: 1px solid #DFDFDF;
+  }
+}

@@ -1,0 +1,43 @@
+.share-div {
+  // background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  // backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  flex-direction: row;
+  gap: 50px;
+
+  .disclaimer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .share-icon-div {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      pointer-events: none;
+    }
+  }
+
+  .share-text{
+    font-family: "AvenirNextLTPro-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+}

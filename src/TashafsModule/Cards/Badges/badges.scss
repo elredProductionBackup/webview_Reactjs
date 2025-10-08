@@ -1,0 +1,46 @@
+@use '/src/App.scss' as css;
+
+.badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .badge-border-white {
+    border: 1px solid #909090;
+  }
+
+  .badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .bastch-Shimmer {
+      margin-top: 12px;
+    }
+    img {
+      width: 31px;
+      height: 31px;
+      pointer-events: none;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+  .total-badge {
+    color: #fff;
+    // font-family: Raleway-Regular;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+}
+.batchedBg {
+  background: rgba(255, 255, 255, 0.4);
+  border: none !important;
+}

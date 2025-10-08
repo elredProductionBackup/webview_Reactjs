@@ -1,0 +1,47 @@
+@use '/src/App.scss' as css;
+
+.feedback_form {
+  background-color: white !important;
+  padding: 0;
+  height: 400px !important;
+  border-radius: 16px 16px 0 0 !important;
+  max-width: 375px !important;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px !important;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedback_btn_container_span {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  .feedback_btn {
+    pointer-events: none;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.feedback_btn_signup {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  padding: 0 !important;
+  margin: 7px 23px 7px 29px;
+}
+
+.feedback_btn_spinner {
+  margin-top: 3px;
+  height: 19px !important;
+  width: 19px !important;
+  border-width: 2px !important;
+  cursor: default;
+}
+
+.feedback_spinner_padding {
+  margin: 15px 23px 15px 29px;
+}

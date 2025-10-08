@@ -1,0 +1,55 @@
+@use '/src/App.scss' as css;
+
+.chat_main_cont {
+  margin-bottom: 10px;
+  .profile_icon {
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    margin-right: 10px;
+    // border: 1px solid #ff0000;
+  }
+  .chat_text_cont {
+    // border-radius: 0px, 18px, 18px, 18px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #876969;
+    width: 75%;
+    padding: 12px;
+    .chat_text {
+      font-size: 14px;
+      font-weight: 300;
+      //   line-height: 18px;
+      letter-spacing: -0.019em;
+      font-family: "AvenirPro-regular";
+
+      text-align: left;
+    }
+  }
+}
+
+.chat_incoming_icon {
+  justify-content: end;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 0px !important;
+
+  .chat_text_cont {
+    background: #334965 !important;
+  }
+}
+
+.chat_tick {
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+}
+
+.time_text {
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-align: left;
+}

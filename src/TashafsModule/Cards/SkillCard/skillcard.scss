@@ -1,0 +1,96 @@
+@use '/src/App.scss' as css;
+
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../../../assets/fonts/fonts/Nunito-Light.ttf") format("opentype");
+  /* You may include additional font properties if needed */
+}
+
+.skillcard {
+  margin-top: 11px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid css.$theme_border;
+  border-radius: 14px;
+
+  .heading {
+    // font-family: "Nunito-Light";
+
+    max-height: 110px;
+    // background-color: rgb(109, 109, 109);
+    // background: linear-gradient(90deg, #e72d38 4.18%, #000000 190.3%);
+    background-size: cover;
+    border-radius: 13px 13px 0 0;
+    // max-width: 335px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+  }
+  .heading-shimmer {
+    border-radius: 14px 14px 0 0;
+    max-height: 110px;
+    width: 334px;
+    top: -4px;
+    margin-bottom: -4px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .heading-shimmer {
+      border-radius: 14px 14px 0 0;
+      max-height: 110px;
+      width: 100%;
+    }
+  }
+
+  .description {
+    min-height: 120px;
+    background-color: #1C1C1E;
+    // box-shadow: 0px 4px 10px 0px #0000001a;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: css.$theme_text;
+    border-radius: 0 0 14px 14px;
+    padding: 15px 20px;
+    line-height: 36px;
+    // max-width: 335px;
+    word-wrap: break-word;
+
+    .no-answer-added {
+      color: css.$theme_text;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background: red; */
+      height: 10vh;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .text-description {
+    color: css.$theme_text;
+    overflow: hidden;
+    display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 335px;
+    // word-break: break-all;
+    white-space: break-spaces;
+    line-height: 30px;
+    word-wrap: break-word;
+    a {
+      font-style: italic;
+    }
+
+    span {
+      color: black;
+    }
+  }
+}
+
+.skeleton-shift-top {
+  margin-top: 6px;
+}

@@ -1,0 +1,232 @@
+.user-details {
+  margin-left: 10px;
+  .profile-img {
+    // margin-top: 71px;
+    margin-top: 100px;
+    display: inline-flex;
+    background-color: #909090;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+
+    .profile-spinner {
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+
+    img {
+      margin: auto;
+      border-radius: 50%;
+      height: 62px;
+      width: 62px;
+      object-fit: cover;
+      pointer-events: none;
+      border: 2px solid #909090;
+    }
+
+    .skeleton-img {
+      width: 60px;
+      height: 60px;
+      margin-top: 50px;
+    }
+  }
+  .name {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 10px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // width: 265px;
+    // text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+
+    .profileUserName {
+      // text-transform: lowercase;
+      // &::first-letter {
+      //   text-transform: capitalize !important;
+      // }
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 285px;
+      text-overflow: ellipsis;
+    }
+    .networkUserName {
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 450px;
+      text-overflow: ellipsis;
+    }
+
+    .profileUserName-tooltip-container {
+      position: absolute;
+      top: 36px;
+      left: 0;
+      max-width: 335px;
+
+      @media only screen and (max-width: 450px) {
+        max-width: calc(100vw - 40px);
+      }
+
+      .profileUserName-tooltip {
+        max-width: 100%;
+        background-color: #404040;
+        border: 1px solid #909090;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.4px;
+        padding: 5px 10px 5px 10px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .profileUserName-tooltip::before {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: -4.8px;
+        left: 18px;
+        transform: rotate(-45deg);
+        border-top: 1px solid #909090;
+        border-right: 1px solid #909090;
+        background-color: #404040;
+        clip-path: polygon(100% 0, 100% 100%, 99% 100%, 0 1%, 0 0);
+        content: "";
+      }
+    }
+  }
+
+  .designation {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: baseline;
+
+    .designation-name {
+      font-size: 18px;
+      font-weight: 500;
+      //  margin-left: 10px;
+    }
+    .designation-image {
+      margin-right: 10px;
+      pointer-events: none;
+    }
+    .designation-loader {
+      margin-right: 10px;
+    }
+  }
+
+  .locate {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    .location-name {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      max-width: 450px; /* Maximum width of the text container */
+      white-space: nowrap; /* Prevents the text from wrapping */
+      overflow: hidden; /* Hides any overflow that goes beyond the set max-width */
+      text-overflow: ellipsis; /* Adds an ellipsis to any truncated text */
+      display: block; /* Optional based on layout, ensures it behaves like a block */
+      cursor: pointer;
+      // margin-left: 10px;
+    }
+    .location-img-profile {
+      margin-right: 10px;
+      cursor: pointer;
+
+      img {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.btick {
+  cursor: pointer;
+  // margin-left: 5px;
+
+  .blue-verify-tick {
+    height: 20px !important;
+    width: 20px !important;
+    margin-top: -2px;
+  }
+
+  img {
+    pointer-events: none;
+    margin-top: -3px;
+  }
+}
+
+.userdetails-sharing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  .share-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2196078431);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-right: 5px;
+    cursor: pointer;
+
+    img {
+      width: 12px;
+      height: auto;
+    }
+  }
+  .title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+}
+
+.network_profile_name {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+
+  .networkData_name {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 450px;
+    text-overflow: ellipsis;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #9e9e9e;
+  }
+}
+
+@media (max-width: 365px) {
+  .designation-name {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 280px;
+    text-overflow: ellipsis;
+  }
+}

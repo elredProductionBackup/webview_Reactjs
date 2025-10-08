@@ -1,0 +1,578 @@
+@use '/src/App.scss' as css;
+
+.container-user-feedback-popup {
+    .user-feedback-container {
+        z-index: 100000;
+        position: fixed;
+        width: 377px;
+        margin-left: -1px;
+        height: 100vh;
+        top: 0;
+        background-color: css.$theme_bg;
+        padding: 0 20px 88px 20px;
+        overflow: auto;
+
+        .feedback-header-with-cross {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            height: 44px;
+            width: 337px;
+            background-color: css.$theme_bg;
+            z-index: 100010;
+
+            .feedback-cross-button-loader {
+                height: 16px;
+                width: 16px;
+                border-width: 2px !important;
+                margin-right: 20px;
+            }
+
+            img {
+                cursor: pointer;
+                margin: 15px 20px 15px 9px;
+            }
+
+            .feedback-header-title-text {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;  
+                padding-top: 2px; 
+                color: css.$theme_text;       
+            }
+        }
+
+        .user-feedback-emojis-top-container {
+            position: relative;
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: flex-start;
+            height: 77px;
+
+            .feedback-emoji-container-span {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 62px;
+
+                .feedback-emoji-cursor-pointer {
+                    cursor: pointer;
+                }
+
+                .feedback-emoji-img-container {
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    margin: 0 6px;
+
+                    .selected-feedback-emoji-check {
+                        pointer-events: none;
+                        height: 16px;
+                        width: 16px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .selected-feedback-emoji-check-loader {
+                        height: 16px;
+                        width: 16px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+    
+                    .feedback-emoji-image {
+                        height: 26px;
+                        width: 26px;
+                        pointer-events: none;
+                    }
+
+                    .feedback-emoji-image-shimmer {
+                        height: 22px;
+                        width: 22px;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .feedback-container-emoji-bg {
+                    background-color: css.$theme_deletePopup;
+                }
+
+                .selected-feedback-emoji-bg {
+                    background: linear-gradient(90deg, rgba(231, 45, 56, 0.35) -0.29%, rgba(255, 63, 48, 0.13) 99.71%);
+                }
+    
+                .feedback-emoji-bottom-text {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 16.8px;
+                    text-align: center;
+                    color: #E72D38;
+                    margin-top: 8px;
+                    white-space: nowrap;
+                }
+            }
+
+            .no-feedback-emoji-selected-text {
+                position: absolute;
+                bottom: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                text-align: center;
+                color: #E72D38;
+            }
+        }
+
+        .user-feedback-header-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 37px;
+            text-align: center;
+            color: css.$theme_text;
+            margin-top: 84px;
+        }
+
+        .user-feedback-sub-header-text {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: center;
+            color: css.$theme_light_text_grey;
+            padding: 0 8px;
+        }
+
+        .user-feedback-sub-header-text-mt {
+            margin-top: 12px;
+        }
+
+        .user-feedback-form-label {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            text-align: left;
+            color: css.$theme_text;
+            margin-top: 56px;
+        }
+
+        .user-feedback-form-input-container { 
+            margin-top: 12px;
+            border-radius: 20px;
+            height: 220px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid css.$theme_light_grey;
+            background-color: css.$theme_light_grey;
+
+            .user-feedback-form-input {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: -0.019em;
+                border: none;
+                outline: none;
+                color: css.$theme_text;
+                height: 198px;
+                width: calc(100% - 22px);
+                resize: none;
+                padding: 0 10px 0 0;
+                vertical-align: bottom;
+                background-color: css.$theme_light_grey;
+                
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+            
+                -ms-overflow-style: auto;  /* IE and Edge */
+                scrollbar-width: auto;  /* Firefox */
+            
+                &::-webkit-scrollbar-track-piece {
+                    background: transparent;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+            
+                &::-webkit-scrollbar-thumb {
+                    background: #D9D9D9;
+                    border-radius: 10px;
+                }
+            }
+    
+            .user-feedback-form-input::placeholder {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: -0.019em;
+                color: #8E8E93;
+            }
+        }
+
+        .user-feedback-error-message-filler {
+            height: 24px;
+        }
+
+        .user-feedback-validation-text {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.019em;
+            text-align: left;
+            color: #929292;
+            margin-top: 6px;
+        }
+
+        .user-feedback-submit-button-container {
+            position: fixed;
+            bottom: 0;
+            width: 337px;
+            padding: 10px 0 20px 0;
+            background-color: css.$theme_bg;
+
+            .user-feedback-submit-button {
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+                color: #fff;
+                border-radius: 42px;
+                padding-top: 40px;
+                padding: 12px 0 12px 0;
+    
+                .user-feedback-submit-spinner {
+                    height: 20px;
+                    width: 20px;
+                    border-width: 2px;
+                }
+            }
+    
+            .user-feedback-submit-button-enabled {
+                background-color: #E72D38;
+                cursor: pointer;
+            }
+    
+            .user-feedback-submit-disabled {
+                opacity: 0.5;
+                background-color: #E72D38;
+                cursor: default;
+            }
+        }
+    }
+    
+    .user-feedback-container-show {
+        display: block;
+    }
+    
+    .user-feedback-container-hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container-user-feedback-popup {
+      .user-feedback-container {
+        z-index: 100000;
+        position: fixed;
+        width: 100%;
+        margin-left: 0;
+        height: 100vh;
+        top: 0;
+        background-color: css.$theme_bg;
+        padding: 0 20px 88px 20px;
+        overflow: auto;
+
+        .feedback-header-with-cross {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            height: 44px;
+            width: calc(100% - 40px);
+            background-color: css.$theme_bg;
+            z-index: 100010;
+
+            .feedback-cross-button-loader {
+                height: 16px;
+                width: 16px;
+                border-width: 2px !important;
+                margin-right: 20px;
+            }
+
+            img {
+                cursor: pointer;
+                margin: 15px 20px 15px 9px;
+            }
+
+            .feedback-header-title-text {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;  
+                padding-top: 2px; 
+                color: css.$theme_text;       
+            }
+        }
+
+        .user-feedback-emojis-top-container {
+            position: relative;
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: flex-start;
+            height: 77px;
+
+            .feedback-emoji-container-span {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 62px;
+                
+                .feedback-emoji-cursor-pointer {
+                    cursor: pointer;
+                }
+                
+                .feedback-emoji-img-container {
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    margin: 0 6px;
+
+                    .selected-feedback-emoji-check {
+                        pointer-events: none;
+                        height: 16px;
+                        width: 16px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .selected-feedback-emoji-check-loader {
+                        height: 16px;
+                        width: 16px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+    
+                    .feedback-emoji-image {
+                        height: 26px;
+                        width: 26px;
+                        pointer-events: none;
+                    }
+
+                    .feedback-emoji-image-shimmer {
+                        height: 22px;
+                        width: 22px;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .feedback-container-emoji-bg {
+                    background-color: css.$theme_deletePopup;
+                }
+
+                .selected-feedback-emoji-bg {
+                    background: linear-gradient(90deg, rgba(231, 45, 56, 0.35) -0.29%, rgba(255, 63, 48, 0.13) 99.71%);
+                }
+    
+                .feedback-emoji-bottom-text {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 16.8px;
+                    text-align: center;
+                    color: #E72D38;
+                    margin-top: 8px;
+                    white-space: nowrap;
+                }
+            }
+
+            .no-feedback-emoji-selected-text {
+                position: absolute;
+                bottom: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                text-align: center;
+                color: #E72D38;
+            }
+        }
+
+        .user-feedback-header-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 37px;
+            text-align: center;
+            color: css.$theme_text;
+            margin-top: 84px;
+        }
+
+        .user-feedback-sub-header-text {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: center;
+            color: css.$theme_light_text_grey;
+            padding: 0 8px;
+        }
+
+        .user-feedback-sub-header-text-mt {
+            margin-top: 12px;
+        }
+
+        .user-feedback-form-label {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            text-align: left;
+            color: css.$theme_text;
+            margin-top: 56px;
+        }
+
+        .user-feedback-form-input-container {
+            margin-top: 12px;
+            border-radius: 20px;
+            height: 220px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid css.$theme_light_grey;
+            background-color: css.$theme_light_grey;
+
+            .user-feedback-form-input {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: -0.019em;
+                border: none;
+                outline: none;
+                color: css.$theme_text;
+                height: 198px;
+                width: calc(100% - 22px);
+                resize: none;
+                padding: 0 10px 0 0;
+                vertical-align: bottom;
+                background-color: css.$theme_light_grey;
+    
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+            
+                -ms-overflow-style: auto;  /* IE and Edge */
+                scrollbar-width: auto;  /* Firefox */
+            
+                &::-webkit-scrollbar-track-piece {
+                    background: transparent;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+            
+                &::-webkit-scrollbar-thumb {
+                    background: #D9D9D9;
+                    border-radius: 10px;
+                }
+            }
+    
+            .user-feedback-form-input::placeholder {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: -0.019em;
+                color: #8E8E93;
+            }
+        }
+
+        .user-feedback-error-message-filler {
+            height: 24px;
+        }
+
+        .user-feedback-validation-text {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.019em;
+            text-align: left;
+            color: #929292;
+            margin-top: 6px;
+        }
+
+        .user-feedback-submit-button-container {
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 40px);
+            padding: 10px 0 20px 0;
+            background-color: css.$theme_bg;
+
+            .user-feedback-submit-button {
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+                color: #fff;
+                border-radius: 42px;
+                padding-top: 40px;
+                padding: 12px 0 12px 0;
+    
+                .user-feedback-submit-spinner {
+                    height: 20px;
+                    width: 20px;
+                    border-width: 2px;
+                }
+            }
+    
+            .user-feedback-submit-button-enabled {
+                background-color: #E72D38;
+                cursor: pointer;
+            }
+    
+            .user-feedback-submit-disabled {
+                opacity: 0.5;
+                background-color: #E72D38;
+                cursor: default;
+            }
+        }
+      }
+    }
+
+    .user-feedback-container-show {
+        display: block;
+      }
+    
+      .user-feedback-container-hide {
+        display: none;
+      }
+}
+
+#style_toast_container__DT-ei {
+    .style_toast-message__-UN8x {
+        width: 75% !important;
+        text-align: center !important;
+        z-index: 200000 !important;
+
+        .style_toast-content__jaj36 {
+        font-size: 12px !important;
+        background-color: white !important;
+        padding: 10px 20px !important;
+        border-radius:50px ;
+        }
+    }
+}

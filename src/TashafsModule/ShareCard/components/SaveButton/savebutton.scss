@@ -1,0 +1,132 @@
+@use '/src/App.scss' as css;
+
+.save_button {
+  position: sticky;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0px;
+  /* padding: 10px; */
+  background: css.$theme_bg;
+  /* width: 100%; */
+  padding: 0 16px 20px 16px;
+  position: fixed;
+  bottom: 0;
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  button {
+    // width: 142px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+    margin-top: 20px;
+    border: none !important;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    background-color: css.$theme_text !important;
+    color: css.$theme_red !important;
+    // &:active {
+    //     background-color: white !important;
+    //     color: #E72D3880 !important;
+    // }
+    &:hover {
+      background-color: css.$theme_text !important;
+      color: css.$theme_red !important;
+    }
+  }
+
+  .card-view-profile-btn {
+    // width: 142px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+    margin-top: 20px;
+    border: none !important;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    background-color: css.$theme_red !important;
+    color: css.$theme_text !important;
+
+    &:hover {
+      background-color: css.$theme_red !important;
+      color: css.$theme_text !important;
+    }
+  }
+}
+
+.save_button_mini{
+  // text-align: center;
+  // top: calc(82vh + 39px);
+  // bottom: 0px;
+    background: css.$theme_bg;
+    width: 100%;
+    // position: fixed;
+    text-align: center;
+    // padding: 0 20px;
+    padding: 0 16px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+  button {
+    // width: 142px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+    margin: 20px 0;
+    // border: 1px solid css.$theme_red !important;
+    border: none !important;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    // background-color: css.$theme_red !important;
+    background-color: #fff !important;
+    // color: css.$theme_text !important;
+    color: css.$theme_red  !important;
+
+    // &:active {
+    //     background-color: white !important;
+    //     color: #E72D3880 !important;
+    // }
+    &:hover {
+      // background-color: css.$theme_red !important;
+      // color: css.$theme_text !important;
+      background-color: #fff !important;
+      color: css.$theme_red !important;
+    }
+  }
+
+  .card-view-profile-btn {
+    // width: 142px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+    margin: 20px 0;
+    border: none !important;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    background-color: css.$theme_red  !important;
+    color: #fff !important;
+
+    &:hover {
+      background-color: css.$theme_red !important;
+      color: #fff !important;
+    }
+  }
+}
+
+
+@media (max-width:450px){
+  .save_button{
+    max-width: 450px !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,192 @@
+@use '/src/App.scss' as css;
+
+.send-msg-right {
+  margin-right: 20px;
+}
+
+.send_chat_msg {
+  max-width: 280px;
+  background-color: #147bff;
+  // margin-top: 10px;
+  // margin-bottom: 10px;
+  // margin: 10px 20px;
+  // margin: 0px 0px 0px 10px;
+  padding: 8px 14px;
+  border-radius: 0 20px 20px 20px;
+  padding-bottom: 5px;
+  width: fit-content;
+min-width: 100px;
+  
+
+  .msg {
+    .chat_username {
+      font-size: 14px;
+      font-weight: 500;
+          line-height: 16.8px;
+      letter-spacing: 0.3px;
+     // margin-bottom: 5px;
+      // text-transform: capitalize;
+     
+    }
+    .message {
+      padding-top: 2px;
+      font-family: "AvenirNextLTPro-Regular";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: -0.342px; 
+      word-break: break-word;
+      // margin-bottom:0px !important;
+      // white-space: pre-wrap;       /* Since CSS 2.1 */
+      // white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      // white-space: -pre-wrap;      /* Opera 4-6 */
+      // white-space: -o-pre-wrap;    /* Opera 7 */
+      // word-wrap: break-word; 
+      a{
+        color: #fff;
+        font-style: italic;
+      }
+    }
+  }
+
+  .deleted_div {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 6px;
+    }
+    .deleted_msg {
+      font-family: "AvenirNextLTPro-Regular";
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      font-style: italic;
+    }
+  }
+  .date_status {
+    text-align: right;
+    .date {
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+      letter-spacing: -0.1px;
+      font-family: "AvenirPro-regular";
+    }
+    .tick {
+      margin-left: 5px;
+    }
+  }
+}
+
+.delete-div {
+  position: relative;
+  z-index: 3;
+  // right: 20px;
+  text-align: right;
+  margin-top: 10px;
+  // margin-right: 10px;
+
+  .button_div_delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn_deleting {
+      // color: #000;
+      // background-color: rgb(255, 255, 255);
+      background-color: css.$theme_deletePopup;
+      color: css.$theme_text;
+      width: 85px;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      // box-shadow: 0px 0px 3px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        margin-left: 5px;
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+.deleteOverlay {
+  position: fixed !important ;
+  z-index: 5;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinner_delete {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .txt {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+
+    .deleting_text {
+      // font-family: "WorkSans-Regular" !important;
+    }
+  }
+}
+
+.spinner-border-sm {
+  --bs-spinner-border-width: 0.1em !important;
+}
+
+.send_chat_active {
+  position: relative;
+  z-index: 3;
+  // right: 20px;
+}
+
+@media (min-width: 451px) {
+  .deleteOverlay {
+    max-width: 375px;
+  }
+}
+
+.chat_name {
+  color: white;
+  background: #9685fd;
+  width: 34px;
+  padding-top: 2px;
+  height: 34px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-right: 8px
+}
+
+.msg-delete-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+
+.cursorTrue{
+  cursor: pointer;
+}

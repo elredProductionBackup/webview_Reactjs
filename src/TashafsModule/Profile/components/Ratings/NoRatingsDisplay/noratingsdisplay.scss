@@ -1,0 +1,36 @@
+@use '/src/App.scss' as css;
+.no-ratings {
+  margin-top: 50%;
+  .shimmer-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+
+    .liner {
+      margin-left: 20px;
+      text-align: left;
+    }
+  }
+  .text {
+    margin-top: 25px;
+    color: #e72d38;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  .description {
+    font-family: "AvenirNextLTPro-Regular";
+    // color: #6d6d6d;
+    color:css.$theme_light_text;
+    padding: 10px 40px;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+}

@@ -1,0 +1,31 @@
+@use '/src/App.scss' as css;
+
+.chat_cont {
+  height: 100vh;
+  background-image: url("../../../assets/images/events/bg_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  .body_cont {
+    position: relative;
+    padding-inline: 10px;
+
+    .scroll_div {
+      height: calc(100vh - 58px);
+      overflow-x: auto;
+    }
+
+    .last_chat {
+      margin-bottom: 80px;
+    }
+
+    .time_div {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.019em;
+      text-align: center;
+    }
+  }
+}

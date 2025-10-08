@@ -1,0 +1,279 @@
+@use '/src/App.scss' as css;
+
+.comments-card-wrapper {
+  padding: 8px 0 10px 0;
+  flex-direction: row;
+  overflow-wrap: anywhere;
+
+  .img-cont {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    // flex-basis: 15%;
+
+    img {
+      background-position: center;
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      pointer-events: none;
+      border: 1.5px solid #A9A9A9;
+      background: linear-gradient(90deg, #f0f0f0 25%, #f0f0f0 50%, #f0f0f0 75%);
+      animation: shimmerAnimation 1.5s infinite linear;
+    }
+  }
+
+  .text-wrapper {
+    padding-left: 8px;
+    // flex-basis: 80%;
+    overflow: hidden;
+  }
+
+  .username {
+    color: css.$theme_text;
+    font-weight: 500 !important;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 185px;
+  }
+
+  .comment-text {
+    color: #2d2d2d;
+    font-family: "AvenirPro-regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+
+  .comment-text-in {
+    color: css.$theme_text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    -webkit-line-clamp: 18;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-family: "AvenirPro-regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    align-self: end;
+    white-space: break-spaces;
+  }
+  .comment-text-in-comment {
+    color: css.$theme_text;
+    max-width: 100%;
+    font-family: "AvenirPro-regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    align-self: end;
+    white-space: break-spaces;
+  }
+  .comment-text-profile {
+    color: #2d2d2d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-family: "AvenirPro-regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    align-self: end;
+    white-space: break-spaces;
+  }
+
+  .readMoreCommentText {
+    color: #147BFF;
+    font-family: "AvenirPro-regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+  }
+
+  .username-wrapper {
+    max-width: 200px;
+    /* Set the width of the container */
+    overflow: hidden;
+    /* Hide any overflowing content */
+  }
+}
+
+
+.NoDPURL {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #fff;
+}
+
+.bg-image-no {
+  background-color: #f2f2f2;
+}
+
+.reply_date_cont {
+  padding-left: 60px;
+}
+
+.text-date {
+  font-family: "AvenirPro-regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: css.$comment_likes;
+}
+
+.comment-line {
+  width: 40px;
+  height: 1px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.view-replies-container {
+  padding-left: 50px;
+}
+
+.view-more-replies {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  color: #00000099 !important;
+}
+
+.load-more-replies {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #00000099 !important;
+}
+
+.text_view_more {
+  cursor: pointer !important;
+  font-family: "AvenirPro-regular" !important;
+  color: css.$comment_likes;
+
+}
+
+@media (max-width: 330px) {
+  .comment-text {
+    height: auto;
+    /* Allowing the height to adjust based on content */
+  }
+}
+
+.line_horizontal {
+  width: 40px;
+  margin-left: 50px;
+  margin-right: 10px;
+  background-color: css.$theme_grey;
+
+}
+
+@media (max-width: 300px) {
+  .username {
+    max-width: 120px !important;
+  }
+
+  .comment-text {
+    /* Allowing the container to take up full width */
+    height: auto;
+    /* Allowing the height to adjust based on content */
+    /* Other mobile styles */
+  }
+}
+
+.button_profile {
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #f0f0f0 50%, #f0f0f0 75%);
+  animation: shimmerAnimation 1.5s infinite linear;
+}
+
+.button_default_profile {
+  align-items: center;
+  background-position: center;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  background-color: #f2f2f2;
+  justify-content: center;
+  display: flex;
+
+  img {
+    background-position: center;
+    height: auto !important;
+    width: 30px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+
+.btick_comments {
+  cursor: pointer;
+  align-items: center;
+
+  img {
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+  }
+}
+
+.btick {
+  img {
+    margin-left: 5px;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+  }
+}
+
+.comments-skeleton-border {
+ padding-left: 8px !important;
+}
+.comments-skeleton-border-replies {
+  padding-left: 8px !important;
+}
+
+.addpadding-shimmer{
+   margin-top: -4px;
+}
+
+.username_comment{
+  color: css.$theme_text;
+  text-overflow: ellipsis;
+  max-width: 203px;
+  white-space: nowrap;
+  overflow: hidden;
+}
