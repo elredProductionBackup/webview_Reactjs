@@ -37,7 +37,7 @@ function App() {
     setisOffline(true)
   });
 
-  console.log('refactoring env..')
+  console.log('refactoring env...')
 
   window.addEventListener("online", (event) => {
 
