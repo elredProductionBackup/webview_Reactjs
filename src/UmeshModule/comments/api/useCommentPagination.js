@@ -21,7 +21,8 @@ export const useCommentPagination = (url, replyUrl, fetchCount) => {
       setHasMore(true)
     }
     axios
-      .post(`${url}?userCode=${userCode}&startComment=${start}&offset=${fetchCount}`, body)
+      // .post(`${url}?userCode=${userCode}&startComment=${start}&offset=${fetchCount}`, body)
+      .post(`${url}?startComment=${start}&offset=${fetchCount}`, body)
       .then((resp) => {
         let d = [...data];
         if (start === 1) {
