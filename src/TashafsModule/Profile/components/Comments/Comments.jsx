@@ -22,7 +22,7 @@ const Comments = ({ productionUrl, isLive, rgba, setShowVerifiedPopup, baseColor
     getComments,
     replyLoader
   } = useCommentPagination(
-    `${isLive ? productionUrl : ""}/noSessionPreviewComments?`,
+    `${isLive ? productionUrl : ""}/noSessionPreviewComments`,
     `${isLive ? productionUrl : ""}/noSessionPreviewReplies`,10
   );
 
