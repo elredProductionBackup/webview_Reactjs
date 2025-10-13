@@ -26,7 +26,7 @@ function useFetchNeeds(isLive, productionUrl, userCode) {
                 setNeedsCount(res?.data?.totalNeedsCount)
                 setHasMore(res?.data?.result.length < 10 ? false : true)
             }).catch((error) =>{
-                 //console.log(error)
+                 console.log(error)
                 });
     }
 

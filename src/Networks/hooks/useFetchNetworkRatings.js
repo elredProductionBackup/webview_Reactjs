@@ -55,7 +55,7 @@ const useFetchNetworkRatings = (isLive, productionUrl, url, networkCode, type) =
             setsearchLoading({ ethicalsearchNetwork: false, workSearch: false })
             setTempSearchText(searchtext)
         } catch (error) {
-            console.log(error, 'error in ratings')
+            console.log(error)
         }
     }
     const debounceAllCall = _.debounce((p) => {
@@ -97,15 +97,7 @@ const useFetchNetworkRatings = (isLive, productionUrl, url, networkCode, type) =
 
     }, 300), [])
 
-    // const closePopup = () => {
-    //     // console.log("called>>>")
-    //     // setIsSearch(false)
-    //     // setLoading({ ethicalNetwork: false, work: false })
-    //     // setsearchLoading({ ethicalsearchNetwork: false, workSearch: false })
-    //     // setData([])
-    // }
-
-
+  
     return {
         data, workcount, hasMore, loader, fetchNextPage, ethicalcount, debounceAllCall, setLoading, isSearch,
         setIsSearch, tempSearchText, getNetworkRatings, searchloader, deBoundeSearch, page, setsearchLoading, staticCount

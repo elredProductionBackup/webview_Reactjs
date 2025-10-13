@@ -44,7 +44,6 @@ const useFetchNetworksList = (isLive, productionUrl, userCode) => {
     const removeDuplicates = (prevDataArr, newDataArr) => {
         let newData = [...prevDataArr, ...newDataArr]
 
-        console.log("newData", newData)
 
         for (let i = 0; i < newData.length - 1; i++) {
             if (newData[i]?.networkId === newData[i + 1]?.networkId) {

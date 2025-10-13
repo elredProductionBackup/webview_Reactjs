@@ -4,7 +4,6 @@ import { calcTextLength } from "../../UserDetails/ImportsUserDetail";
 const DesignationListProfileForRatings = ({ designation, maxWidth }) => {
 
   const designations = designation?.map((item) => transformArrayRatings(item?.value));
-  console.log(designations, '===')
   const displayDesignations = () => {
     if (designations?.length === 0) {
       return "";
