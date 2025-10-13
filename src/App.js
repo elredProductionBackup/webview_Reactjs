@@ -33,13 +33,11 @@ function App() {
   const BROWSER_TYPE = getBrowserType();
 
   window.addEventListener("offline", (event) => {
-
     setisOffline(true)
   });
 
 
   window.addEventListener("online", (event) => {
-
     setisOffline(false)
   });
 
