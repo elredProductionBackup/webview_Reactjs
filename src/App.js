@@ -29,6 +29,7 @@ function App() {
     country_code: '+91',
     maxDigits: 10,
   });
+  
   const [isOffline, setisOffline] = useState(false)
   const BROWSER_TYPE = getBrowserType();
 
