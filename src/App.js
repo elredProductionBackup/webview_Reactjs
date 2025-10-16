@@ -38,7 +38,6 @@ function App() {
     setisOffline(true)
   });
 
-
   window.addEventListener("online", (event) => {
     setisOffline(false)
   });
