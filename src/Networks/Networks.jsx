@@ -50,7 +50,8 @@ const Networks = ({ textColor = "red", isLive, productionUrl }) => {
             {
                 isLoading || isBgLoading ? <NetworkShimmer /> : <div className="networks"
                 style={{
-                            backgroundImage: data?.profileDesignInfo?.tint ? `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${data?.profileDesignInfo?.profileBannerImageURL})` :
+                    // Added tint 80% for V10
+                            backgroundImage: data?.profileDesignInfo?.tint ? `linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(${data?.profileDesignInfo?.profileBannerImageURL})` :
                                 `url(${data?.profileDesignInfo?.profileBannerImageURL})`,
                             backgroundSize: data?.profileDesignInfo?.designType === "ptypeC" ? "contain" : "cover",
                             backgroundPosition: data?.profileDesignInfo?.designType === "ptypeC" ? "100% 0%" : '50% 0%',
@@ -63,7 +64,8 @@ const Networks = ({ textColor = "red", isLive, productionUrl }) => {
                         <BrandingHeader link={isIOS || isMacOs ? data?.downloadURL?.appstoreURL : data?.downloadURL?.playstoreURL} />
                         <div className="profile d-flex align-items-center justify-content-between" style={{ background: `#ffffff33`, backdropFilter: "blur(34px)" }}>
                             <TopHeader color={`#${textColor}`} title={`${Constants.NETWORK_NAME_SINGULAR} Profile`} />
-                            <Feedback setOpen={setShowUserFeedbackPopup} />
+                            {/* Removed Feedback Icon for V10 */}
+                            {/* <Feedback setOpen={setShowUserFeedbackPopup} /> */}
                         </div>
                     </div>}
                     <div className="profile-body network_body bg-filter-profile-with-data network-profile-body">
@@ -83,7 +85,7 @@ const Networks = ({ textColor = "red", isLive, productionUrl }) => {
                         <Share rgba={rgba} url={data?.shareProfileURL} show={show} isNetwork={true} 
                          setOpenModal={setOpenModal} disclaimerData= {data} />
                         <Network_Ratings {...networkRatingsData} />
-                        <NetworkComments isLive={isLive} productionUrl={productionUrl} isNetwork={true} rgba={rgba}/>
+                        {/* <NetworkComments isLive={isLive} productionUrl={productionUrl} isNetwork={true} rgba={rgba}/> */}
                     </div>
                 </div>
             }

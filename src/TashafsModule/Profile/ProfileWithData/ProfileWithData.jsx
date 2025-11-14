@@ -57,7 +57,8 @@ const ProfileWithData = ({ data, rgba, tint, designTypeC, secondaryColor, baseCo
           <div className="parent-profile"
             style={
               {
-                backgroundImage: tint ? `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${data?.result?.[0]?.profileDesignInfo?.profileBannerImageURL})` :
+                // Added tint 80% for V10
+                backgroundImage: tint ? `linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(${data?.result?.[0]?.profileDesignInfo?.profileBannerImageURL})` :
                   `url(${data?.result?.[0]?.profileDesignInfo?.profileBannerImageURL})`,
                 backgroundSize: designTypeC == "ptypeC" ? "contain" : "cover",
                 backgroundPosition: designTypeC == "ptypeC" ? "100% 0%" : '50% 0%',

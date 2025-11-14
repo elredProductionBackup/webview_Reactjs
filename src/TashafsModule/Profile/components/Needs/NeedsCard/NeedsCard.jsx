@@ -32,6 +32,8 @@ const NeedsCard = ({ isLive, productionUrl,userCode }) => {
   const [toaster, setToaster] = useState(true);
   const [resetSession, setResetSession] = useState(false)
   const [allChatWithDate,setAllChatsWithDate]=useState({});
+  // intro need state for V10
+  const [introNeed, setIntroNeed] = useState(false);
   toastConfig({ theme: "dark" });
 
   useEffect(() => {
@@ -47,7 +49,7 @@ const NeedsCard = ({ isLive, productionUrl,userCode }) => {
   }, []);
 
   const { errorMsg, apiFail, sessionExpired, mappingId, setMappingId,conversationCount, setConversationCount, invalidNeed } = useFetchSpecificNeed( isLive, productionUrl, needId,
-    page, setPage, needData, setNeedData, allChats, setAllChats, loading, setLoading, resetSession,setHasMore,setAllChatsWithDate );
+    page, setPage, needData, setNeedData, allChats, setAllChats, loading, setLoading, resetSession,setHasMore,setAllChatsWithDate, setIntroNeed );
 
   const sendMessageProps = { chatMsg, setSendOverlay, isLive, productionUrl, needId, accessToken, toast, setToaster, toaster,allChatWithDate,setAllChatsWithDate,
     allChats, setAllChats, setChatMsg, openEmoji, setopenEmoji, setChatAdded, chatAdded, user, setFormData, formData,
@@ -70,7 +72,7 @@ const NeedsCard = ({ isLive, productionUrl,userCode }) => {
 
   return <>{
     sessionExpired ? <SessionExpired setResetSession={setResetSession} resetSession={resetSession} errorMsg={errorMsg}/> 
-    : (apiFail ? <SessionExpired home={true} errorMsg={errorMsg} invalidNeed={invalidNeed}/> : (loading ? <NeedsCardShimmer /> : <NeedsCardData {...needsCardDataProps}/>))
+    : (apiFail || introNeed ? <SessionExpired home={true} errorMsg={errorMsg} invalidNeed={invalidNeed}/> : (loading ? <NeedsCardShimmer /> : <NeedsCardData {...needsCardDataProps}/>))
   }</>;
 
 };

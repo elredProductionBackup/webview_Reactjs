@@ -105,18 +105,19 @@ const CardDataContainer = ({
                   data={data}
                   setShowVerifiedPopup={setShowVerifiedPopup}
                 />
-                {data?.awards?.length > 0 || wholeData?.userSpecificAwardsCount > 0 ?
+                {/* Removed from Awards and Networks Badges for V10 */}
+                {/* {data?.awards?.length > 0 || wholeData?.userSpecificAwardsCount > 0 ?
                   <Badges
                     data={data?.awards}
                     count={wholeData?.userSpecificAwardsCount}
-                  /> : <div className="badges-height-space"></div>}
-                {wholeData?.userSpecificNetworksCount > 0 ? <div className="network-badges-div-mini-card">
+                  /> : <div className="badges-height-space"></div>} */}
+                {/* {wholeData?.userSpecificNetworksCount > 0 ? <div className="network-badges-div-mini-card">
                   <NetworkIconBadges
                     setOpenNetworkList={setOpenNetworkList}
                     data={wholeData?.result?.[0]?.networks}
                     count={wholeData?.userSpecificNetworksCount}
                   />
-                </div> : null}
+                </div> : null} */}
                 <BottomOptions
                   setOpen={setOpen}
                   setEnable={setEnable}

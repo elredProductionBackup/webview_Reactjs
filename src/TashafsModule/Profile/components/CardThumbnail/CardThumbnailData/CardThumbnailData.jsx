@@ -53,7 +53,8 @@ const CardThumbnailData = ({ cardInfo, tint, handleShow, dpURL, firstname, lastn
                         <div className="location">
                             {newAddress?.length <= 28 ? newAddress : newAddress?.slice(0, 28) + '...'}
                         </div>
-                        {data?.awards?.length !== 0 ? (
+                        {/* Removed from Awards and Networks Badges for V10 */}
+                        {/* {data?.awards?.length !== 0 ? (
                             <div className="mini-badges">
                                 <Badges
                                     data={data?.awards}
@@ -62,8 +63,8 @@ const CardThumbnailData = ({ cardInfo, tint, handleShow, dpURL, firstname, lastn
                                     noBorder={true}
                                 />
                             </div>
-                        ) : <div className="no-mini-badges-icons"></div>}
-                        {data?.networks?.length !== 0 ? (
+                        ) : <div className="no-mini-badges-icons"></div>} */}
+                        {/* {data?.networks?.length !== 0 ? (
                             <div className="mini-badges">
                             <Badges
                                      data={data?.networks}
@@ -72,7 +73,7 @@ const CardThumbnailData = ({ cardInfo, tint, handleShow, dpURL, firstname, lastn
                                      noBorder={true}
                                  />
                              </div>
-                            ) : <div className="no-mini-badges-icons-network"></div>}
+                            ) : <div className="no-mini-badges-icons-network"></div>} */}
                         <CardBottomOptions />
                     </div>
                     {cardInfo?.[0]?.customImageCardDesignInfo?.colorFilter?.length !== 0 ? (
