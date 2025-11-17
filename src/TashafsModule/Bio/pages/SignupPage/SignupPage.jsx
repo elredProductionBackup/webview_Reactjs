@@ -62,9 +62,9 @@ const SignupPage = ({ productionUrl, isLive, userCode }) => {
         <SignupButton sending={sending} getOtp={needId !== "" ? getOtp : getOtpLeads} getOtpProps={getOtpProps} signupInputsProps={signupInputsProps} />
         <AlreadyAccountPopup show={show} handleClose={handleClose} downloadURL={downloadURL} />
       </div>
-      <UserFeedbackPopup showUserFeedbackPopup={showUserFeedbackPopup} setShowUserFeedbackPopup={setShowUserFeedbackPopup}
+      {/* <UserFeedbackPopup showUserFeedbackPopup={showUserFeedbackPopup} setShowUserFeedbackPopup={setShowUserFeedbackPopup}
         productionUrl={productionUrl} isLive={isLive} screen="Signup Form - Webview" headerText="Signup Form"
-      />
+      /> */}
     </div>
   )
 }
