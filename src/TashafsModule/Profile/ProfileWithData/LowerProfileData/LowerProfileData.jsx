@@ -21,12 +21,12 @@ const LowerProfileData = ({ rgba, ratingsWholeData, metWholeData, ratingsData, v
     return (
         <>
             <Ratings {...RatingData} />
-            <Testimonials rgba={rgba} isLive={isLive} productionUrl={productionUrl} baseColor={baseColor} />
-            <HowDifferent rgba={rgba} userCode={userCode} icon={superSkillsIcon} />
-            <MyBio rgba={rgba} userCode={userCode} isLive={isLive} productionUrl={productionUrl} />
+            {/* <Testimonials rgba={rgba} isLive={isLive} productionUrl={productionUrl} baseColor={baseColor} /> */}
+            {/* <HowDifferent rgba={rgba} userCode={userCode} icon={superSkillsIcon} /> */}
+            {/* <MyBio rgba={rgba} userCode={userCode} isLive={isLive} productionUrl={productionUrl} /> */}
             {/* {needsAvailable ? <Needs rgba={rgba} userCode={userCode} needsData={needsData} isLive={isLive} productionUrl={productionUrl} />
             : <NoNeeds rgba={rgba} />} */}
-            <Comments rgba={rgba} productionUrl={productionUrl} isLive={isLive} setShowVerifiedPopup={setShowVerifiedPopup} baseColor={baseColor} />
+            {/* <Comments rgba={rgba} productionUrl={productionUrl} isLive={isLive} setShowVerifiedPopup={setShowVerifiedPopup} baseColor={baseColor} /> */}
         </>
     )
 }

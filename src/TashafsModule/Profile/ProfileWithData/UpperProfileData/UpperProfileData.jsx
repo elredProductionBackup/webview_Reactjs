@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { handleMapClick } from '../../../../globalFunctions'
 import { UserDetails, CardThumbnail, Share, Leads, NoLeads } from './ImportsUpperProfileData'
 import Designations from '../../components/Designations/Designations';
+import InfoData from '../../components/InfoData/InfoData';
 
 const UpperProfileData = ({ data, miniCardData, baseColor, secondaryColor, tint, wholeData, rgba, userCode, 
     leadsData, isLive, productionUrl, getCOuntofLeads, setShowVerifiedPopup, setShowTitlesPopup, noCollabs, collabsData, setShowUserFeedbackPopup,
@@ -42,10 +43,14 @@ const UpperProfileData = ({ data, miniCardData, baseColor, secondaryColor, tint,
             />
             {!noCollabs && <Designations baseColor={rgba} data={collabsData} productionUrl={productionUrl} isLive={isLive} 
                 showDesignationsPopup={showDesignationsPopup} setShowDesignationsPopup={setShowDesignationsPopup} />}
+                <InfoData rgba={rgba}/>
             {/* <Designations baseColor={rgba} /> */}
-            <Share rgba={rgba} url={data?.result?.[0]?.shareProfileURL} show={show} />
+            {/* <Share rgba={rgba} url={data?.result?.[0]?.shareProfileURL} show={show} /> */}
             {getCOuntofLeads > 0 ? <Leads baseColor={`${baseColor}`} rgba={rgba} userCode={userCode} leadsData={leadsData} isLive={isLive} productionUrl={productionUrl} />
-                : <NoLeads rgba={rgba} />}
+                : 
+                // Removed no leads screen for V10
+                <NoLeads rgba={rgba} />
+                }
         </>
     )
 }

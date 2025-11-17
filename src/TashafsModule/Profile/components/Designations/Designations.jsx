@@ -51,7 +51,7 @@ const Designations = ({ baseColor, data, productionUrl, isLive, showDesignations
         <>
             <div className='designations_view' style={{ backgroundColor: `${baseColor}` }}>
                 <div className="designation_title">
-                    I can offer
+                    I am incredible at these skills
                 </div>
                 {chipsLoader ? 
                 <div className='chip_collab_tag_shimmer_container'>

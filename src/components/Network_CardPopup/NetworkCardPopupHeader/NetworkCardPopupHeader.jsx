@@ -12,11 +12,14 @@ const NetworkCardPopupHeader = ({ data, handleClose, isNetworkShareCard, isLive,
             <span className="network-card-title-text network-card-network-name">{data?.name}</span>
             <span className="network-card-title-text">'s {Constants.NETWORK_NAME_SINGULAR} Card</span>
           </div>
-          {isNetworkShareCard ? <Feedback setOpen={setShowUserFeedbackPopup} />
+          {isNetworkShareCard ? 
+          //  <Feedback setOpen={setShowUserFeedbackPopup} />
+          <></>
             : (
               <div >
                 <div className="d-flex" style={{ gap: 14 }}>
-                  <div className="d-flex"><Feedback setOpen={setShowUserFeedbackPopup} /></div>
+                  {/* Removed Feedback Icon for V10 */}
+                  {/* <div className="d-flex"><Feedback setOpen={setShowUserFeedbackPopup} /></div> */}
                   <img
                     src={closeImg}
                     alt=""
