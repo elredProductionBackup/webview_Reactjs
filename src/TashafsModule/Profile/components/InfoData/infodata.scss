@@ -9,5 +9,8 @@
     letter-spacing: .2px;
     text-align: center;
     font-family: "AvenirNextLTPro-Regular";
-    span{font-weight: 700; &.titlecase-span{text-transform: capitalize;}}
+    span{font-weight: 700; 
+        &.titlecase-span{text-transform: capitalize;}
+        &.lowercase-span{text-transform: lowercase;}
+    }
 }

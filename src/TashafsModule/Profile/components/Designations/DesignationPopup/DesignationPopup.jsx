@@ -17,7 +17,7 @@ function DesignationPopup({ open, setOpen, designations, productionUrl, isLive }
             <Offcanvas show={open} onHide={handleClose} placement='bottom' className='designation_popup'>
                 <Offcanvas.Header className='popup_header_offcanvas_wrapper'>
                     <div className='popup_header'>
-                        <div className='keywords_title'>I can offer</div>
+                        <div className='keywords_title'>I am incredible at these skills</div>
                         <div className='d-flex ' style={{ gap: 14 }}>
                             {/* Removed Feedback Icon for V10 */}
                             {/* <div className='d-flex'><Feedback setOpen={setShowUserFeedbackPopup} /></div> */}

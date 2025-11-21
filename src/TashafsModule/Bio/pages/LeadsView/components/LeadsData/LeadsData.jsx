@@ -57,8 +57,8 @@ const [displayData,setDisplayData]=useState(data)
               onClick={() => navigateToRespondingLeads(item?.leadId, navigate, userCode, isLive, productionUrl)}
               style={{
                 backgroundImage: item?.backgroundImages?.length > 0 && isError[id] === false
-                  ? `linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(${item?.backgroundImages[0]})`
-                  : `url(${noImageLeads})`
+                  ? `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${item?.backgroundImages[0]})`
+                  : `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${noImageLeads})`
               }}>
 
               <LeadsviewCardBottom locationLoader={locationLoader} mapIcon={mapIcon} setlocationLoader={setlocationLoader} item={item} />
