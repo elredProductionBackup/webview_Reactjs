@@ -49,7 +49,8 @@
         .square_icons {
           display: flex;
           gap: 12px;
-          margin-top: 46px;
+          // margin-top: 46px;
+          margin-top: calc(46px + 65px);
         }
       }
 

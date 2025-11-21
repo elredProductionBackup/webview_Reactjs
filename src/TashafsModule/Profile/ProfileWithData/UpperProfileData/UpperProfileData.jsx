@@ -43,7 +43,7 @@ const UpperProfileData = ({ data, miniCardData, baseColor, secondaryColor, tint,
             />
             {!noCollabs && <Designations baseColor={rgba} data={collabsData} productionUrl={productionUrl} isLive={isLive} 
                 showDesignationsPopup={showDesignationsPopup} setShowDesignationsPopup={setShowDesignationsPopup} />}
-                <InfoData rgba={rgba}/>
+                <InfoData rgba={rgba} data={data?.result?.[0]?.basicDetails}/>
             {/* <Designations baseColor={rgba} /> */}
             {/* <Share rgba={rgba} url={data?.result?.[0]?.shareProfileURL} show={show} /> */}
             {getCOuntofLeads > 0 ? <Leads baseColor={`${baseColor}`} rgba={rgba} userCode={userCode} leadsData={leadsData} isLive={isLive} productionUrl={productionUrl} />
