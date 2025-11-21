@@ -11,7 +11,7 @@ const NoLeads = ({ rgba }) => {
       {/* <Spinner animation="border" variant="light" size="sm" className={logoLoader ? 'show-img-loader' : 'hide-img-loader'} style={{ margin: "95px 0" }} /> */}
       {/* <img src={noleads} alt="" className={logoLoader ? 'hide-img-loader' : 'no-image'} onLoad={() => setLogoLoader(false)} /> */}
       <div className='title'>No Offerings Available Yet</div>
-      <div className="subtle">An Offering is a Product / Service<br/> which you would display on your Profile</div>
+      {/* <div className="subtle">An Offering is a Product / Service<br/> which you would display on your Profile</div> */}
     </div>
   )
 }
