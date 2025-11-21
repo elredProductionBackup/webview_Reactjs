@@ -8,7 +8,7 @@ const InfoData = ({rgba,data}) => {
 
   return (
     <div className='infodata' style={{ background: `${rgba}` }}>
-        I am <span>{article} <span className='titlecase-span'>{data?.profession}</span></span>.{data?.industry?.industryName && <> My industry is <span className='titlecase-span'>{data?.industry?.industryName}</span></>}. {data?.organizationName && <>My company / business name is <span className='titlecase-span'>{data?.organizationName}</span></>}
+        I am <span>{article} <span className='titlecase-span'>{data?.profession}</span></span>.{data?.industry?.industryName && <> My industry is <span className='titlecase-span'>{data?.industry?.industryName}</span>.</>} {data?.organizationName && <>My company / business name is <span className='titlecase-span'>{data?.organizationName}</span></>}
     </div>
   )
 }
