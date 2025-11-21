@@ -66,8 +66,8 @@ const ParallaxBackgroundContainer = ({ data, currentIndex, setCurrentIndex, chil
         "defaultImage" : "containerrespondingleads "}
         style={!erroState && isLoading ? { backgroundColor: 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 24.98%, rgba(0, 0, 0, 0.80) 66.46%)' } : {
           backgroundImage: erroState || data?.backgroundImages?.length === 0  ? 
-          `linear-gradient(180deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0)), url(${NoLeadImage})`  :
-            `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${data?.backgroundImages[currentIndex]})`,
+          `linear-gradient(180deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.8)), url(${NoLeadImage})`  :
+            `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${data?.backgroundImages[currentIndex]})`,
           animationPlayState: `${isPaused ? "paused" : ""}`
         }}
       >
