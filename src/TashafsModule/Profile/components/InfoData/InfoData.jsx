@@ -29,7 +29,7 @@ const InfoData = ({ rgba, data }) => {
       I am <span className='lowercase-span'>{profession !== 'Promoter' && article} {getProfessionLabel(profession)}</span>.
 
       {data?.industry?.industryName && (
-        <> My industry is <span className='lowercase-span'>{data?.industry?.industryName}</span>.</>
+        <> {profession !== 'Promoter' ?'My' :'Our'} industry is <span className='lowercase-span'>{data?.industry?.industryName}</span>.</>
       )}
 
       {data?.organizationName && (
@@ -38,7 +38,7 @@ const InfoData = ({ rgba, data }) => {
             <> My high school / college name is <span>{data?.organizationName}</span>.</>
           )
           : (
-            <> My company / business name is <span>{data?.organizationName}</span>.</>
+            <> {profession !== 'Promoter' ?'My' :'Our'} company / business name is <span>{data?.organizationName}</span>.</>
           )
       )}
     </div>
