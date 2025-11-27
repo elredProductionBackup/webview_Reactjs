@@ -20,7 +20,7 @@ const SessionExpired = ({setResetSession, resetSession, home, errorMsg, invalidN
     <div className="session_expired">
       <div className="center_box">
         <img src={icon} alt="" />
-        <div className="title">Something’s went wrong...</div>
+        <div className="title">Something went wrong</div>
         <div className="desc">
           {errorMsg ? errorMsg : 'Its not you, its us. Please retry to continue'}
         </div>

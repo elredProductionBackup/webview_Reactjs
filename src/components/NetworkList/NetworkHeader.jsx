@@ -18,7 +18,8 @@ const NetworkHeader = ({ setOpenNetworkList, setShowUserFeedbackPopup, count, lo
                        : <span className='count_list'>{count}</span>}
                 </div>
             </div>
-            <div className='d-flex' style={{paddingRight:20}}><Feedback setOpen={setShowUserFeedbackPopup} /></div>
+            {/* Removed Feedback Icon for V10 */}
+            {/* <div className='d-flex' style={{paddingRight:20}}><Feedback setOpen={setShowUserFeedbackPopup} /></div> */}
         </div>
     )
 }

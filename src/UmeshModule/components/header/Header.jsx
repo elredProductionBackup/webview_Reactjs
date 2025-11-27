@@ -42,7 +42,8 @@ function Header({ title, userCode, disabled = false, children, onClick, showSear
               }} />
             <span className="header-title">{capitalizeNameString(title)}</span>
           </div>
-          {isNetwork && <div><Feedback setOpen={setShowUserFeedbackPopup} /></div>}
+          {/* Removed Feedback Icon for V10 */}
+          {/* {isNetwork && <div><Feedback setOpen={setShowUserFeedbackPopup} /></div>} */}
           {children}
         </div>
         {showSearch ? (

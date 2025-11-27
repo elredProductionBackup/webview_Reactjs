@@ -31,6 +31,7 @@ const NetworkClusterViewProfileImage = ({ isLive, productionUrl }) => {
                                     : <Skeleton height={12} width={200} className="network-profile-pic-header-skeleton" baseColor="#242939" highlightColor="#1e212b" />}
                             </div>
                         </div>
+                        {/* Removed Feedback Icon for V10 */}
                         {/* <div style={{ marginRight: "22px" }}><Feedback setOpen={setShowUserFeedbackPopup} /></div> */}
                     </div>
                     <div className={imgError ? "default-profile-picture-container" : "profile-picture-container"}>

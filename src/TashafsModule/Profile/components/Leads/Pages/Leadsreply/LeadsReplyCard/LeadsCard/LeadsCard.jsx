@@ -41,9 +41,9 @@ function LeadsCard({ data, setShowVerifiedPopup }) {
       <div
         className="card_wrapper"
         style={data?.backgroundImages.length > 0 && errorImage ? {
-          "background": ` linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 50%), url(${data?.backgroundImages?.[0]}),no-repeat`,
+          "background": ` linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 50%), url(${data?.backgroundImages?.[0]}),no-repeat`,
           "backgroundColor":"#1A1D27"
-        } : { "background": `linear-gradient(180deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0)),  url(${noImageLeads})`,  "backgroundColor":"#1A1D27" }}
+        } : { "background": `linear-gradient(180deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, .80)),  url(${noImageLeads})`,  "backgroundColor":"#1A1D27" }}
       >
         <LeadsCardProfile data={data} setShowVerifiedPopup={setShowVerifiedPopup} />
 
