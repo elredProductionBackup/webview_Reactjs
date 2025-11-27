@@ -70,14 +70,14 @@ const ShareCardContainer = ({ userDetail, cardDetail, data, setOpen, setEnable, 
                             <div className="bg-filter-sharecard" >
                                 <UserDetails userDetail={userDetail} firstname={firstname} lastname={lastname} setShowVerifiedPopup={setShowVerifiedPopup} />
                                 <div className="badges-div">
-                                    {userDetail?.awards.length > 0 || data?.userSpecificAwardsCount > 0 ? 
+                                    {/* {userDetail?.awards.length > 0 || data?.userSpecificAwardsCount > 0 ? 
                                         <Badges data={userDetail?.awards} count={data?.userSpecificAwardsCount} />
                                         : <div className="badges-div-height-space"></div>
-                                    }
+                                    } */}
                                 </div>
-                                {data?.userSpecificNetworksCount > 0 ? <div className="network-badges-div">
-                                    <NetworkIconBadges data={userDetail?.networks} count={data?.userSpecificNetworksCount} setOpenNetworkList={setOpenNetworkList} />
-                                </div> : null}
+                                {/* {data?.userSpecificNetworksCount > 0 ? <div className="network-badges-div"> */}
+                                    {/* <NetworkIconBadges data={userDetail?.networks} count={data?.userSpecificNetworksCount} setOpenNetworkList={setOpenNetworkList} /> */}
+                                {/* </div> : null} */}
                             </div>
                             <ShareBottomOptions {...shareBottomOptionsProps} />
                         </div>

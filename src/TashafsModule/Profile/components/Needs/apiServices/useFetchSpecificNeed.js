@@ -17,6 +17,7 @@ const useFetchSpecificNeed = (
   resetSession,
   setHasMore,
   setAllChatsWithDate,
+  setIntroNeed
 ) => {
   const [conversationCount, setConversationCount] = useState(0);
   const [mappingId, setMappingId] = useState(null);
@@ -45,6 +46,12 @@ const useFetchSpecificNeed = (
           setSessionExpired(false);
           setConversationCount(response?.data?.totalConversationCount);
           setNeedData(response?.data?.result?.[0]);
+          // Intro need changes for V10
+          if(response?.data?.result?.[0].needDetails.needType == 'introduction'){
+            setIntroNeed(true);
+            setInvalidNeed(true);
+            setErrorMsg(`This need doesn't exist`)
+          }
           setHasMore(
             response?.data?.result?.[0]?.responseDetails?.conversations.length <
               10

@@ -11,7 +11,8 @@ const RatingsSearchInput = ({ close, closeBtn, count, msg, type, searchHandler, 
           <span className="count">{count}</span> <span className="count-rating-header-text">{msg}</span>
         </div>
         <div className='d-flex'>
-          {isNetwork && <div className='d-flex' style={{ paddingRight: 14 }}><Feedback setOpen={setShowUserFeedbackPopup} /></div>}
+          {/* Removed Feedback Icon for V10 */}
+          {/* {isNetwork && <div className='d-flex' style={{ paddingRight: 14 }}><Feedback setOpen={setShowUserFeedbackPopup} /></div>} */}
           {(showEthical || shoWork) && <div onClick={() => closePopUphandler(close, setSearchText, closePopUp, type, fetchMoreData)} className="ratings-popup-close-button">
             <img src={closeBtn} alt="" className={!closeIconLoader ? 'showing-img-loader' : "hiding-img-loader"} onLoad={() => setCLoseIconLoader(false)} />
             <Spinner animation="border" variant="light" size="sm" className={closeIconLoader ?
