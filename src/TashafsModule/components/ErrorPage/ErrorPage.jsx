@@ -8,6 +8,10 @@ const ErrorPage = () => {
     clearToasts();
   }, []);
 
+  const handleReload = () => {
+    window.location.reload();
+  };
+
   return (
     <div className='errorPage'>
       <div className='ele_div'>
@@ -15,8 +19,10 @@ const ErrorPage = () => {
         <div className='oops'>Oops!</div>
         <div className='error_msg'>Something went wrong,
           please try again</div>
+        <button className="rel-btn" onClick={handleReload}>
+          Reload
+        </button>
       </div>
-
     </div>
   )
 }

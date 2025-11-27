@@ -31,10 +31,11 @@ const SkillsPopup = ({ setOpen, data }) => {
           skills={true}
           capitalise={true}
         />
-        <div className="superskill-title">My Super Power</div>
+        {/* Super Card Section Removed for V10 */}
+        {/* <div className="superskill-title">My Super Power</div>
         {attributes?.map((item, idx) => (
           <SkillCard title={item?.question} data={item?.answer} superSkills={true} key={idx} />
-        ))}
+        ))} */}
       </div>
     </>
   );

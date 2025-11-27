@@ -22,7 +22,7 @@ const SignupTop = ({ navigate, userCode, setShowUserFeedbackPopup }) => {
                         className={!backLoader ? 'show-image-after-loader' : "hide-img-loader"} onLoad={() => setBackLoader(false)} />
                     <span className='title'>Your Information</span>
                 </div>
-                <div><Feedback setOpen={setShowUserFeedbackPopup} headerPadding={true} isSignup={true} /></div>
+                {/* <div><Feedback setOpen={setShowUserFeedbackPopup} headerPadding={true} isSignup={true} /></div> */}
             </div>
         </>
     )

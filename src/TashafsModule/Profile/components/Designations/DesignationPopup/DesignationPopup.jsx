@@ -17,9 +17,10 @@ function DesignationPopup({ open, setOpen, designations, productionUrl, isLive }
             <Offcanvas show={open} onHide={handleClose} placement='bottom' className='designation_popup'>
                 <Offcanvas.Header className='popup_header_offcanvas_wrapper'>
                     <div className='popup_header'>
-                        <div className='keywords_title'>I can offer</div>
+                        <div className='keywords_title'>I am incredible at these skills</div>
                         <div className='d-flex ' style={{ gap: 14 }}>
-                            <div className='d-flex'><Feedback setOpen={setShowUserFeedbackPopup} /></div>
+                            {/* Removed Feedback Icon for V10 */}
+                            {/* <div className='d-flex'><Feedback setOpen={setShowUserFeedbackPopup} /></div> */}
                             <img src={closeBtn} alt="" onClick={handleClose} />
                         </div>
                     </div>
@@ -35,9 +36,9 @@ function DesignationPopup({ open, setOpen, designations, productionUrl, isLive }
                     </div>
 
                 </Offcanvas.Body>
-                <UserFeedbackPopup showUserFeedbackPopup={showUserFeedbackPopup} setShowUserFeedbackPopup={setShowUserFeedbackPopup}
+                {/* <UserFeedbackPopup showUserFeedbackPopup={showUserFeedbackPopup} setShowUserFeedbackPopup={setShowUserFeedbackPopup}
                     productionUrl={productionUrl} isLive={isLive} screen={"Profile Keywords - Bottom Popup - Webview"} 
-                    headerText="I can offer Popup" />
+                    headerText="I can offer Popup" /> */}
             </Offcanvas>
         </>
     );

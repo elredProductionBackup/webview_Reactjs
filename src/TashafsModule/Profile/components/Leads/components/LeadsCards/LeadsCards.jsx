@@ -50,14 +50,14 @@ const[isLazyLoadingError,setIsLazyLoadingError]=useState([])
               ? { backgroundColor: `${rgba}`, cursor: "default" }
               : lazyLoadedIndices.includes(index) ? {
                 backgroundImage: item?.backgroundImages?.length !== 0 && isLazyLoadingError[index] ===false
-                  ? `linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(${item?.backgroundImages[0]})`
-                  : `url(${noImageLeads})`,
+                  ? `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${item?.backgroundImages[0]})`
+                  : `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${noImageLeads})`,
 
               } : index < 2
                 ? {
                   backgroundImage: item?.backgroundImages?.length !== 0 && isError[index] === false
-                    ? `linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(${item?.backgroundImages[0]})`
-                    : `url(${noImageLeads})`,
+                    ? `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${item?.backgroundImages[0]})`
+                    : `linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${noImageLeads})`,
 
                 }
                 : {}

@@ -10,17 +10,17 @@ const ShareCardShimmerData = ({baseColor, highlightColor }) => {
             <Skeleton height={7} width={79} baseColor={baseColor} highlightColor={highlightColor} style={{ marginTop: "30px" }} />
             <Skeleton height={7} width={121} baseColor={baseColor} highlightColor={highlightColor} style={{ marginTop: "12px", marginBottom: "10px" }} />
             <div className="circle_icons">
+                {/* <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
                 <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
                 <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
-                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
-                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
+                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} /> */}
             </div>
             <div className="circle_icons_two ">
+                {/* <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
                 <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
                 <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
                 <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
-                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
-                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} />
+                <Skeleton circle height={30} width={30} baseColor={baseColor} highlightColor={highlightColor} /> */}
             </div>
             {/* <Skeleton height={7} width={101} baseColor={baseColor} highlightColor={highlightColor} style={{ marginTop: "35px" }} /> */}
             <div className="square_icons">
