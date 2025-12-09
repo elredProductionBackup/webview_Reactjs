@@ -13,12 +13,12 @@ const SkillsPopup = ({ setOpen, data }) => {
         </div>
       </div>
       <div className="mid_part_skill">
-        <SkillCard
+        {/* <SkillCard
           title={"I am incredible at these skills / professionally great at "}
           data={data?.skills}
           skills={true}
           capitalise={true}
-        />
+        /> */}
         <SkillCard
           title={"Hobbies I am passionate about"}
           data={data?.hobbies}
