@@ -16,8 +16,8 @@ const Network_Ratings = ({ ethicalData, ethicalhasMore, ethicalloader, workedHer
     }
 
     return (
-        <div className="ratings" style={{ background: `${rgba}` }}>
-            <div className="circle-logo" style={{ background: `${rgba}`, backdropFilter: "blur(34px)" }}>
+        <div className="ratings">
+            <div className="circle-logo" style={{ background: `#FFFFFF1A`, backdropFilter: "blur(34px)" }}>
                 <Spinner animation="border" variant="light" size="sm" className={logoLoader ? 'show-img-loader' : 'hide-img-loader'} />
                 <img src={star} alt="" className={logoLoader ? 'hide-img-loader' : 'show-image-after-loader'} onLoad={() => setLogoLoader(false)} />
             </div>
