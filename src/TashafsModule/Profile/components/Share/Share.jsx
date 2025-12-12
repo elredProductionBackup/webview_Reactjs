@@ -52,7 +52,7 @@ const Share = ({
 
   return (
     <>
-      <div className="share-div" style={{ background: `${rgba}` }}>
+      <div className="share-div" style={{ background: `#FFFFFF1A` }}>
         <div>
           <div className="share-icon-div" onClick={handleShare}>
             <Spinner

@@ -8,6 +8,10 @@
     line-height: 28px;
     letter-spacing: .2px;
     text-align: center;
+    backdrop-filter: blur(34px);
+    -webkit-backdrop-filter: blur(34px);
+
+    background: rgba(255, 255, 255, 0.1); 
     font-family: "AvenirNextLTPro-Regular";
     span{font-weight: 700; 
         &.titlecase-span{text-transform: capitalize;}

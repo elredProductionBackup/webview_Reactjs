@@ -25,8 +25,8 @@ const Ratings = ({ rgba, data1, data2, hasMore, fetchNextPage, pagingData1, pagi
 
   const [logoLoader, setLogoLoader] = useState(true)
   return (
-    <div className="ratings" style={{ background: `${rgba}` }}>
-      <div className="circle-logo" style={{ background: `${rgba}` }}>
+    <div className="ratings">
+      <div className="circle-logo" style={{ background: `${`#FFFFFF1A`}` }}>
         <Spinner animation="border" variant="light" size="sm" className={logoLoader ? 'show-img-loader' : 'hide-img-loader'} />
         <img src={star} alt="" className={logoLoader ? 'hide-img-loader' : 'show-image-after-loader'} onLoad={() => setLogoLoader(false)} />
       </div>

@@ -41,15 +41,15 @@ const UpperProfileData = ({ data, miniCardData, baseColor, secondaryColor, tint,
                 openNetworkList={openNetworkList}
                 setOpenNetworkList={setOpenNetworkList}
             />
-            {!noCollabs && <Designations baseColor={rgba} data={collabsData} productionUrl={productionUrl} isLive={isLive} 
+            {!noCollabs && <Designations baseColor={`#FFFFFF1A`} data={collabsData} productionUrl={productionUrl} isLive={isLive} 
                 showDesignationsPopup={showDesignationsPopup} setShowDesignationsPopup={setShowDesignationsPopup} />}
-                <InfoData rgba={rgba} data={data?.result?.[0]?.basicDetails}/>
+                <InfoData rgba={`#FFFFFF1A`} data={data?.result?.[0]?.basicDetails}/>
             {/* <Designations baseColor={rgba} /> */}
             {/* <Share rgba={rgba} url={data?.result?.[0]?.shareProfileURL} show={show} /> */}
-            {getCOuntofLeads > 0 ? <Leads baseColor={`${baseColor}`} rgba={rgba} userCode={userCode} leadsData={leadsData} isLive={isLive} productionUrl={productionUrl} />
+            {getCOuntofLeads > 0 ? <Leads baseColor={`${baseColor}`} rgba={`#FFFFFF1A`} userCode={userCode} leadsData={leadsData} isLive={isLive} productionUrl={productionUrl} />
                 : 
                 // Removed no leads screen for V10
-                <NoLeads rgba={rgba} />
+                <NoLeads rgba={`#FFFFFF1A`} />
                 }
         </>
     )
