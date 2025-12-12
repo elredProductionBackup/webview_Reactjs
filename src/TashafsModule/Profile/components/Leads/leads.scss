@@ -9,6 +9,8 @@
   justify-content: center;
   margin-top: 15px;
   flex-direction: column;
+  backdrop-filter: blur(34px);
+
 
   .leads-top {
     display: flex;
