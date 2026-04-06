@@ -1,6 +1,7 @@
 @use '/src/App.scss' as css;
 .designation_popup {
-  background-color: rgba(36, 36, 38, 1) !important;
+  // background-color: rgba(36, 36, 38, 1) !important;
+  background-color: css.$theme_bg !important;
   padding: 0;
   height: fit-content !important;
   //   min-height: 100px !important;
@@ -24,7 +25,8 @@
       justify-content: space-between;
       padding: 0px 4px;
       padding-bottom: 2px;
-      background-color: rgba(36, 36, 38, 1);
+      // background-color: rgba(36, 36, 38, 1);
+      background-color: css.$theme_bg;
       position: sticky;
       top: 0;
       border-radius: 16px 16px 0 0 !important;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import close from "../../../assets/images/cross_white.svg";
+import close from "../../../assets/images/cross.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
 import emailLogo from "../../../assets/images/mailBg.svg";
 import { Spinner } from "react-bootstrap";

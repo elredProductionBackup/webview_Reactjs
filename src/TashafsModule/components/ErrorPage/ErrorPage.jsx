@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './errorpage.scss'
-import errorScreen from '../../../assets/images/no_internet.svg'
+// import errorScreen from '../../../assets/images/no_internet.svg'
+import errorScreen from '../../../assets/images/errorScreen.png'
 import { clearToasts } from 'react-simple-toasts';
 
 const ErrorPage = () => {

@@ -12,13 +12,14 @@
   }
 
   .branding_header {
+    background-color: css.$theme_bg;
     height: 40px;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background: css.$download_header;
+    // background: css.$download_header;
 
     .elred_logo {
       img {
