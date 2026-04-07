@@ -13,7 +13,7 @@ import { toastConfig } from "react-simple-toasts";
 
 export const GlobalData = createContext();
 
-console.log('7 Apr 2026')
+console.log('7 Apr 2026: latest deployment')
 
 function App() {
   axios.defaults.headers.common[process.env.REACT_APP_DEFAULT_HEADER]
