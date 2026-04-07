@@ -122,7 +122,7 @@
 * {
   font-family: "AvenirNextLTPro-Medium", sans-serif;
   // font-family: "AvenirNextLTPro-Medium";
-  color: white;
+  color: #0d0d0d;
   // touch-action: pan-x pan-y;
 
   &::-webkit-scrollbar {
@@ -154,16 +154,19 @@
 
 // --------------------------------------------------------------------------
 // DARK THEMING
-$theme_bg: #0d0d0d;
+// $theme_bg: #0d0d0d;
+$theme_bg: #ffffff;
 $theme_red: #e72d38;
 $theme_light_red: #ff2130;
 $theme_light: #ffffff;
 $theme_grey: #525252;
 $theme_border: #909090;
 $theme_shimmer_dark: #1a1d27;
-$theme_shimmer_bg: #1e232d;
-$theme_shimmer: #242939;
-$theme_text: #fff;
+$theme_shimmer_bg: #f0f0f0;
+$theme_shimmer: #e0e0e0;
+// $theme_text: #fff;
+$theme_text: #000000;
+$card-text : #ffffff;
 $comment_likes: #e5e5e5;
 $download_header: #04112b;
 $personality_bg: #3a3a3c;
@@ -369,11 +372,11 @@ $scrollbar: rgb(248, 248, 248);
 
 .private_text {
   font-weight: 400;
-  color: $theme_light;
+  color: $theme_text;
   padding: 26px 20px 32px 20px;
   text-align: center;
   font-family: AvenirPro-regular;
-  background-color: #0d0d0d;;
+  background-color: $theme_bg;
 }
 
 .header_division {
@@ -399,26 +402,33 @@ $scrollbar: rgb(248, 248, 248);
 
 // --------------------------------------------------------------------------
 // DARK THEMING
-$theme_bg: #0d0d0d;
+// $theme_bg: #0d0d0d;
+$theme_bg: #ffffff;
 $theme_red: #e72d38;
 $theme_light_red: #ff2130;
 $theme_light: #ffffff;
 $theme_grey: #525252;
 $theme_border: #909090;
-$theme_shimmer_bg: #1a1d27;
-$theme_shimmer: #242939;
-$theme_text: #fff;
+$theme_shimmer_bg: #f0f0f0;
+$theme_shimmer: #e0e0e0;
+// $theme_text: #fff;
+$theme_text: #000000;
+$card-text : #ffffff;
 $thme_border_bottom: #3c3c3c;
-$theme_light_text: #ebebeb;
+// $theme_light_text: #ebebeb;
+$theme_light_text: #525252;
 $theme_dark_blue: #161b25;
 $theme_light_border: #dfdfdf;
-$theme_light_grey: #363638;
+// $theme_light_grey: #363638;
+$theme_light_grey: #f7f7f7;
 $theme_half_light_text: #8E8E93;
-$theme_input: #444446;
+// $theme_input: #444446;
+$theme_input: #f2f2f7;
 $theme_lead_shimmer: #1e232d;
 $theme_lead_inner_shimmer: #0d0d0d38;
 $theme_light_text_grey: #e5e5e5;
-$theme_deletePopup: #242426;
+// $theme_deletePopup: #242426;
+$theme_deletePopup: #ffffff;
 $theme_dark_border: #2d2d2d;
 $theme_shimmer_leads:#1E232D;
 :export {

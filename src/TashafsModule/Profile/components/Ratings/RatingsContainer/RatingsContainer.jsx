@@ -1,7 +1,7 @@
 import { Offcanvas } from 'react-bootstrap'
 import RatingsPopUp from '../RatingsPopUp/RatingsPopUp'
-//import closeButton from '../../../../../assets/images/closeBg.svg'
-import closeButton from '../../../../../assets/images/close_dark.svg'
+//import closeButton from '../../../../../assets/images/close_dark.svg'
+import closeButton from '../../../../../assets/images/close.svg'
 import { useEffect } from 'react';
 import { clearToasts } from 'react-simple-toasts';
 

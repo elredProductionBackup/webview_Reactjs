@@ -1,3 +1,6 @@
+
+@use '/src/App.scss' as css;
+
 .user-details {
   margin-left: 10px;
   .profile-img {
@@ -51,6 +54,7 @@
       // &::first-letter {
       //   text-transform: capitalize !important;
       // }
+      color:css.$card-text;
       white-space: nowrap;
       overflow: hidden;
       max-width: 285px;
@@ -68,12 +72,14 @@
       top: 36px;
       left: 0;
       max-width: 335px;
+     
 
       @media only screen and (max-width: 450px) {
         max-width: calc(100vw - 40px);
       }
 
       .profileUserName-tooltip {
+        color: css.$card-text;
         max-width: 100%;
         background-color: #404040;
         border: 1px solid #909090;
@@ -110,6 +116,7 @@
     align-items: baseline;
 
     .designation-name {
+      color:css.$card-text;
       font-size: 18px;
       font-weight: 500;
       //  margin-left: 10px;
@@ -129,6 +136,7 @@
     margin-top: 5px;
 
     .location-name {
+      color:css.$card-text;
       cursor: pointer;
       font-size: 16px;
       font-weight: 500;

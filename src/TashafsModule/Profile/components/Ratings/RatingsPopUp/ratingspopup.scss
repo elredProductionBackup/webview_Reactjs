@@ -2,10 +2,12 @@
 @use '/src/App.scss' as css;
 
 .ratings-popup {
-  background-color: css.$theme_light_grey;
+  // background-color: css.$theme_light_grey;
+  background-color: css.$theme_bg;
   height: 100vh;
   .ethical {
-    color: #000;
+    // color: #000;
+    color: css.$theme_text;
 
     display: flex;
     align-items: center;
@@ -39,7 +41,8 @@
 
       .count-rating-header-text {
         font-weight: 500;
-        color: #f3f3f3;
+        // color: #f3f3f3;
+        color: css.$theme_text;
       }
     }
     .count-div-profile {
@@ -116,13 +119,13 @@
       font-size: 14px;
       font-style: normal;
     
-      color: rgba(255, 255, 255, 0.5) ;
+      color: rgba(0, 0, 0, 0.5) ;
     }
     input::-moz-placeholder {  
  
       font-size: 14px !important;
       font-style: normal !important;
-      color: rgba(255, 255, 255, 0.5) !important;
+      color: rgba(0, 0, 0, 0.5) !important;
   } 
   
     @supports (-webkit-touch-callout: none) {
@@ -159,7 +162,7 @@
       // line-height: 18px;
       //letter-spacing: 1px;
       // color: rgba(183, 183, 183, 1);
-      color: rgba(255, 255, 255, 0.5) ;
+      color: rgba(0, 0, 0, 0.5) ;
     }
 
     .SearchIconsvg {
@@ -174,7 +177,8 @@
 
     .vertical_border {
       color: #000;
-      border-left: 0.8px solid #eaecf2;
+      // border-left: 0.8px solid #eaecf2;
+      border-left: 0.8px solid css.$theme_border;
     }
   }
 
@@ -343,8 +347,8 @@
 }
 
 .ratings-header {
-  // background: rgb(255, 255, 255);
-  background-color: css.$theme_light_grey;
+  // background-color: css.$theme_light_grey;
+  background-color: css.$theme_bg;
   color: css.$theme_text;
   padding: 20px;
   // padding-bottom: 0;

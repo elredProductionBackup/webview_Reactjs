@@ -9,7 +9,8 @@
         width: 375px;
         bottom: 0;
         border-radius: 16px 16px 0 0;
-        background-color: #242426;
+        // background-color: #242426;
+        background-color: white;
         padding: 18px 20px 35px 20px;
         visibility: hidden;
 
@@ -81,7 +82,8 @@
                 }
 
                 .titles-popup-title {
-                    color: css.$theme_light;
+                    // color: css.$theme_light;
+                    color: css.$theme_text;
                     font-family: "AvenirNextLTPro-Regular";
                     font-size: 20px;
                     font-weight: 500;

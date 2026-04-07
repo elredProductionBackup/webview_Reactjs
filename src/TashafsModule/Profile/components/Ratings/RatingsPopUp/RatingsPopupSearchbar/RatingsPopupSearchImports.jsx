@@ -1,5 +1,6 @@
 //import closeIcon from '../../../../../../assets/images/x.svg'
-import closeIcon from '../../../../../../assets/images/white-cross-search-ratings-4x.png'
+// import closeIcon from '../../../../../../assets/images/white-cross-search-ratings-4x.png'
+import closeIcon from '../../../../../../assets/images/cross.svg'
 import { searchRatinghandler, closePopUphandler, SearchHandlers } from '../../ratingsFunctions'
 import { Spinner } from 'react-bootstrap'
 import search from '../../../../../../assets/images/search.svg'

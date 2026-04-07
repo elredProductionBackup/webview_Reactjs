@@ -1,4 +1,7 @@
+@use '/src/App.scss' as css;
+
 .ratings {
+
   // background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
   // padding: 10px;
@@ -6,6 +9,7 @@
   margin-top: 36px;
   position: relative;
   z-index: 2;
+  color:css.$card-text;
   &::before{
     content: "";
     position: absolute;
@@ -50,6 +54,7 @@
     // font-size: 18px;
     // font-weight: 500;
     // line-height: 24px;
+     color:css.$card-text;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -58,6 +63,7 @@
   }
 
   .desc-ratings {
+     color:css.$card-text;
     display: flex;
     align-items: center;
     /* width: 85%; */
@@ -68,6 +74,7 @@
     padding-top: 21px;
 
     .ratings-count {
+       color:css.$card-text;
       font-size: 20px;
       font-weight: 500;
       line-height: 24px;
@@ -86,6 +93,7 @@
       line-height: 15px;
       font-weight: 400;
       font-family: "AvenirNextLTPro-Regular";
+       color:css.$card-text;
     }
     .hr-line{
      // color: inherit;
