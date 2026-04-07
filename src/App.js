@@ -51,7 +51,6 @@ function App() {
         <GlobalData.Provider value={{ formData, setFormData }}>
           <Routing isLive={process.env.REACT_APP_ISLIVE} productionUrl={process.env.REACT_APP_API} isOffline={isOffline} setisOffline={setisOffline} />
         </GlobalData.Provider>
-          {/* <ToastContainer position="top-center" /> */}
       </Container>
     </AadharPopupContextProvider>
   );
