@@ -1,4 +1,7 @@
+@use '/src/App.scss' as css;
+
 .infodata{
+    color:css.$card-text;
     margin-top: 15px;
     padding: 20px 12px;
     box-shadow: 0px 2px 16px 0px #0000001A;
@@ -16,5 +19,8 @@
     span{font-weight: 700; 
         &.titlecase-span{text-transform: capitalize;}
         &.lowercase-span{text-transform: lowercase;}
+    }
+    span{
+        color:#E72D38;
     }
 }
