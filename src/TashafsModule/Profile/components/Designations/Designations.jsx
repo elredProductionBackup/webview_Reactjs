@@ -11,6 +11,9 @@ const Designations = ({ baseColor, data, productionUrl, isLive, showDesignations
     const [designationChipWidth, setDesignationChipWidth] = useState([]);
     const [widths, setWidths] = useState([]);
     const [chipsLoader, setChipsLoader] = useState(true);
+    const allDesignationsRef = useRef(null);
+    const [allDesignationsWidth, setAllDesignationsWidth] = useState(0);
+    const [breakIndex, setBreakIndex] = useState(-1);
 
     useEffect(() => {
         if (data?.result?.length === 0) setChipsLoader(false);
@@ -21,6 +24,64 @@ const Designations = ({ baseColor, data, productionUrl, isLive, showDesignations
     useEffect(() => {
         if (designationChipWidth?.length !== 0) widthCalculator();
     }, [designationChipWidth]) // eslint-disable-line
+
+    const getLineBreakIndex = (containerWidth, chipWidths, gap = 10) => {
+    let currentLineWidth = 0;
+
+    for (let i = 0; i < chipWidths.length; i++) {
+        const chipWidth = chipWidths[i];
+        const widthWithGap = currentLineWidth === 0
+        ? chipWidth
+        : currentLineWidth + gap + chipWidth;
+
+        if (widthWithGap > containerWidth) {
+        return i;
+        }
+
+        currentLineWidth = widthWithGap;
+    }
+
+    return -1; 
+    };
+
+
+useEffect(() => {
+  if (!allDesignationsRef.current) return;
+
+  const chips = allDesignationsRef.current.querySelectorAll('.chip_designation');
+  const widths = Array.from(chips).map(chip => chip.offsetWidth);
+//   setChipWidths(widths);
+
+  const containerWidth = allDesignationsRef.current.offsetWidth;
+  setAllDesignationsWidth(containerWidth);
+
+  const index = getLineBreakIndex(containerWidth, widths, 10);
+  setBreakIndex(index);
+
+}, [data]);
+
+useEffect(() => {
+  if (breakIndex !== -1) {
+    widthCalculator();
+  }
+}, [breakIndex]);
+
+
+
+    useEffect(() => {
+    if (!allDesignationsRef.current) return;
+
+    const observer = new ResizeObserver(entries => {
+        for (let entry of entries) {
+        setAllDesignationsWidth(entry.contentRect.width);
+        }
+    });
+
+    observer.observe(allDesignationsRef.current);
+
+    return () => observer.disconnect();
+    }, []);
+
 
     const widthCalculator = () => {
         if (result?.length === 1) {
@@ -36,13 +97,25 @@ const Designations = ({ baseColor, data, productionUrl, isLive, showDesignations
         const gapValue = 10;
         const minWidth = 40;
         const countChipWidth = 39;
+        // Extra Deduction for next line element
+        const extraReduction =
+            breakIndex === 3 ? (countChipWidth + gapValue) : 0;
         let maxWidth1 = `calc(100% - ${minWidth + gapValue}px)`;
         let maxWidth2 = `calc(100% - ${designationChipWidth?.[0] + gapValue}px`;
         let maxWidth3 = result?.length > 4 ? `calc(100% - ${minWidth + (2 * gapValue) + countChipWidth}px)`
             : result?.length === 3 ? "100%"
                 : `calc(100% - ${minWidth + gapValue}px)`;
-        let maxWidth4 = result?.length > 4 ? `calc(100% - ${designationChipWidth?.[1] + (2 * gapValue) + countChipWidth}px)` :
-            `calc(100% - ${designationChipWidth?.[1] + gapValue}px)`;
+       let maxWidth4 = result?.length > 4
+                ? breakIndex === 3
+                ? `calc(100% - ${extraReduction}px)`
+                : `calc(100% - ${
+                    designationChipWidth?.[1] +
+                    (2 * gapValue) +
+                    countChipWidth
+                    }px)`
+                :  breakIndex === 3
+                ? `calc(100% - ${extraReduction}px)`:`calc(100% - ${designationChipWidth?.[1] + gapValue}px)`;
+
         setWidths([maxWidth1, maxWidth2, maxWidth3, maxWidth4]);
         setChipsLoader(false);
     }
@@ -61,7 +134,7 @@ const Designations = ({ baseColor, data, productionUrl, isLive, showDesignations
                     <Skeleton height={24} baseColor="#242939" highlightColor="" className='chip_collab_tag_shimmer' />
                 </div>
                 : null}
-                <div className='all_designations'>
+                <div className='all_designations' ref={allDesignationsRef}>
                     {
                         result?.length > 4 ?
                             result?.slice(0, 4).map((item, id) => (
