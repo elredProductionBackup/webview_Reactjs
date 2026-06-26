@@ -13,8 +13,6 @@ import { toastConfig } from "react-simple-toasts";
 
 export const GlobalData = createContext();
 
-console.log('26 June 2026: latest deployment')
-
 function App() {
   axios.defaults.headers.common[process.env.REACT_APP_DEFAULT_HEADER]
     = Math.random() > 0.5 ? process.env.REACT_APP_HEADER_KEY_1 : process.env.REACT_APP_HEADER_KEY_2;
