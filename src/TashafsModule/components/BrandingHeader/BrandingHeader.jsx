@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import { downloadElred } from '../../../globalFunctions'
 
-import brand_logo from '../../../assets/images/logo_title.svg'
+import brand_logo from '../../../assets/images/logo_title_recent.svg'
 
 const BrandingHeader = ({ link }) => {
     return (

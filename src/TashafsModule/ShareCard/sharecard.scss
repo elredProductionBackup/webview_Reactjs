@@ -1,4 +1,4 @@
-@use '/src/App.scss' as css;
+@use "/src/App.scss" as css;
 
 .share-card {
   background: css.$theme_bg;
@@ -65,7 +65,7 @@
         }
 
         .user-image-border-blue {
-          border: 3px solid #3A90FF;
+          border: 3px solid #3a90ff;
         }
       }
 
@@ -112,6 +112,7 @@
         margin-top: 25px;
         text-align: center;
         text-transform: capitalize;
+        color: css.$text_color;
       }
 
       .locations {
@@ -120,6 +121,7 @@
         font-weight: 500 !important;
         text-align: center;
         letter-spacing: 0.5px;
+        color: css.$text_color;
       }
 
       .badges-div {
@@ -151,22 +153,20 @@
   }
 }
 
-
 @media only screen and (max-width: 450px) {
-.verified-user-share-card-icon-container {
-  position: absolute;
-  top: 169px;
-  left: 56.75%;
-  cursor: pointer;
-  border-radius: 100%;
+  .verified-user-share-card-icon-container {
+    position: absolute;
+    top: 169px;
+    left: 56.75%;
+    cursor: pointer;
+    border-radius: 100%;
 
-  .verified-user-share-card-icon {
-    height: 28px;
-    width: 28px;
-    pointer-events: none;
+    .verified-user-share-card-icon {
+      height: 28px;
+      width: 28px;
+      pointer-events: none;
+    }
   }
-}
-
 }
 
 .card-branding-new {
@@ -175,7 +175,7 @@
   justify-content: space-between;
   position: absolute;
   width: 92%;
-  bottom: 0;
+  bottom: 10px;
 
   .logo-elred {
     img {
@@ -205,6 +205,7 @@
     .shareTxt {
       cursor: pointer;
       padding-left: 5px;
+      color: css.$text_color;
     }
   }
 }
