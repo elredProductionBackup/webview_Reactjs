@@ -2,14 +2,14 @@ import Skeleton from 'react-loading-skeleton';
 import "./networksharecardshimmer.scss";
 
 const NetworkShareCardShimmer = () => {
-  const baseColor = "#242939";
-  const highlightColor = "#1e212b"; 
+  const baseColor = "#d4d4d4";
+  const highlightColor = "#eeeeee"; 
 
   return (
     <div className='network-share-card-shimmer'>
         <div className='network-card-shimmer-title-container'>
             <div className='network-card-shimmer-title'>
-                <Skeleton width={147} height={16} baseColor="#1A1D27" highlightColor={highlightColor} />
+                <Skeleton width={147} height={16} baseColor={baseColor} highlightColor={highlightColor} />
             </div>
         </div>
         <div className="network-card-shimmer-body">
