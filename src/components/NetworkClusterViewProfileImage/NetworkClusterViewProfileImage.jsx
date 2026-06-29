@@ -28,7 +28,7 @@ const NetworkClusterViewProfileImage = ({ isLive, productionUrl }) => {
                             </div>
                             <div className="network-profile-pic-title">
                                 {!profileBackLoader && data?.networkClusterDetails?.name ? data?.networkClusterDetails?.name
-                                    : <Skeleton height={12} width={200} className="network-profile-pic-header-skeleton" baseColor="#242939" highlightColor="#1e212b" />}
+                                    : <Skeleton height={12} width={200} className="network-profile-pic-header-skeleton" baseColor="#e5e5e5" highlightColor="#f1f1f1" />}
                             </div>
                         </div>
                         {/* Removed Feedback Icon for V10 */}
