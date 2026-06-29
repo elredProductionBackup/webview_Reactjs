@@ -63,6 +63,7 @@
       margin: 0 auto;
       // padding: 0 4px;
       margin-top: 5px;
+      color: #fff;
 
       text-transform: lowercase;
       &::first-letter {
@@ -86,6 +87,7 @@
       width: 50px;
       text-overflow: ellipsis;
       margin: 0 auto;
+      color: #fff;
     }
     .designation {
       margin-top: 3px;
@@ -94,6 +96,7 @@
       font-weight: 600;
       // letter-spacing: 0.3px;
       text-align: center;
+      color: #fff;
     }
     .location {
       font-size: 2px;
@@ -102,6 +105,7 @@
       // letter-spacing: 0.2px;
       text-align: center;
       margin-top: 1px;
+      color: #fff;
     }
 
     .badges {

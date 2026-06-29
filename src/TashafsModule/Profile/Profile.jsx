@@ -47,7 +47,8 @@ const Profile = ({ isLive, productionUrl }) => {
 
   return (
     <>
-      {loading || leadsLoading ? <ProfileShimmer color={"#242939"} highlight="#1E212B" />
+      {loading || leadsLoading ? <ProfileShimmer color={"#d4d4d4"} highlight="#eeeeee" />
+      // {true ? <ProfileShimmer color={"#d4d4d4"} highlight="#eeeeee" />
         : !error ? (
           <ProfileWithData {...profileWithDataProps}/>
         ) : (

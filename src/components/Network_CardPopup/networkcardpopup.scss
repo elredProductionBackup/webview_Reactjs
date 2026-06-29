@@ -137,6 +137,7 @@
             font-weight: 500;
             cursor: pointer;
             padding-left: 5px;
+            color: css.$text_color;
           }
         }
 
@@ -190,6 +191,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            color: css.$text_color;
           }
         }
 
@@ -234,6 +236,7 @@
             max-width: 100%;
             padding-left: 8px;
             padding-right: 5px;
+            color: css.$text_color;
           }
         }
 
@@ -243,11 +246,11 @@
           justify-content: space-between;
           position: absolute;
           width: 92%;
-          bottom: 0;
+          bottom: 10px;
 
           .logo-elred {
             img {
-              width: 70px;
+              width: 100px;
               pointer-events: none;
             }
           }
@@ -278,6 +281,7 @@
 
             .profile_txt {
               cursor: pointer;
+              color: #fff;
             }
           }
         }

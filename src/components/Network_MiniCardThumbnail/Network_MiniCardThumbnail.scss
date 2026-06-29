@@ -1,4 +1,4 @@
-@use '/src/App.scss' as css;
+@use "/src/App.scss" as css;
 
 .network_minicard_thumbnail {
   width: 57px;
@@ -31,9 +31,9 @@
     margin-top: 2px;
 
     .thumbnail-group-network-dp-img {
-        height: 4px;
-        width: 4px;
-        border-radius: 50%;
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
     }
 
     .thumbnail-group-network-title {
@@ -45,6 +45,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: calc(100% - 8px);
+      color: css.$text_color;
     }
   }
 
@@ -63,12 +64,13 @@
     padding: 0 5px;
     text-align: center;
     height: 10px;
+    color: css.$text_color;
   }
 
   .network_location {
     font-size: 3px;
     font-weight: 500;
-    color: white;
+    color: css.$text_color;
     text-align: center;
     margin-top: 3px;
     padding: 0 10%;

@@ -178,24 +178,24 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   width={50}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
                 <Skeleton
                   width={100}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
                 <Skeleton
                   width={110}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
 
@@ -203,9 +203,9 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   <Skeleton
                     width={150}
                     height={4}
-                    baseColor="#242939"
+                    baseColor={color}
                     borderRadius={6}
-                    style={{ backgroundColor: "#1a1d27" }}
+                    style={{ backgroundColor: "#e0e0e0" }}
                     highlightColor={highlight}
                   />
                 </div>
@@ -213,9 +213,9 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   <Skeleton
                     width={150}
                     height={4}
-                    baseColor="#242939"
+                    baseColor={color}
                     borderRadius={6}
-                    style={{ backgroundColor: "#1a1d27" }}
+                    style={{ backgroundColor: "#e0e0e0" }}
                     highlightColor={highlight}
                   />
                 </div>
@@ -223,9 +223,9 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   <Skeleton
                     width={150}
                     height={4}
-                    baseColor="#242939"
+                    baseColor={color}
                     borderRadius={6}
-                    style={{ backgroundColor: "#1a1d27" }}
+                    style={{ backgroundColor: "#e0e0e0" }}
                     highlightColor={highlight}
                   />
                 </div>
@@ -237,24 +237,24 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   width={50}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
                 <Skeleton
                   width={100}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
                 <Skeleton
                   width={110}
                   height={7}
                   borderRadius={6}
-                  baseColor={"#242939"}
-                  style={{ backgroundColor: "#1a1d27" }}
+                  baseColor={color}
+                  style={{ backgroundColor: "#e0e0e0" }}
                   highlightColor={highlight}
                 />
                 <div style={{ lineHeight: "10px" }}>
@@ -262,8 +262,8 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                     width={150}
                     height={4}
                     borderRadius={6}
-                    baseColor={"#242939"}
-                    style={{ backgroundColor: "#1a1d27" }}
+                    baseColor={color}
+                    style={{ backgroundColor: "#e0e0e0" }}
                     highlightColor={highlight}
                   />
                 </div>
@@ -271,8 +271,8 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   <Skeleton
                     width={150}
                     height={4}
-                    baseColor={"#242939"}
-                    style={{ backgroundColor: "#1a1d27" }}
+                    baseColor={color}
+                    style={{ backgroundColor: "#e0e0e0" }}
                     borderRadius={6}
                     highlightColor={highlight}
                   />
@@ -281,8 +281,8 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
                   <Skeleton
                     width={150}
                     height={4}
-                    style={{ backgroundColor: "#1a1d27" }}
-                    baseColor={"#242939"}
+                    style={{ backgroundColor: "#e0e0e0" }}
+                    baseColor={color}
                     borderRadius={6}
                     highlightColor={highlight}
                   />
@@ -389,8 +389,13 @@ const ProfileShimmer = ({ color, isLoading, highlight }) => {
             />
           </div>
         </div>
-        <div className="shimmer-single">                 
-          <Skeleton baseColor="#292939" width={100} height={7} highlightColor={highlight}/>
+        <div className="shimmer-single">
+          <Skeleton
+            baseColor={color}
+            width={100}
+            height={7}
+            highlightColor={highlight}
+          />
         </div>
 
         {/* <div className="i-need">

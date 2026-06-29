@@ -52,7 +52,7 @@ const ProfileWithData = ({ data, rgba, tint, designTypeC, secondaryColor, baseCo
 
   return (
     <>
-      {isLoading ? <ProfileShimmer color={"#242939"} highlight="#1E212B" /> :
+      {isLoading ? <ProfileShimmer color={"#d4d4d4"} highlight="#eeeeee" /> :
         <>
           <div className="parent-profile"
             style={

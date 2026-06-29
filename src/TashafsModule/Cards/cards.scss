@@ -203,6 +203,7 @@
           max-width: 100%;
           text-overflow: ellipsis;
           padding: 0 0 0 8px;
+          color: white;
         }
       }
 
@@ -235,11 +236,11 @@
         justify-content: space-between;
         position: absolute;
         width: 92%;
-        bottom: 0;
+        bottom: 10px;
 
         .logo-elred {
           img {
-            width: 70px;
+            width: 100px;
             pointer-events: none;
           }
         }
@@ -269,6 +270,7 @@
 
           .profile_txt {
             cursor: pointer;
+            color: #fff;
           }
         }
       }
