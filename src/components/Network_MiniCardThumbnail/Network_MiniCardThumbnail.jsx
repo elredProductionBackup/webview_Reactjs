@@ -65,10 +65,10 @@ const Network_MiniCardThumbnail = ({ setOpenCardPopup, data, tint, baseColor }) 
                     }}
                     >
                     <img src={imgError ? defaultGroupImg : logo} className='network_image' alt="" onError={() => setImgError(true)} />
-                    <div className="thumbnail-group-network-name-dp-container">
+                    {/* <div className="thumbnail-group-network-name-dp-container">
                         <img src={data?.networkClusterDetails?.logo} className="thumbnail-group-network-dp-img" alt="" />
                         <span className="thumbnail-group-network-title">{data?.networkClusterDetails?.name}</span>
-                    </div>
+                    </div> */}
                     <div className="network_name">{name}</div>
                     <div className="network_location">{capitalNames(newAddress)}</div>
                     <NetworkBottomIcons />
