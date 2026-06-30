@@ -131,7 +131,6 @@ const CardDataContainer = ({
                   cardUser={cardUser}
                   handleClose={handleClose}
                 />
-
                 {cardInfo?.[0]?.customImageCardDesignInfo?.colorFilter?.length !==
                   0 ? (
                   <BackgroundFilter

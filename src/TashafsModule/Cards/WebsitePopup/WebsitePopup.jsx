@@ -31,6 +31,7 @@ const WebsitePopup = ({ data, setWebEnable, webStatus, socialStatus, website }) 
           favicon={data?.socialMediaLink === "" || !data?.socialMediaLink ? false : true}
         />
       </div>
+     {(data.websiteURL || data.website) && 
       <div className="email-address-wrapper">
         <LogoTitle
           logo={web}
@@ -44,7 +45,7 @@ const WebsitePopup = ({ data, setWebEnable, webStatus, socialStatus, website }) 
           blankAddress="User has kept website link private"
           favicon={website === "" ? false : true}
         />
-      </div>
+      </div>}
 
 
     </div>

@@ -80,7 +80,7 @@
     /* background: #eaecf2; */
 
     // padding: 9px 15px !important;
-
+    border: 1.4px solid #ccc;
     border-radius: 60px;
     margin-top: 25px;
     // margin-bottom: 15px;
@@ -289,7 +289,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 20px;
-  background-color: css.$theme_light_grey;
+  background-color: css.$theme_light;
   color: css.$theme_text;
   // to hide the scrollbar
   &::-webkit-scrollbar {

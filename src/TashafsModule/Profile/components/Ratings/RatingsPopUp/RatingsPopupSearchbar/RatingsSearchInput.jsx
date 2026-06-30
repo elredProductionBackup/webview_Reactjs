@@ -35,7 +35,7 @@ const RatingsSearchInput = ({ close, closeBtn, count, msg, type, searchHandler, 
                 SearchHandlers(e, setSearchText, setLoading, searchHandler, type, searchText, page, prevSearchText, dataLength, searchMore)
               };
             }} />
-          {searchText.length > 0 && <img className='ratings-popup-search-close-img' src={closeIcon} alt=""
+          {searchText.length > 0 && <img className='ratings-popup-search-close-img'  style={{ filter: "invert(1)" }} src={closeIcon} alt=""
             onClick={() => searchRatinghandler("", setSearchText, setLoading, searchHandler, type, true, page, prevSearchText, dataLength, searchMore)} />
           }
         </div>

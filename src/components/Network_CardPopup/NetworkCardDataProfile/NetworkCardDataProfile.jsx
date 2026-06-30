@@ -51,12 +51,12 @@ const NetworkCardDataProfile = ({ dpURL, networkName, newAddress, data, isNetwor
           onError={() => setImgError(true)}
         />
       </div>
-      <div className="group-network-name-dp-container">
+      {/* <div className="group-network-name-dp-container">
         <span className="group-network-dp">
           <img src={isNetworkShareCard ? shareCardData?.networkClusterDetails?.logo : data?.networkClusterDetails?.logo} className="group-network-dp-img" alt="" />
         </span>
         <span className="group-network-title">{isNetworkShareCard ? shareCardData?.networkClusterDetails?.name : data?.networkClusterDetails?.name}</span>
-      </div>
+      </div> */}
       <div className="network-name-div">
         <div className="network-title-name">
           {networkName}

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './DesignationPopup.scss'
-import closeBtn from '../../../../../assets/images/close_dark.svg'
+// import closeBtn from '../../../../../assets/images/close_dark.svg'
+import closeBtn from '../../../../../assets/images/redclose.svg'
 import { calcTextLength } from '../../UserDetails/ImportsUserDetail';
 import Feedback from '../../../../../components/Feedback/Feedback';
 import UserFeedbackPopup from '../../../../components/UserFeedbackPopup/UserFeedbackPopup';

@@ -10,7 +10,7 @@ function NetworkDisclaimerModal({ isOpen, onClose, disclaimerData }) {
   return (
     <div className="disclaimerModalOverlay" onClick={(e) => {!modalRef.current.contains(e.target) && onClose()}}>
       <div className="disclaimerMainContainer" ref={modalRef}>
-        <div className="disclaimerModalContainer">
+        {/* <div className="disclaimerModalContainer">
           <div style={{ height: "36px", marginRight: disclaimerLogo ? "8px" : "0" }}>
             <Skeleton
               circle
@@ -30,7 +30,7 @@ function NetworkDisclaimerModal({ isOpen, onClose, disclaimerData }) {
           <div className="disclaimerTopContentTitle">
           {disclaimerData?.networkClusterDetails?.name}
           </div>
-        </div>
+        </div> */}
 
         <div className="disclaimerContentContainer">
           <div className="disclaimerMainModalScrollContainer">

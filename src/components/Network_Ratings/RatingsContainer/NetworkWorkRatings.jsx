@@ -1,6 +1,6 @@
 import React from 'react'
 //import closeButton from '../../../assets/images/closeBg.svg'
-import closeButton from '../../../assets/images/close_dark.svg'
+import closeButton from '../../../assets/images/redclose.svg'
 import RatingsPopUp from '../../../TashafsModule/Profile/components/Ratings/RatingsPopUp/RatingsPopUp';
 import Contants from '../../../utils/Contants';
 
