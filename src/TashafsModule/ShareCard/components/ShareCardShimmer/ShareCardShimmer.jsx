@@ -4,13 +4,13 @@ import Skeleton from 'react-loading-skeleton'
 import ShareCardShimmerData from './ShareCardShimmerData/ShareCardShimmerData';
 
 const ShareCardShimmer = () => {
-    const baseColor = '#242939';
-    const highlightColor ="#1e212b";
+    const baseColor = '#d4d4d4';
+    const highlightColor ="#eeeeee";
    
     return (
         <div className='sharecard-shimmer'>
             <div className='title'>
-                <Skeleton width={155} height={12} baseColor="#1A1D27" highlightColor={highlightColor} />
+                <Skeleton width={155} height={12} baseColor={baseColor} highlightColor={highlightColor} />
             </div>
             <div className='card_shimmer'>
                 <div className='card_wrapper'>

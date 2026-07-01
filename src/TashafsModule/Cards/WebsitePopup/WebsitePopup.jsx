@@ -7,7 +7,6 @@ import { handleUrlClick } from "../../../globalFunctions";
 
 const WebsitePopup = ({ data, setWebEnable, webStatus, socialStatus, website }) => {
   const [backLoader, setbackLoader] = useState(true)
-
   return (
     <div className="outer-div" onClick={(e) => e.stopPropagation()}>
       <div className="skill-title">
@@ -31,6 +30,7 @@ const WebsitePopup = ({ data, setWebEnable, webStatus, socialStatus, website }) 
           favicon={data?.socialMediaLink === "" || !data?.socialMediaLink ? false : true}
         />
       </div>
+     {!data.networkCode && 
       <div className="email-address-wrapper">
         <LogoTitle
           logo={web}
@@ -44,7 +44,7 @@ const WebsitePopup = ({ data, setWebEnable, webStatus, socialStatus, website }) 
           blankAddress="User has kept website link private"
           favicon={website === "" ? false : true}
         />
-      </div>
+      </div>}
 
 
     </div>

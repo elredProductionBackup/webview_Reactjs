@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import "./profile-titles-popup.scss";
 import { useEffect, useRef } from "react";
-import crossImg from "../../../../assets/images/close_dark.svg";
+// import crossImg from "../../../../assets/images/close_dark.svg";
+import crossImg from "../../../../assets/images/redclose.svg";
 import briefcaseImg from "../../../../assets/images/briefcase.svg";
 import { clearToasts } from "react-simple-toasts";
 import SingleProfileTitle from "./SingleProfileTitle/SingleProfileTitle";

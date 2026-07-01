@@ -45,11 +45,11 @@ const UserDetails = ({ profileImg, designation, location, firstName, lastName, a
           />
         </span>
       </span>
-      {isNetwork && <div className='network_profile_name'>
+      {/* {isNetwork && <div className='network_profile_name'>
         <img src={networkData?.logo} alt='network_name' onClick={()=>navigate(`/view-network-cluster-picture?networkCode=${networkCode}`)}
         style={{cursor:"pointer"}} />
         <div className='networkData_name'>{networkData?.name}</div>
-        </div>}
+        </div>} */}
       <div className="name">
         <div onMouseOver={() => handleMouseOver(setTooltip)} onMouseLeave={() => { if (tooltip) setTooltip(false)}}
         className={isNetwork ? "networkUserName" : "profileUserName"}>{isNetwork ? username : calcTextLength(username.length, username, 'name')}</div>

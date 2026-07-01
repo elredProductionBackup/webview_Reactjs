@@ -33,7 +33,7 @@ const ViewProfilePicture = ({ productionUrl, isLive }) => {
                         </div>
                         <div className="profile-pic-title">
                             {data && !profileBackLoader ? data?.result[0]?.firstname + " " + data?.result[0]?.lastname 
-                                : <Skeleton width={155} height={12} className="profile-pic-header-skeleton" baseColor="#242939"/>}
+                                : <Skeleton width={155} height={12} className="profile-pic-header-skeleton" baseColor="#e5e5e5" highlightColor="#f1f1f1"/>}
                         </div>
                     </div>
                     <div className="profile-picture-container">

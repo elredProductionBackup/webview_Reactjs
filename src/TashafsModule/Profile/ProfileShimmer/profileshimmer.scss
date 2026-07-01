@@ -5,10 +5,10 @@
   overflow-y: hidden;
   // padding: 15px;
   .profile-shimmer-title {
-    color: #000;
+    // color: #000;
     top: 0;
     // background: #e7e9ef;
-    background-color: css.$theme_shimmer_bg;
+    // background-color: css.$theme_shimmer_bg;
     width: 100%;
     padding: 15px;
     height: 44px;
@@ -71,7 +71,7 @@
 
   .share-shimmer {
     // background: #e7e9ef;
-    background-color: css.$theme_shimmer_dark !important;
+    background-color: css.$theme_shimmer !important;
     text-align: center;
     margin-top: 30px;
     padding: 10px 0;
@@ -79,7 +79,7 @@
   }
   .tags-shimmer {
     // background: #e7e9ef;
-    background-color: css.$theme_shimmer_dark;
+    background-color: css.$theme_shimmer;
     padding: 8px 16px !important;
     margin-top: 32px;
     padding: 10px 0;
@@ -172,7 +172,7 @@
   }
 
   .ratings-shimmer {
-    background: #1a1d27;
+    background: css.$theme_shimmer_dark;
     margin-top: 35px;
     position: relative;
     padding: 20px;
@@ -186,7 +186,7 @@
       width: 46px;
       height: 46px;
       // background: red;
-      background: #242939;
+      background: css.$theme_shimmer;
 
       display: flex;
       align-items: center;
@@ -209,7 +209,7 @@
   }
 
   .network-ratings-shimmer {
-    background: #1a1d27;
+    background: css.$theme_shimmer_dark;
     margin-top: 35px;
     position: relative;
     padding: 20px;
@@ -246,13 +246,13 @@
   }
 
   .testimonials-shimmer {
-    background: #1a1d27;
+    background: css.$theme_shimmer_dark;
     padding: 15px 20px;
     margin-top: 12px;
     border-radius: 4px;
 
     .inner-card {
-      background: #1a1d27;
+      background: css.$theme_shimmer_dark;
       margin-top: 20px;
       border-radius: 18px;
       padding: 20px 30px;
@@ -264,14 +264,14 @@
         margin-bottom: 20px;
 
         .first {
-          background: #1a1d27;
+          background: css.$theme_shimmer_dark;
           text-align: right;
         }
       }
 
       .middle-item {
         margin-top: 10px;
-        background: #1a1d27;
+        background: css.$theme_shimmer_dark;
       }
 
       .last-item {
@@ -280,12 +280,12 @@
         margin-top: 20px;
 
         .last-circle {
-          background: #1a1d27;
+          background: css.$theme_shimmer_dark;
         }
 
         .last-shimmer {
           margin-left: 10px;
-          background: #1a1d27;
+          background: css.$theme_shimmer_dark;
         }
       }
     }
@@ -293,7 +293,7 @@
 
   .super-skills {
     display: flex;
-    background: #1a1d27;
+    background: css.$theme_shimmer_dark;
     /* margin-top: 15px; */
     border-radius: 4px;
     padding: 15px;
@@ -307,7 +307,7 @@
 
     .super1,
     .super2 {
-      background-color: #242939;
+      background-color: css.$theme_shimmer;
     }
 
     .super-div {
@@ -316,7 +316,7 @@
   }
 
   .shimmer-single {
-    background: #1a1d27;
+    background: css.$theme_shimmer_dark;
     margin-top: 15px;
     padding: 10px;
     display: flex;
@@ -326,7 +326,7 @@
 }
 
 .super-skills-big {
-  background: #1a1d27;
+  background: css.$theme_shimmer_dark;
   margin-top: 15px;
   padding: 10px;
   border-radius: 10px;

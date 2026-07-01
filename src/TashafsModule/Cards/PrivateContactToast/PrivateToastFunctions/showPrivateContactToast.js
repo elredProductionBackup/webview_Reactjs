@@ -15,18 +15,18 @@ export const showPrivateContactToast = (toast) => {
                             <div className="private-contact-toast-container">
                                 <div className="private-contact-toast-text-container">
                                     <span className="private-contact-main-text private-contact-submitted-main-text-color">
-                                       <Skeleton width={72} height={12} baseColor={"#242939"} />
+                                       <Skeleton width={72} height={12} baseColor={"#d4d4d4"} />
                                     </span>
                                     <span className="private-contact-sub-text">
-                                      <Skeleton width={160} height={8} baseColor={"#242939"} />
-                                      <Skeleton width={160} height={8} baseColor={"#242939"} />
-                                      <Skeleton width={50} height={8} baseColor={"#242939"} />
+                                      <Skeleton width={160} height={8} baseColor={"#d4d4d4"} />
+                                      <Skeleton width={160} height={8} baseColor={"#d4d4d4"} />
+                                      <Skeleton width={50} height={8} baseColor={"#d4d4d4"} />
                                     </span>
                                 </div>
                             </div>
                         )
                     },
-                    icon: <div className='private-toast-load'><Skeleton circle height={34} width={34} baseColor={"#242939"}
+                    icon: <div className='private-toast-load'><Skeleton circle height={34} width={34} baseColor={"#d4d4d4"}
                     /> <Spinner variant="danger" size="sm" className="private-contact-cross-load" />
                     </div>,
     
